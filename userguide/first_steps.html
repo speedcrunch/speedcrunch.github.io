@@ -1,0 +1,297 @@
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>First Steps &mdash; SpeedCrunch 0.12 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.12',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="SpeedCrunch 0.12 documentation" href="../contents.html" />
+    <link rel="up" title="User Guide" href="index.html" />
+    <link rel="next" title="Syntax" href="syntax.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document" data-spy="scroll" data-target="#myScrollspy" data-offset="80">
+
+  <div id="navbar" class="navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"  href="../index.html"><span class=""><img src="../_static/logo.png"></span>
+          SpeedCrunch</a>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+      </div>
+
+      
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+              <li class="dropdown globaltoc-container">
+  
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../contents.html">Navigation <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">First Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syntax.html">Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html">User-Defined Variables and Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#complex-numbers">Complex numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html">User Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/index.html#built-in-functions">Built-in Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/index.html#constants">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="installation.html" data-toggle="tooltip" title="Previous Page: Installation"><span class="glyphicon glyphicon-chevron-left"></span><span class="hidden-sm hidden-tablet"> Previous</span>
+    </a>
+  </li>
+  <li>
+    <a href="syntax.html" data-toggle="tooltip" title="Next Page: Syntax">
+      <span class="hidden-sm hidden-tablet">Next</span><span class="glyphicon glyphicon-chevron-right"></span></a>
+  </li>
+
+<script>
+$(document).ready(function(){
+    $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
+});
+</script>
+              
+            
+            
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          
+            
+<li><form class="navbar-form" action="../search.html" method="get">
+ <div class="form-group has-feedback">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <i class="glyphicon glyphicon-search form-control-feedback"></i>
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form></li>
+          
+
+          
+            
+          
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home </a></li>
+      <li><a href="../contents.html">Documentation </a></li><li><a href="index.html">User Guide</a></li>
+      <li class="active">First Steps</li>
+    </ul> 
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><div id="myScrollspy"><ul>
+<li><a class="reference internal" href="#">First Steps</a></li>
+</ul>
+</div>
+        </div>
+      </div> 
+    <div class="col-md-9 content">
+      
+  <div class="section" id="first-steps">
+<h1>First Steps<a class="headerlink" href="#first-steps" title="Permalink to this headline">¶</a></h1>
+<p>SpeedCrunch is designed to be used via the keyboard. While an <a class="reference internal" href="interface.html#keypad"><span class="std std-ref">on-screen keypad</span></a> is available,
+it is disabled by default. The powerful keyboard interface is the recommended way to
+use SpeedCrunch to get the most out of it. However, the keypad can be enabled from:
+<span class="menuselection">View ‣ Keypad</span>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All examples in this manual use a period (<code class="docutils literal"><span class="pre">.</span></code>) as the decimal separator. By default,
+SpeedCrunch will use your system&#8217;s default decimal separator for output and will
+accept both a period and a comma (<code class="docutils literal"><span class="pre">,</span></code>) for input (<a class="reference internal" href="interface.html#radix-character"><span class="std std-ref">more details</span></a>).
+Depending on your settings, it may be necessary to replace the periods with the
+appropriate decimal separator when entering these examples into SpeedCrunch.</p>
+</div>
+<p>When starting SpeedCrunch for the first time, the interface may thus seem a little plain. Don&#8217;t be fooled, it can easily be customized. At the bottom edge of the window, you see the the <strong>input bar</strong>, also called the <strong>editor</strong>, with a blinking cursor showing that it is ready to accept keystrokes. To try out SpeedCrunch, type:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mf">1.234 </span><span class="o">+</span> <span class="mf">7.89</span>
+</pre></div>
+</div>
+<p>then hit <code class="kbd docutils literal"><span class="pre">Enter</span></code> to evaluate the expression. The result (along with the expression you just entered) will be displayed at the top of window:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mf">1.234 </span><span class="o">+</span> <span class="mf">7.89</span><span class="ge"></span>
+<span class="ge">= 9.124</span>
+</pre></div>
+</div>
+<p>This region (called the <strong>result window</strong>) not only shows the result of your last calculation, it is a complete browsable history. Any previous input or result can be recalled by double-clicking the corresponding line.</p>
+<p>Let&#8217;s try this out. First, perform some more calculations so that more than one entry is displayed in the result window:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">54</span><span class="o">*</span><span class="mf">4.514 </span><span class="o">+</span> <span class="mi">57</span><span class="ge"></span>
+<span class="ge">= 300.756</span>
+
+<span class="mi">54</span><span class="o">*</span><span class="p">(</span><span class="mf">4.514 </span><span class="o">-</span> <span class="mf">5.7</span><span class="p">)</span><span class="ge"></span>
+<span class="ge">= -64.044</span>
+</pre></div>
+</div>
+<p>Note how multiplication (<code class="docutils literal"><span class="pre">*</span></code>) takes precedence over addition (<code class="docutils literal"><span class="pre">+</span></code>) unless parentheses are used to specify a particular order of evaluation. If you now wish to continue working with one of the results, double-click e.g. the line <code class="docutils literal"><span class="pre">=</span> <span class="pre">300.756</span></code>. The input bar will be populated with this result. Similarly, you can also quickly recall previous input by double-clicking them in the result history. Alternatively, you can use the <code class="kbd docutils literal"><span class="pre">Up</span></code> and <code class="kbd docutils literal"><span class="pre">Down</span></code> arrow keys on your keyboard to recall previous expressions or use the mouse wheel for the same effect (the mouse cursor must be hovering over the editor for this to work, otherwise the result window will be scrolled).</p>
+<p>To continue the computation directly from the previous result, you can use the special variable <code class="docutils literal"><span class="pre">ans</span></code> which always holds the result of the last entry in the history. Try this:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">3         </span><span class="c">? By the way, you can use question marks for comments.</span>
+<span class="o">=</span> <span class="mi">5</span>
+
+<span class="mi">7</span><span class="o">*</span><span class="no">ans</span>       <span class="c">? &#39;ans&#39; is now equal to 5</span>
+<span class="o">=</span> <span class="mi">35</span>
+
+<span class="no">ans</span> <span class="o">+</span> <span class="mi">300</span><span class="ge"></span>
+<span class="ge">= 38</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal"><span class="pre">ans</span></code> provides a quick and easy way to access the previous result. Sometimes,
+SpeedCrunch can even insert <code class="docutils literal"><span class="pre">ans</span></code> for you: When you start a new expression with an operator (e.g. <code class="docutils literal"><span class="pre">+</span></code>, <code class="docutils literal"><span class="pre">-</span></code>, <code class="docutils literal"><span class="pre">*</span></code>, <code class="docutils literal"><span class="pre">/</span></code>, <code class="docutils literal"><span class="pre">^</span></code>), <code class="docutils literal"><span class="pre">ans</span></code> will be prepended automatically. <a class="footnote-reference" href="#f1" id="id1">[1]</a> To try it out, type <code class="docutils literal"><span class="pre">7</span></code> <code class="kbd docutils literal"><span class="pre">Enter</span></code> <code class="docutils literal"><span class="pre">+3</span></code> <code class="kbd docutils literal"><span class="pre">Enter</span></code>.
+SpeedCrunch expands this as follows:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">7</span><span class="ge"></span>
+<span class="ge">= 7</span>
+
+<span class="no">ans</span><span class="o">+</span><span class="mi">3</span><span class="ge"></span>
+<span class="ge">= 10</span>
+</pre></div>
+</div>
+<p>SpeedCrunch comes with a number of <a class="reference internal" href="../reference/constants.html#constants"><span class="std std-ref">mathematical constants</span></a> like π that are available by typing their name:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="no">pi</span><span class="ge"></span>
+<span class="ge">= 3.14159265358979323846</span>
+
+<span class="no">pi</span><span class="o">*</span><span class="mf">1.2</span><span class="o">^</span><span class="mi">2</span><span class="ge"></span>
+<span class="ge">= 4.52389342116930226339</span>
+</pre></div>
+</div>
+<p>Let us finish this short introduction with a word about functions. SpeedCrunch comes with an extensive list of built-in mathematical functions which can be accessed by simply typing their name in the editor followed by any parameters (also called arguments) in parentheses:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">sqrt</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span><span class="ge"></span>
+<span class="ge">= 12</span>
+</pre></div>
+</div>
+<p>The function <a class="reference internal" href="../reference/basic.html#sc.sqrt" title="sqrt"><code class="xref sc sc-func docutils literal"><span class="pre">sqrt()</span></code></a> calculates the square root of its argument. Some functions require or accept more than one argument. In that case, separate them with a semicolon (<code class="docutils literal"><span class="pre">;</span></code>).</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">To repeat: In contrast to many programming languages, parameters in SpeedCrunch are separated by a <strong>semicolon</strong>!</p>
+</div>
+<p>An example is the <a class="reference internal" href="../reference/statistical.html#sc.average" title="average"><code class="xref sc sc-func docutils literal"><span class="pre">average()</span></code></a> function:</p>
+<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">average</span><span class="p">(</span><span class="mi">12</span><span class="p">;</span><span class="mi">34</span><span class="p">;</span><span class="mi">56</span><span class="p">)</span><span class="ge"></span>
+<span class="ge">= 34</span>
+</pre></div>
+</div>
+<p>This is already enough to use SpeedCrunch effectively. Try it out for yourself! Alternatively,
+read on to learn about its more advanced features.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This requires that the <a class="reference internal" href="interface.html#automatic-result-reuse"><span class="std std-ref">Automatic Result Reuse</span></a> setting
+is enabled.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+    </div> 
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/userguide/first_steps.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
+
+

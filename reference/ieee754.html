@@ -1,0 +1,356 @@
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>IEEE-754 Functions &mdash; SpeedCrunch 0.12 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.12',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="SpeedCrunch 0.12 documentation" href="../contents.html" />
+    <link rel="up" title="Reference" href="index.html" />
+    <link rel="next" title="Constants" href="constants.html" />
+    <link rel="prev" title="Statistical Functions" href="statistical.html" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document" data-spy="scroll" data-target="#myScrollspy" data-offset="80">
+
+  <div id="navbar" class="navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"  href="../index.html"><span class=""><img src="../_static/logo.png"></span>
+          SpeedCrunch</a>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+      </div>
+
+      
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+              <li class="dropdown globaltoc-container">
+  
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../contents.html">Navigation <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/first_steps.html">First Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/syntax.html">Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html">User-Defined Variables and Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html#complex-numbers">Complex numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/interface.html">User Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#built-in-functions">Built-in Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#constants">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="statistical.html" data-toggle="tooltip" title="Previous Page: Statistical Functions"><span class="glyphicon glyphicon-chevron-left"></span><span class="hidden-sm hidden-tablet"> Previous</span>
+    </a>
+  </li>
+  <li>
+    <a href="constants.html" data-toggle="tooltip" title="Next Page: Constants">
+      <span class="hidden-sm hidden-tablet">Next</span><span class="glyphicon glyphicon-chevron-right"></span></a>
+  </li>
+
+<script>
+$(document).ready(function(){
+    $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
+});
+</script>
+              
+            
+            
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          
+            
+<li><form class="navbar-form" action="../search.html" method="get">
+ <div class="form-group has-feedback">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <i class="glyphicon glyphicon-search form-control-feedback"></i>
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form></li>
+          
+
+          
+            
+          
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home </a></li>
+      <li><a href="../contents.html">Documentation </a></li><li><a href="index.html">Reference</a></li>
+      <li class="active">IEEE-754 Functions</li>
+    </ul> 
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><div id="myScrollspy"><ul>
+<li><a class="reference internal" href="#">IEEE-754 Functions</a></li>
+</ul>
+</div>
+        </div>
+      </div> 
+    <div class="col-md-9 content">
+      
+  <div class="section" id="ieee-754-functions">
+<h1>IEEE-754 Functions<a class="headerlink" href="#ieee-754-functions" title="Permalink to this headline">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.12.</span></p>
+</div>
+<p>IEEE-754 is a standard for the representation of and computations with floating point
+numbers in binary systems. It is widely used by floating point implementations in
+CPUs. These functions implement encoding and decoding binary representations of floating point
+numbers according to IEEE-754.</p>
+<p>An IEEE-754 binary float consists of three parts: a sign bit, the exponent and the significand
+(sometimes called the mantissa). From these parts, the value is then calculated using the
+following formula: <code class="docutils literal"><span class="pre">-1</span> <span class="pre">^</span> <span class="pre">sign</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">^</span> <span class="pre">(exponent</span> <span class="pre">-</span> <span class="pre">bias)</span> <span class="pre">*</span> <span class="pre">1.significand</span></code>.  The standard defines
+multiple binary formats of different sizes that all follow these rules, but differ in
+the number of bits allocated for the exponent and significand. The bias for the default
+formats is defined as <code class="docutils literal"><span class="pre">bias</span> <span class="pre">=</span> <span class="pre">(2</span> <span class="pre">^</span> <span class="pre">(exponent_bits</span> <span class="pre">-</span> <span class="pre">1))</span> <span class="pre">-</span> <span class="pre">1</span></code>.
+See <a class="reference external" href="http://chrishecker.com/images/f/fb/Gdmfp.pdf">this article</a> for a more detailed introduction into the subject.</p>
+<p>The following binary float formats are defined by the standard:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="30%" />
+<col width="22%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Also known as</th>
+<th class="head">Exponent bits</th>
+<th class="head">Significand bits</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">binary16</span></code></td>
+<td>Half precision</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">binary32</span></code></td>
+<td>Single precision</td>
+<td>8</td>
+<td>23</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">binary64</span></code></td>
+<td>Double precision</td>
+<td>11</td>
+<td>52</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">binary128</span></code></td>
+<td>Quad precision</td>
+<td>15</td>
+<td>112</td>
+</tr>
+</tbody>
+</table>
+<p>In many programming languages, the <code class="docutils literal"><span class="pre">binary32</span></code> format is available as <code class="docutils literal"><span class="pre">float</span></code>
+and <code class="docutils literal"><span class="pre">binary64</span></code> is available as <code class="docutils literal"><span class="pre">double</span></code>.</p>
+<dl class="function">
+<dt id="sc.ieee754_encode">
+<code class="descname">ieee754_encode</code><span class="sig-paren">(</span><em>x</em>; <em>exponent_bits</em>; <em>significand_bits</em><span class="optional">[</span>; <em>exponent_bias</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode a floating point number into a IEEE-754 binary representation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> &#8211; The floating point value to encode.</li>
+<li><strong>exponent_bits</strong> &#8211; The length of the exponent part, in bits.</li>
+<li><strong>significand_bits</strong> &#8211; The length of the significand part, in bits.</li>
+<li><strong>exponent_bias</strong> &#8211; The exponent bias to use. Derived from the length of the
+exponent if not specified.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_decode">
+<code class="descname">ieee754_decode</code><span class="sig-paren">(</span><em>x</em>; <em>exponent_bits</em>; <em>significand_bits</em><span class="optional">[</span>; <em>exponent_bias</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the value of an IEEE-754 binary float.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> &#8211; The binary float to decode.</li>
+<li><strong>exponent_bits</strong> &#8211; The length of the exponent part, in bits.</li>
+<li><strong>significand_bits</strong> &#8211; The length of the significand part, in bits.</li>
+<li><strong>exponent_bias</strong> &#8211; The exponent bias to use. Derived from the length of the
+exponent if not specified.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_half_encode">
+<code class="descname">ieee754_half_encode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode <code class="docutils literal"><span class="pre">x</span></code> in the half-precision binary format.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_half_decode">
+<code class="descname">ieee754_half_decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode the half-precision binary float <code class="docutils literal"><span class="pre">x</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_single_encode">
+<code class="descname">ieee754_single_encode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode <code class="docutils literal"><span class="pre">x</span></code> in the single-precision binary format.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_single_decode">
+<code class="descname">ieee754_single_decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode the single-precision binary float <code class="docutils literal"><span class="pre">x</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_double_encode">
+<code class="descname">ieee754_double_encode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode <code class="docutils literal"><span class="pre">x</span></code> in the double-precision binary format.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_double_decode">
+<code class="descname">ieee754_double_decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode the double-precision binary float <code class="docutils literal"><span class="pre">x</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_quad_encode">
+<code class="descname">ieee754_quad_encode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode <code class="docutils literal"><span class="pre">x</span></code> in the quad-precision binary format.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sc.ieee754_quad_decode">
+<code class="descname">ieee754_quad_decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode the quad-precision binary float <code class="docutils literal"><span class="pre">x</span></code>.</p>
+</dd></dl>
+
+</div>
+
+
+    </div> 
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/reference/ieee754.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
+
+
