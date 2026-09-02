@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://speedcrunch.org/schemas/theme-v1.schema.json",
+  "title": "SpeedCrunch Theme",
+  "description": "Defines the colors used by a SpeedCrunch theme.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "$id",
+    "number",
+    "parens",
+    "list",
+    "unit",
+    "result",
+    "comment",
+    "function",
+    "operator",
+    "variable",
+    "separator",
+    "background"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://json-schema.org/draft/2020-12/schema",
+      "description": "JSON Schema draft identifier"
+    },
+    "$id": {
+      "const": "https://speedcrunch.org/schemas/theme-v1.schema.json",
+      "description": "Theme schema identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Optional theme display name"
+    },
+    "author": {
+      "type": "string",
+      "description": "Optional theme author"
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Optional theme homepage"
+    },
+    "version": {
+      "type": "string",
+      "description": "Optional theme version chosen by the theme author"
+    },
+    "number": { "$ref": "#/$defs/color" },
+    "parens": { "$ref": "#/$defs/color" },
+    "list": { "$ref": "#/$defs/color" },
+    "unit": { "$ref": "#/$defs/color" },
+    "result": { "$ref": "#/$defs/color" },
+    "comment": { "$ref": "#/$defs/color" },
+    "function": { "$ref": "#/$defs/color" },
+    "operator": { "$ref": "#/$defs/color" },
+    "variable": { "$ref": "#/$defs/color" },
+    "separator": { "$ref": "#/$defs/color" },
+    "background": { "$ref": "#/$defs/color" },
+    "primary": {
+      "$ref": "#/$defs/color",
+      "description": "Optional primary/accent color override"
+    }
+  },
+  "$defs": {
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "description": "Hex color in the form #RRGGBB"
+    }
+  }
+}
