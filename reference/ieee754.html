@@ -24,23 +24,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>IEEE-754 Functions &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=3" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=4042127e"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
@@ -69,7 +67,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand"  href="../index.html">
-              <span class=""><img src="../_static/logo.png" alt=""></span>
+              <span class=""><img src="../_static/logo.png" alt="Logo of SpeedCrunch"></span>
           SpeedCrunch</a>
         <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
@@ -172,9 +170,9 @@ $jqTheme(document).ready(function(){
     <div class="col-md-9 content">
       
   <section id="ieee-754-functions">
-<h1>IEEE-754 Functions<a class="headerlink" href="#ieee-754-functions" title="Permalink to this heading">¶</a></h1>
+<h1>IEEE-754 Functions<a class="headerlink" href="#ieee-754-functions" title="Link to this heading">¶</a></h1>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 0.12.</span></p>
+<p><span class="versionmodified added">Added in version 0.12.</span></p>
 </div>
 <p>IEEE-754 is a standard for the representation of and computations with floating point
 numbers in binary systems. It is widely used by floating point implementations in
@@ -223,7 +221,7 @@ See <a class="reference external" href="http://chrishecker.com/images/f/fb/Gdmfp
 and <code class="docutils literal notranslate"><span class="pre">binary64</span></code> is available as <code class="docutils literal notranslate"><span class="pre">double</span></code>.</p>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_encode">
-<span class="sig-name descname"><span class="pre">ieee754_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">exponent_bits</span></em>; <em class="sig-param"><span class="pre">significand_bits</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">exponent_bias</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_encode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">exponent_bits</span></em>; <em class="sig-param"><span class="pre">significand_bits</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">exponent_bias</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_encode" title="Link to this definition">¶</a></dt>
 <dd><p>Encode a floating point number into a IEEE-754 binary representation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -240,7 +238,7 @@ exponent if not specified.</p></li>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_decode">
-<span class="sig-name descname"><span class="pre">ieee754_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">exponent_bits</span></em>; <em class="sig-param"><span class="pre">significand_bits</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">exponent_bias</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_decode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">exponent_bits</span></em>; <em class="sig-param"><span class="pre">significand_bits</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">exponent_bias</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_decode" title="Link to this definition">¶</a></dt>
 <dd><p>Calculate the value of an IEEE-754 binary float.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -257,73 +255,73 @@ exponent if not specified.</p></li>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_half_encode">
-<span class="sig-name descname"><span class="pre">ieee754_half_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_encode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_half_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_encode" title="Link to this definition">¶</a></dt>
 <dd><p>Encode <code class="docutils literal notranslate"><span class="pre">x</span></code> in the half-precision binary format.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_half_decode">
-<span class="sig-name descname"><span class="pre">ieee754_half_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_decode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_half_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode the half-precision binary float <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_single_encode">
-<span class="sig-name descname"><span class="pre">ieee754_single_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_encode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_single_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_encode" title="Link to this definition">¶</a></dt>
 <dd><p>Encode <code class="docutils literal notranslate"><span class="pre">x</span></code> in the single-precision binary format.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_single_decode">
-<span class="sig-name descname"><span class="pre">ieee754_single_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_decode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_single_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_single_decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode the single-precision binary float <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_double_encode">
-<span class="sig-name descname"><span class="pre">ieee754_double_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_encode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_double_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_encode" title="Link to this definition">¶</a></dt>
 <dd><p>Encode <code class="docutils literal notranslate"><span class="pre">x</span></code> in the double-precision binary format.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_double_decode">
-<span class="sig-name descname"><span class="pre">ieee754_double_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_decode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_double_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode the double-precision binary float <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_quad_encode">
-<span class="sig-name descname"><span class="pre">ieee754_quad_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_encode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_quad_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_encode" title="Link to this definition">¶</a></dt>
 <dd><p>Encode <code class="docutils literal notranslate"><span class="pre">x</span></code> in the quad-precision binary format.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_quad_decode">
-<span class="sig-name descname"><span class="pre">ieee754_quad_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_decode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_quad_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode the quad-precision binary float <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_round_half">
-<span class="sig-name descname"><span class="pre">ieee754_round_half</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_half" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_round_half</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_half" title="Link to this definition">¶</a></dt>
 <dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest representable half-precision value.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_round_float">
-<span class="sig-name descname"><span class="pre">ieee754_round_float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_float" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_round_float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_float" title="Link to this definition">¶</a></dt>
 <dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest representable single-precision value.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_round_double">
-<span class="sig-name descname"><span class="pre">ieee754_round_double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_double" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_round_double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_double" title="Link to this definition">¶</a></dt>
 <dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest representable double-precision value.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_round_quad">
-<span class="sig-name descname"><span class="pre">ieee754_round_quad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_quad" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_round_quad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_round_quad" title="Link to this definition">¶</a></dt>
 <dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest representable quad-precision value.</p>
 </dd></dl>
 
@@ -337,25 +335,25 @@ exponent if not specified.</p></li>
 <p>That is, residual uses the <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">rounded</span></code> sign convention (not <code class="docutils literal notranslate"><span class="pre">rounded</span> <span class="pre">-</span> <span class="pre">x</span></code>).</p>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_half_residual">
-<span class="sig-name descname"><span class="pre">ieee754_half_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_residual" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_half_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_half_residual" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">ieee754_round_half(x)</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_float_residual">
-<span class="sig-name descname"><span class="pre">ieee754_float_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_float_residual" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_float_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_float_residual" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">ieee754_round_float(x)</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_double_residual">
-<span class="sig-name descname"><span class="pre">ieee754_double_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_residual" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_double_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_double_residual" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">ieee754_round_double(x)</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ieee754_quad_residual">
-<span class="sig-name descname"><span class="pre">ieee754_quad_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_residual" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ieee754_quad_residual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ieee754_quad_residual" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">ieee754_round_quad(x)</span></code>.</p>
 </dd></dl>
 
@@ -371,7 +369,7 @@ exponent if not specified.</p></li>
   <div class="container">
     <p>
         &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/>
     </p>
   </div>
 </footer>

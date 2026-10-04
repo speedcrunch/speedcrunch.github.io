@@ -24,23 +24,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Statistical Functions &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=3" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=4042127e"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
@@ -69,7 +67,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand"  href="../index.html">
-              <span class=""><img src="../_static/logo.png" alt=""></span>
+              <span class=""><img src="../_static/logo.png" alt="Logo of SpeedCrunch"></span>
           SpeedCrunch</a>
         <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
@@ -178,14 +176,14 @@ $jqTheme(document).ready(function(){
     <div class="col-md-9 content">
       
   <section id="statistical-functions">
-<h1>Statistical Functions<a class="headerlink" href="#statistical-functions" title="Permalink to this heading">¶</a></h1>
+<h1>Statistical Functions<a class="headerlink" href="#statistical-functions" title="Link to this heading">¶</a></h1>
 <section id="general">
-<h2>General<a class="headerlink" href="#general" title="Permalink to this heading">¶</a></h2>
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">¶</a></h2>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.average">
-<span class="sig-name descname"><span class="pre">average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.average" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.average" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the arithmetic average of the arguments (sum of the arguments divided by their number). The arguments must share the same dimension.</p>
 <p>A single list or matrix argument is also accepted. Matrix inputs are
@@ -194,16 +192,16 @@ flattened and reduced over all elements.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.mean">
-<span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mean" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Alias for <a class="reference internal" href="#sc.average" title="average"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">average()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.geomean">
-<span class="sig-name descname"><span class="pre">geomean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.geomean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">geomean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.geomean" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the geometric mean of the arguments, defined by <code class="docutils literal notranslate"><span class="pre">product(x1;</span> <span class="pre">x2;</span> <span class="pre">...)^(1/n)</span></code> where <code class="docutils literal notranslate"><span class="pre">n</span></code> is the number of arguments. All the arguments may each have a different dimension. The geometric mean is useful for comparing sets of quantities that are very different in order of magnitude and even possibly dimension.</p>
 <p>A single list or matrix argument is also accepted. Matrix inputs are
 flattened first.</p>
@@ -211,9 +209,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.median">
-<span class="sig-name descname"><span class="pre">median</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.median" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">median</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.median" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the median of the arguments, i.e. the value dividing the set of arguments into two evenly sized parts.</p>
 <p>First the set of arguments is sorted. If the number of arguments is odd, the element in the middle of the sorted list is returned. If the number of arguments is even, the arithmetic mean of the two central elements is returned.</p>
@@ -223,9 +221,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.min">
-<span class="sig-name descname"><span class="pre">min</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.min" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">min</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.min" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Returns the minimum out of the supplied argument list. The arguments must be real and share the same dimension.</p>
 <p>A single list or matrix argument is also accepted. Matrix inputs are
@@ -234,9 +232,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.max">
-<span class="sig-name descname"><span class="pre">max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.max" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.max" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Returns the maximum out of the supplied argument list. The arguments must be real and share the same dimension.</p>
 <p>A single list or matrix argument is also accepted. Matrix inputs are
@@ -245,9 +243,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.sum">
-<span class="sig-name descname"><span class="pre">sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.sum" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.sum" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the sum of all the given arguments. These must share the same dimension.</p>
 <p>A single list or matrix argument is also accepted. Matrix inputs are
@@ -256,9 +254,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.count">
-<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.count" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.count" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Returns the number of arguments. With a single list or matrix argument, it
 returns the number of contained elements.</p>
@@ -266,9 +264,9 @@ returns the number of contained elements.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.summation">
-<span class="sig-name descname"><span class="pre">summation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">start</span></em>; <em class="sig-param"><span class="pre">end</span></em>; <em class="sig-param"><span class="pre">expression</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.summation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">summation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">start</span></em>; <em class="sig-param"><span class="pre">end</span></em>; <em class="sig-param"><span class="pre">expression</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.summation" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes a summation over integer values of <code class="docutils literal notranslate"><span class="pre">n</span></code> from <code class="docutils literal notranslate"><span class="pre">start</span></code> to <code class="docutils literal notranslate"><span class="pre">end</span></code> (inclusive), evaluating <code class="docutils literal notranslate"><span class="pre">expression</span></code> at each step.</p>
 <p>Inside <code class="docutils literal notranslate"><span class="pre">expression</span></code>, the identifier <code class="docutils literal notranslate"><span class="pre">n</span></code> is bound to the current iteration value.</p>
@@ -282,15 +280,15 @@ returns the number of contained elements.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.product">
-<span class="sig-name descname"><span class="pre">product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.product" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.product" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the product of all the given arguments.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.rand">
-<span class="sig-name descname"><span class="pre">rand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">[digits</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.rand" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">rand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">[digits</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.rand" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Generates a pseudo-random decimal in the range <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">1</span></code>.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">digits</span></code> is omitted, 16 random decimal digits are generated internally. If supplied, <code class="docutils literal notranslate"><span class="pre">digits</span></code> must be an integer between 0 and 78.</p>
@@ -303,14 +301,14 @@ returns the number of contained elements.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.randint">
-<span class="sig-name descname"><span class="pre">randint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">max</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.randint" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">randint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">max</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.randint" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc">
 <span class="sig-name descname"><span class="pre">randint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">min</span></em>; <em class="sig-param"><span class="pre">max</span></em><span class="sig-paren">)</span></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Generates a pseudo-random integer between two inclusive bounds.</p>
 <p>With one argument, the range is from 0 to <code class="docutils literal notranslate"><span class="pre">max</span></code> (or from <code class="docutils literal notranslate"><span class="pre">max</span></code> to 0 if <code class="docutils literal notranslate"><span class="pre">max</span></code> is negative). With two arguments, both bounds are included and the argument order does not matter.</p>
@@ -324,9 +322,9 @@ returns the number of contained elements.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.varp">
-<span class="sig-name descname"><span class="pre">varp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.varp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.varp" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the population variance of the arguments, using normalization by
 <code class="docutils literal notranslate"><span class="pre">n</span></code>. The variance is a measure for the spreading of a set of numbers.</p>
@@ -337,9 +335,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.vars">
-<span class="sig-name descname"><span class="pre">vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.vars" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.vars" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the sample variance of the arguments, using normalization by
 <code class="docutils literal notranslate"><span class="pre">n-1</span></code>. Use this when the arguments are a sample of a larger population.</p>
@@ -350,9 +348,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.stdevp">
-<span class="sig-name descname"><span class="pre">stdevp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.stdevp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stdevp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.stdevp" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the population standard deviation of the given arguments. It is
 obtained by taking the square root of <a class="reference internal" href="#sc.varp" title="varp"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">varp()</span></code></a> and uses normalization
@@ -363,9 +361,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.stdevs">
-<span class="sig-name descname"><span class="pre">stdevs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.stdevs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stdevs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.stdevs" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the sample standard deviation of the given arguments. It is
 obtained by taking the square root of <a class="reference internal" href="#sc.vars" title="vars"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">vars()</span></code></a> and uses normalization
@@ -376,7 +374,7 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.absdev">
-<span class="sig-name descname"><span class="pre">absdev</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.absdev" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">absdev</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.absdev" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the average absolute deviation of the arguments from their mean. This means that, with <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">average(x1;</span> <span class="pre">x2;</span> <span class="pre">...)</span></code>, we have:</p>
 <div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">absdev</span><span class="p">(</span><span class="n">x1</span><span class="p">;</span> <span class="n">x2</span><span class="p">;</span> ... <span class="p">)</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">abs</span><span class="p">(</span><span class="n">x2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> ...
 </pre></div>
@@ -387,9 +385,9 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.mad">
-<span class="sig-name descname"><span class="pre">mad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mad" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mad" title="Link to this definition">¶</a></dt>
 <dd><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 <p>Computes the median absolute deviation of the arguments from their median:</p>
 <div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">mad</span><span class="p">(</span><span class="n">x1</span><span class="p">;</span> <span class="n">x2</span><span class="p">;</span> ... <span class="p">)</span> <span class="o">=</span> <span class="n">median</span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">median</span><span class="p">(</span><span class="n">x</span><span class="p">));</span> <span class="n">abs</span><span class="p">(</span><span class="n">x2</span> <span class="o">-</span> <span class="n">median</span><span class="p">(</span><span class="n">x</span><span class="p">));</span> ...<span class="p">)</span>
@@ -401,11 +399,11 @@ flattened first.</p>
 
 </section>
 <section id="binomial-distribution">
-<span id="id1"></span><h2>Binomial Distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">¶</a></h2>
+<span id="id1"></span><h2>Binomial Distribution<a class="headerlink" href="#binomial-distribution" title="Link to this heading">¶</a></h2>
 <p>The binomial distribution is described by the parameters <code class="docutils literal notranslate"><span class="pre">N</span></code> and <code class="docutils literal notranslate"><span class="pre">p</span></code>. It gives the probability distribution of the number of successful trials, when the total number of trials is given by <code class="docutils literal notranslate"><span class="pre">N</span></code>, and each test is successful with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. Not that unlike the <a class="reference internal" href="#hypergeometric-distribution"><span class="std std-ref">Hypergeometric Distribution</span></a>, the probability <code class="docutils literal notranslate"><span class="pre">p</span></code> remains the same for all draws. The binomial distribution can be thought of drawing <em>with</em> replacement, while the hypergeometric distribution describes drawing <em>without</em> replacement.</p>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.binomcdf">
-<span class="sig-name descname"><span class="pre">binomcdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binomcdf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">binomcdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binomcdf" title="Link to this definition">¶</a></dt>
 <dd><p>Binomial cumulative distribution function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -426,7 +424,7 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.binompmf">
-<span class="sig-name descname"><span class="pre">binompmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binompmf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">binompmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binompmf" title="Link to this definition">¶</a></dt>
 <dd><p>Binomial probability mass function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -447,38 +445,38 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.binommean">
-<span class="sig-name descname"><span class="pre">binommean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binommean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">binommean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binommean" title="Link to this definition">¶</a></dt>
 <dd><p>Mean (expectation) value of the given binomial distribution.</p>
 <p>The function computes the expected number of successes when an experiment is performed <code class="docutils literal notranslate"><span class="pre">N</span></code> times, each successful independently with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. The result will simply be given by <em>N * p</em>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.binomvar">
-<span class="sig-name descname"><span class="pre">binomvar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binomvar" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">binomvar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.binomvar" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the variance of the given binomial distribution function, equal to <em>N * p * (1-p)</em>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.ncr">
-<span class="sig-name descname"><span class="pre">ncr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ncr" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ncr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ncr" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the binomial coefficient, equal to the number of possibilities of how to select <code class="docutils literal notranslate"><span class="pre">k</span></code> elements from a set of size <code class="docutils literal notranslate"><span class="pre">N</span></code>. The order of the <code class="docutils literal notranslate"><span class="pre">k</span></code> elements is of no importance, i.e. permutations of a subset are not counted as an additional choice.</p>
 <p>In SpeedCrunch the domain of <a class="reference internal" href="#sc.ncr" title="ncr"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">ncr()</span></code></a> is extended to all real numbers. The result is <em>1/((N + 1) * B(k + 1, N - k + 1))</em>, where <em>B(a, b)</em> is the complete Beta function.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.npr">
-<span class="sig-name descname"><span class="pre">npr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.npr" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">npr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.npr" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the binomial coefficient, equal to the number of possibilities of how to select <code class="docutils literal notranslate"><span class="pre">k</span></code> elements from a set of size <code class="docutils literal notranslate"><span class="pre">N</span></code>. The order of the <code class="docutils literal notranslate"><span class="pre">k</span></code> elements <strong>is</strong> important, i.e. permutations of a subset are counted as an additional choice.</p>
 <p>In SpeedCrunch, the domain of <a class="reference internal" href="#sc.npr" title="npr"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">npr()</span></code></a> is extended to all real numbers. The result is <em>Γ(N + 1)/Γ(k)</em>, where <em>Γ</em> is the gamma function; see <a class="reference internal" href="basic.html#sc.gamma" title="gamma"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">gamma()</span></code></a>.</p>
 </dd></dl>
 
 </section>
 <section id="hypergeometric-distribution">
-<span id="id2"></span><h2>Hypergeometric Distribution<a class="headerlink" href="#hypergeometric-distribution" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2>Hypergeometric Distribution<a class="headerlink" href="#hypergeometric-distribution" title="Link to this heading">¶</a></h2>
 <p>The hypergeometric distribution is described by the three parameters <code class="docutils literal notranslate"><span class="pre">N</span></code>, <code class="docutils literal notranslate"><span class="pre">K</span></code> and  <code class="docutils literal notranslate"><span class="pre">n</span></code>. It describes the probability distribution of the number of successes when drawing <code class="docutils literal notranslate"><span class="pre">n</span></code> samples from a finite population of size <code class="docutils literal notranslate"><span class="pre">N</span></code>, containing exactly <code class="docutils literal notranslate"><span class="pre">K</span></code> successes. Unlike the <a class="reference internal" href="#binomial-distribution"><span class="std std-ref">Binomial Distribution</span></a>, the hypergeometric distribution describes drawing <em>without</em> replacement.</p>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.hyperpmf">
-<span class="sig-name descname"><span class="pre">hyperpmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">K</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hyperpmf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">hyperpmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">K</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hyperpmf" title="Link to this definition">¶</a></dt>
 <dd><p>Hypergeometric probability mass function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -500,7 +498,7 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.hypercdf">
-<span class="sig-name descname"><span class="pre">hypercdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">K</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypercdf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">hypercdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">K</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypercdf" title="Link to this definition">¶</a></dt>
 <dd><p>Hypergeometric cumulative distribution function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -522,7 +520,7 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.hypermean">
-<span class="sig-name descname"><span class="pre">hypermean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypermean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">hypermean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypermean" title="Link to this definition">¶</a></dt>
 <dd><p>Expected value of the given hypergeometric distribution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -542,7 +540,7 @@ flattened first.</p>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.hypervar">
-<span class="sig-name descname"><span class="pre">hypervar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypervar" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">hypervar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">N</span></em>; <em class="sig-param"><span class="pre">k</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hypervar" title="Link to this definition">¶</a></dt>
 <dd><p>Variance of the given hypergeometric distribution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -563,11 +561,11 @@ flattened first.</p>
 
 </section>
 <section id="poisson-distribution">
-<h2>Poisson Distribution<a class="headerlink" href="#poisson-distribution" title="Permalink to this heading">¶</a></h2>
+<h2>Poisson Distribution<a class="headerlink" href="#poisson-distribution" title="Link to this heading">¶</a></h2>
 <p>The Poisson distribution is characterized by only a single parameter, named <code class="docutils literal notranslate"><span class="pre">mu</span></code>. It represents both the mean and the variance of the distribution. It describes the probability distribution of the number of events during a fixed period of time, when the average rate of events is known. The Poisson distribution requires the events to be independent. This is usually a good approximation when the rate is low compared to the total population size.</p>
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.poipmf">
-<span class="sig-name descname"><span class="pre">poipmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poipmf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">poipmf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poipmf" title="Link to this definition">¶</a></dt>
 <dd><p>Poisson probability mass function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -598,7 +596,7 @@ First, we note that according to the yield, the expected number of failures are 
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.poicdf">
-<span class="sig-name descname"><span class="pre">poicdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poicdf" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">poicdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poicdf" title="Link to this definition">¶</a></dt>
 <dd><p>Poisson cumulative distribution function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -618,13 +616,13 @@ First, we note that according to the yield, the expected number of failures are 
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.poimean">
-<span class="sig-name descname"><span class="pre">poimean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poimean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">poimean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poimean" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the expectation value of the given Poisson distribution. By definition, this value is equal to <code class="docutils literal notranslate"><span class="pre">mu</span></code>.</p>
 </dd></dl>
 
 <dl class="sc function">
 <dt class="sig sig-object sc" id="sc.poivar">
-<span class="sig-name descname"><span class="pre">poivar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poivar" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">poivar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.poivar" title="Link to this definition">¶</a></dt>
 <dd><p>Computes the variance of the given Poisson distribution. By definition, this value is equal to <code class="docutils literal notranslate"><span class="pre">mu</span></code>.</p>
 </dd></dl>
 
@@ -639,7 +637,7 @@ First, we note that according to the yield, the expected number of failures are 
   <div class="container">
     <p>
         &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/>
     </p>
   </div>
 </footer>

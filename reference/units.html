@@ -24,23 +24,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Units and Canonicalization &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=3" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=4042127e"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
@@ -68,7 +66,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand"  href="../index.html">
-              <span class=""><img src="../_static/logo.png" alt=""></span>
+              <span class=""><img src="../_static/logo.png" alt="Logo of SpeedCrunch"></span>
           SpeedCrunch</a>
         <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
@@ -214,12 +212,12 @@ $jqTheme(document).ready(function(){
     <div class="col-md-9 content">
       
   <section id="units-and-canonicalization">
-<h1>Units and Canonicalization<a class="headerlink" href="#units-and-canonicalization" title="Permalink to this heading">¶</a></h1>
+<h1>Units and Canonicalization<a class="headerlink" href="#units-and-canonicalization" title="Link to this heading">¶</a></h1>
 <p>SpeedCrunch supports unit-aware arithmetic and conversions. Results are
 dimensionally consistent and then formatted with readability-oriented
 canonicalization rules.</p>
 <section id="display-policy">
-<h2>Display Policy<a class="headerlink" href="#display-policy" title="Permalink to this heading">¶</a></h2>
+<h2>Display Policy<a class="headerlink" href="#display-policy" title="Link to this heading">¶</a></h2>
 <p>The formatter prefers meaningful derived units over full SI base expansion when
 that improves readability. For example:</p>
 <ul class="simple">
@@ -247,7 +245,7 @@ render denominator form for readability:</p>
 </ul>
 </section>
 <section id="unit-notation">
-<h2>Unit Notation<a class="headerlink" href="#unit-notation" title="Permalink to this heading">¶</a></h2>
+<h2>Unit Notation<a class="headerlink" href="#unit-notation" title="Link to this heading">¶</a></h2>
 <p>In <span class="menuselection">Settings ‣ Results</span>, SpeedCrunch provides a
 <code class="docutils literal notranslate"><span class="pre">Unit</span> <span class="pre">Notation</span></code> submenu with two display styles:</p>
 <ul class="simple">
@@ -259,7 +257,7 @@ is at least one positive exponent, such as <code class="docutils literal notrans
 <p>This is a display preference only; numeric values and dimensions are unchanged.</p>
 </section>
 <section id="authored-units">
-<h2>Authored Units<a class="headerlink" href="#authored-units" title="Permalink to this heading">¶</a></h2>
+<h2>Authored Units<a class="headerlink" href="#authored-units" title="Link to this heading">¶</a></h2>
 <p>SpeedCrunch preserves authored units that carry practical or domain meaning.
 This includes accepted metric units and many non-SI units, such as <code class="docutils literal notranslate"><span class="pre">tonne</span></code>,
 <code class="docutils literal notranslate"><span class="pre">hectare</span></code>, <code class="docutils literal notranslate"><span class="pre">inch</span></code>, <code class="docutils literal notranslate"><span class="pre">foot</span></code>, <code class="docutils literal notranslate"><span class="pre">Btu</span></code>, <code class="docutils literal notranslate"><span class="pre">eV</span></code>, <code class="docutils literal notranslate"><span class="pre">Eh</span></code>, <code class="docutils literal notranslate"><span class="pre">bar</span></code>, <code class="docutils literal notranslate"><span class="pre">atm</span></code>,
@@ -331,7 +329,7 @@ exponent can be reused in unit expressions. For example,
 <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">×</span> <span class="pre">10⁻¹²[s]</span></code> is interpreted like <code class="docutils literal notranslate"><span class="pre">1e-12[s]</span></code> and displays as <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">ps</span></code>.</p>
 </section>
 <section id="composed-units">
-<h2>Composed Units<a class="headerlink" href="#composed-units" title="Permalink to this heading">¶</a></h2>
+<h2>Composed Units<a class="headerlink" href="#composed-units" title="Link to this heading">¶</a></h2>
 <p>For products and quotients, SpeedCrunch keeps authored composite structure where
 possible, unless a clear canonical derived target is recognized.</p>
 <p>Examples that canonicalize:</p>
@@ -366,7 +364,7 @@ you want another expression:</p>
 </ul>
 </section>
 <section id="conversions">
-<h2>Conversions<a class="headerlink" href="#conversions" title="Permalink to this heading">¶</a></h2>
+<h2>Conversions<a class="headerlink" href="#conversions" title="Link to this heading">¶</a></h2>
 <p>Use explicit conversion to request a specific target unit expression:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[N*m]</span> <span class="pre">-&gt;</span> <span class="pre">[J]</span></code></p></li>
@@ -381,9 +379,9 @@ you want another expression:</p>
 canonicalization/display policy above.</p>
 </section>
 <section id="built-in-units-table">
-<h2>Built-in Units Table<a class="headerlink" href="#built-in-units-table" title="Permalink to this heading">¶</a></h2>
+<h2>Built-in Units Table<a class="headerlink" href="#built-in-units-table" title="Link to this heading">¶</a></h2>
 <section id="built-in-units-by-quantity">
-<h3>Built-in Units by Quantity<a class="headerlink" href="#built-in-units-by-quantity" title="Permalink to this heading">¶</a></h3>
+<h3>Built-in Units by Quantity<a class="headerlink" href="#built-in-units-by-quantity" title="Link to this heading">¶</a></h3>
 <p>Column meanings:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Canonical</span> <span class="pre">name</span></code>: long built-in unit name.</p></li>
@@ -391,7 +389,7 @@ canonicalization/display policy above.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">aliases</span></code>: accepted alternate symbols/aliases.</p></li>
 </ul>
 <section id="absorbed-dose">
-<h4>Absorbed Dose<a class="headerlink" href="#absorbed-dose" title="Permalink to this heading">¶</a></h4>
+<h4>Absorbed Dose<a class="headerlink" href="#absorbed-dose" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -408,7 +406,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="activity-referred-to-a-radionuclide">
-<h4>Activity Referred To A Radionuclide<a class="headerlink" href="#activity-referred-to-a-radionuclide" title="Permalink to this heading">¶</a></h4>
+<h4>Activity Referred To A Radionuclide<a class="headerlink" href="#activity-referred-to-a-radionuclide" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -425,7 +423,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="amount-of-heat">
-<h4>Amount Of Heat<a class="headerlink" href="#amount-of-heat" title="Permalink to this heading">¶</a></h4>
+<h4>Amount Of Heat<a class="headerlink" href="#amount-of-heat" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -458,7 +456,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="amount-of-substance">
-<h4>Amount Of Substance<a class="headerlink" href="#amount-of-substance" title="Permalink to this heading">¶</a></h4>
+<h4>Amount Of Substance<a class="headerlink" href="#amount-of-substance" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -475,7 +473,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="area">
-<h4>Area<a class="headerlink" href="#area" title="Permalink to this heading">¶</a></h4>
+<h4>Area<a class="headerlink" href="#area" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -524,7 +522,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="capacitance">
-<h4>Capacitance<a class="headerlink" href="#capacitance" title="Permalink to this heading">¶</a></h4>
+<h4>Capacitance<a class="headerlink" href="#capacitance" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -541,7 +539,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="catalytic-activity">
-<h4>Catalytic Activity<a class="headerlink" href="#catalytic-activity" title="Permalink to this heading">¶</a></h4>
+<h4>Catalytic Activity<a class="headerlink" href="#catalytic-activity" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -558,7 +556,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="dose-equivalent">
-<h4>Dose Equivalent<a class="headerlink" href="#dose-equivalent" title="Permalink to this heading">¶</a></h4>
+<h4>Dose Equivalent<a class="headerlink" href="#dose-equivalent" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -575,7 +573,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="electric">
-<h4>Electric<a class="headerlink" href="#electric" title="Permalink to this heading">¶</a></h4>
+<h4>Electric<a class="headerlink" href="#electric" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -608,7 +606,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="energy">
-<h4>Energy<a class="headerlink" href="#energy" title="Permalink to this heading">¶</a></h4>
+<h4>Energy<a class="headerlink" href="#energy" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -637,7 +635,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="force">
-<h4>Force<a class="headerlink" href="#force" title="Permalink to this heading">¶</a></h4>
+<h4>Force<a class="headerlink" href="#force" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -654,7 +652,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="frequency">
-<h4>Frequency<a class="headerlink" href="#frequency" title="Permalink to this heading">¶</a></h4>
+<h4>Frequency<a class="headerlink" href="#frequency" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -675,7 +673,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="illuminance">
-<h4>Illuminance<a class="headerlink" href="#illuminance" title="Permalink to this heading">¶</a></h4>
+<h4>Illuminance<a class="headerlink" href="#illuminance" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -692,7 +690,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="inductance">
-<h4>Inductance<a class="headerlink" href="#inductance" title="Permalink to this heading">¶</a></h4>
+<h4>Inductance<a class="headerlink" href="#inductance" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -709,7 +707,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="information">
-<h4>Information<a class="headerlink" href="#information" title="Permalink to this heading">¶</a></h4>
+<h4>Information<a class="headerlink" href="#information" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -738,7 +736,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="kerma">
-<h4>Kerma<a class="headerlink" href="#kerma" title="Permalink to this heading">¶</a></h4>
+<h4>Kerma<a class="headerlink" href="#kerma" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -755,7 +753,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="length">
-<h4>Length<a class="headerlink" href="#length" title="Permalink to this heading">¶</a></h4>
+<h4>Length<a class="headerlink" href="#length" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -828,7 +826,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="luminous-flux">
-<h4>Luminous Flux<a class="headerlink" href="#luminous-flux" title="Permalink to this heading">¶</a></h4>
+<h4>Luminous Flux<a class="headerlink" href="#luminous-flux" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -845,7 +843,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="luminous-intensity">
-<h4>Luminous Intensity<a class="headerlink" href="#luminous-intensity" title="Permalink to this heading">¶</a></h4>
+<h4>Luminous Intensity<a class="headerlink" href="#luminous-intensity" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -862,7 +860,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="magnetic-flux">
-<h4>Magnetic Flux<a class="headerlink" href="#magnetic-flux" title="Permalink to this heading">¶</a></h4>
+<h4>Magnetic Flux<a class="headerlink" href="#magnetic-flux" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -879,7 +877,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="magnetic-flux-density">
-<h4>Magnetic Flux Density<a class="headerlink" href="#magnetic-flux-density" title="Permalink to this heading">¶</a></h4>
+<h4>Magnetic Flux Density<a class="headerlink" href="#magnetic-flux-density" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -896,7 +894,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="mass">
-<h4>Mass<a class="headerlink" href="#mass" title="Permalink to this heading">¶</a></h4>
+<h4>Mass<a class="headerlink" href="#mass" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -961,7 +959,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="plane-angle">
-<h4>Plane Angle<a class="headerlink" href="#plane-angle" title="Permalink to this heading">¶</a></h4>
+<h4>Plane Angle<a class="headerlink" href="#plane-angle" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1010,7 +1008,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="power">
-<h4>Power<a class="headerlink" href="#power" title="Permalink to this heading">¶</a></h4>
+<h4>Power<a class="headerlink" href="#power" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1031,7 +1029,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="pressure">
-<h4>Pressure<a class="headerlink" href="#pressure" title="Permalink to this heading">¶</a></h4>
+<h4>Pressure<a class="headerlink" href="#pressure" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1068,7 +1066,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="radiant-flux">
-<h4>Radiant Flux<a class="headerlink" href="#radiant-flux" title="Permalink to this heading">¶</a></h4>
+<h4>Radiant Flux<a class="headerlink" href="#radiant-flux" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1085,7 +1083,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="solid-angle">
-<h4>Solid Angle<a class="headerlink" href="#solid-angle" title="Permalink to this heading">¶</a></h4>
+<h4>Solid Angle<a class="headerlink" href="#solid-angle" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1102,7 +1100,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="speed">
-<h4>Speed<a class="headerlink" href="#speed" title="Permalink to this heading">¶</a></h4>
+<h4>Speed<a class="headerlink" href="#speed" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1127,7 +1125,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="stress">
-<h4>Stress<a class="headerlink" href="#stress" title="Permalink to this heading">¶</a></h4>
+<h4>Stress<a class="headerlink" href="#stress" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1144,7 +1142,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="temperature">
-<h4>Temperature<a class="headerlink" href="#temperature" title="Permalink to this heading">¶</a></h4>
+<h4>Temperature<a class="headerlink" href="#temperature" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1169,7 +1167,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="time">
-<h4>Time<a class="headerlink" href="#time" title="Permalink to this heading">¶</a></h4>
+<h4>Time<a class="headerlink" href="#time" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1218,7 +1216,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="velocity">
-<h4>Velocity<a class="headerlink" href="#velocity" title="Permalink to this heading">¶</a></h4>
+<h4>Velocity<a class="headerlink" href="#velocity" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1243,7 +1241,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="volume">
-<h4>Volume<a class="headerlink" href="#volume" title="Permalink to this heading">¶</a></h4>
+<h4>Volume<a class="headerlink" href="#volume" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1400,7 +1398,7 @@ canonicalization/display policy above.</p>
 </table>
 </section>
 <section id="work">
-<h4>Work<a class="headerlink" href="#work" title="Permalink to this heading">¶</a></h4>
+<h4>Work<a class="headerlink" href="#work" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Canonical name</p></th>
@@ -1432,7 +1430,7 @@ canonicalization/display policy above.</p>
   <div class="container">
     <p>
         &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/>
     </p>
   </div>
 </footer>

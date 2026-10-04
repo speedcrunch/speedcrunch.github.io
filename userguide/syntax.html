@@ -24,23 +24,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Syntax &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=3" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=4042127e"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
@@ -69,7 +67,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand"  href="../index.html">
-              <span class=""><img src="../_static/logo.png" alt=""></span>
+              <span class=""><img src="../_static/logo.png" alt="Logo of SpeedCrunch"></span>
           SpeedCrunch</a>
         <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
@@ -185,12 +183,12 @@ $jqTheme(document).ready(function(){
     <div class="col-md-9 content">
       
   <section id="syntax">
-<h1>Syntax<a class="headerlink" href="#syntax" title="Permalink to this heading">¶</a></h1>
+<h1>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">¶</a></h1>
 <p>This part of the documentation explains the syntax of valid SpeedCrunch input. As you will see, SpeedCrunch honors most conventions for mathematical expressions. You will find using SpeedCrunch to be very natural and intuitive, especially so if you are already familiar with a programming language.</p>
 <section id="number-notation">
-<h2>Number Notation<a class="headerlink" href="#number-notation" title="Permalink to this heading">¶</a></h2>
+<h2>Number Notation<a class="headerlink" href="#number-notation" title="Link to this heading">¶</a></h2>
 <section id="decimal-form">
-<h3>Decimal Form<a class="headerlink" href="#decimal-form" title="Permalink to this heading">¶</a></h3>
+<h3>Decimal Form<a class="headerlink" href="#decimal-form" title="Link to this heading">¶</a></h3>
 <p>When you would like to specify a non-integer value, simply enter the number as you would write it on paper,
 with either a period (<code class="docutils literal notranslate"><span class="pre">.</span></code>) or a comma (<code class="docutils literal notranslate"><span class="pre">,</span></code>) as the decimal separator.
 Accepted decimal separator and grouping conventions depend on the selected
@@ -198,7 +196,7 @@ Accepted decimal separator and grouping conventions depend on the selected
 <p>Trailing zeros after the decimal point (like in <code class="docutils literal notranslate"><span class="pre">12.300</span></code>) or leading zeros before it (<code class="docutils literal notranslate"><span class="pre">0012.3</span></code>) are redundant and can be included or omitted to the user’s preference. Expressions like <code class="docutils literal notranslate"><span class="pre">.5</span></code> as a shorthand notation for <code class="docutils literal notranslate"><span class="pre">0.5</span></code> are also permitted.</p>
 </section>
 <section id="digit-grouping-separators">
-<span id="id1"></span><h3>Digit Grouping Separators<a class="headerlink" href="#digit-grouping-separators" title="Permalink to this heading">¶</a></h3>
+<span id="id1"></span><h3>Digit Grouping Separators<a class="headerlink" href="#digit-grouping-separators" title="Link to this heading">¶</a></h3>
 <p>To improve readability, SpeedCrunch accepts grouping separators inside number literals. Grouping separators are optional and ignored during evaluation.</p>
 <p>Allowed grouping separators are characters that are <strong>not</strong> letters or digits and are <strong>not</strong> number operators. In practice, this includes many punctuation and symbol characters, for example:</p>
 <ul class="simple">
@@ -230,7 +228,7 @@ Accepted decimal separator and grouping conventions depend on the selected
 </ul>
 </section>
 <section id="scientific-notation">
-<span id="id2"></span><h3>Scientific Notation<a class="headerlink" href="#scientific-notation" title="Permalink to this heading">¶</a></h3>
+<span id="id2"></span><h3>Scientific Notation<a class="headerlink" href="#scientific-notation" title="Link to this heading">¶</a></h3>
 <p>When dealing with very small or very large numbers (think the size of an atom or of a galaxy) the notation above is inconvenient. These are more commonly expressed in scientific notation; for instance, 1.234*10<sup>-9</sup> is preferable to 0.000000001234.</p>
 <p>Naturally, in SpeedCrunch this could be written as <code class="docutils literal notranslate"><span class="pre">1.234*10^-9</span></code>, but there’s also a shorthand notation: <code class="docutils literal notranslate"><span class="pre">1.234e-9</span></code>. Here, the <code class="docutils literal notranslate"><span class="pre">e</span></code> represents <code class="docutils literal notranslate"><span class="pre">*10^</span></code>, but it is considered a part of the number literal and treated with higher precedence. For example, <code class="docutils literal notranslate"><span class="pre">1e2^3</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">(1e2)^3</span> <span class="pre">=</span> <span class="pre">100^3</span></code>. The scale of a number (sometimes called its exponent) always begins with the scale character <code class="docutils literal notranslate"><span class="pre">E</span></code> or <code class="docutils literal notranslate"><span class="pre">e</span></code> followed by a signed integer. So <code class="docutils literal notranslate"><span class="pre">e+10</span></code>, <code class="docutils literal notranslate"><span class="pre">e-4</span></code>, <code class="docutils literal notranslate"><span class="pre">E-0</span></code> are all valid scale expressions. If the sign is ‘+’, you may simply omit it: <code class="docutils literal notranslate"><span class="pre">e0</span></code>, <code class="docutils literal notranslate"><span class="pre">E10</span></code>. The significand (i.e. the part preceding the exponent) is required; exactly one exponent must be specified.</p>
 <p>Equivalent examples:</p>
@@ -242,7 +240,7 @@ Accepted decimal separator and grouping conventions depend on the selected
 <p>Compared to most calculators, SpeedCrunch can accept very large numbers without overflowing (e.g. both <code class="docutils literal notranslate"><span class="pre">1e+536870911</span></code> and <code class="docutils literal notranslate"><span class="pre">1e-536870911</span></code> are still valid). However, only about 78 significant digits are stored at any point. Any digits beyond that are lost.</p>
 </section>
 <section id="non-decimal-bases">
-<h3>Non-Decimal Bases<a class="headerlink" href="#non-decimal-bases" title="Permalink to this heading">¶</a></h3>
+<h3>Non-Decimal Bases<a class="headerlink" href="#non-decimal-bases" title="Link to this heading">¶</a></h3>
 <p>In addition to decimal (base-10) numbers, SpeedCrunch provides support for binary (base-2), octal (base-8) and hexadecimal (base-16) numbers.
 You can enter a number in any of these bases by marking it with the corresponding prefix:</p>
 <ul class="simple">
@@ -319,10 +317,10 @@ To specify large integers, using the shift operators (<code class="docutils lite
 calculations and thus susceptible to rounding errors.</p>
 </section>
 <section id="sexagesimal-values">
-<span id="id3"></span><h3>Sexagesimal Values<a class="headerlink" href="#sexagesimal-values" title="Permalink to this heading">¶</a></h3>
+<span id="id3"></span><h3>Sexagesimal Values<a class="headerlink" href="#sexagesimal-values" title="Link to this heading">¶</a></h3>
 <blockquote>
 <div><div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 </div></blockquote>
 <p>Sexagesimal values in SpeedCrunch are angle degrees or time values represented with minutes and seconds.</p>
@@ -335,7 +333,7 @@ calculations and thus susceptible to rounding errors.</p>
 </div>
 <p>Dimensionless input values are automatically considered to be in current angle mode. For example, in radian mode:</p>
 <div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="no">pi</span>
-<span class="ge">= 180°00&#39;00</span>
+<span class="ge">= 180°00'00</span>
 </pre></div>
 </div>
 <p>For trigonometric input, explicit angle units override angle mode. For example,
@@ -477,7 +475,7 @@ or the aliases <code class="docutils literal notranslate"><span class="pre">arcm
 </section>
 </section>
 <section id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading">¶</a></h2>
+<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
 <p>The question mark character <code class="docutils literal notranslate"><span class="pre">?</span></code> starts a comment. Everything from <code class="docutils literal notranslate"><span class="pre">?</span></code> to the end of the line is ignored by the evaluator:</p>
 <div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">1 </span><span class="o">+</span> <span class="mi">2 </span><span class="c">? simple sum</span>
 <span class="o">=</span> <span class="mi">3</span>
@@ -491,7 +489,7 @@ or the aliases <code class="docutils literal notranslate"><span class="pre">arcm
 </div>
 </section>
 <section id="operators-and-precedence">
-<h2>Operators and Precedence<a class="headerlink" href="#operators-and-precedence" title="Permalink to this heading">¶</a></h2>
+<h2>Operators and Precedence<a class="headerlink" href="#operators-and-precedence" title="Link to this heading">¶</a></h2>
 <p>When writing an expression like <code class="docutils literal notranslate"><span class="pre">10+5*4</span></code>, which operation will be executed first? The common rules of operator precedence tell us that in this case multipication shall be computed first, hence the result is <code class="docutils literal notranslate"><span class="pre">30</span></code>. We also distinguish <strong>unary</strong> operators (which act on a single number/operand) and <strong>binary</strong> operators (which link two operands).</p>
 <p>SpeedCrunch supports the following operators, listed in order of decreasing precedence:</p>
 <table class="docutils align-default">
@@ -532,7 +530,7 @@ So <code class="docutils literal notranslate"><span class="pre">1+(2+3)+10%</spa
 </dd>
 </dl>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Contextual percent semantics.</p>
+<p><span class="versionmodified added">Added in version 1.0: </span>Contextual percent semantics.</p>
 </div>
 </td>
 <td><p><code class="docutils literal notranslate"><span class="pre">50%</span> <span class="pre">=</span> <span class="pre">0.5</span></code>
@@ -563,7 +561,7 @@ with either <code class="docutils literal notranslate"><span class="pre">^</span
 </dd>
 </dl>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Integer superscript powers and <code class="docutils literal notranslate"><span class="pre">f^n(x)</span></code> function-power
+<p><span class="versionmodified added">Added in version 1.0: </span>Integer superscript powers and <code class="docutils literal notranslate"><span class="pre">f^n(x)</span></code> function-power
 notation (equivalent to <code class="docutils literal notranslate"><span class="pre">fⁿ(x)</span></code>).</p>
 </div>
 </td>
@@ -583,7 +581,7 @@ notation (equivalent to <code class="docutils literal notranslate"><span class="
 </dd>
 </dl>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0.</span></p>
+<p><span class="versionmodified added">Added in version 1.0.</span></p>
 </div>
 </td>
 <td><p><code class="docutils literal notranslate"><span class="pre">~5</span> <span class="pre">=</span> <span class="pre">-6</span></code>
@@ -621,11 +619,11 @@ showing the interpreted expression before the numeric
 result.</p>
 </div></blockquote>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 0.12: </span>Implicit multiplication was added
+<p><span class="versionmodified added">Added in version 0.12: </span>Implicit multiplication was added
 SpeedCrunch 0.12.</p>
 </div>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Multiplication and division symbol aliases.
+<p><span class="versionmodified added">Added in version 1.0: </span>Multiplication and division symbol aliases.
 Improved explicit interpretation/association in results.</p>
 </div>
 </td>
@@ -644,7 +642,7 @@ these symbols are normalized to <code class="docutils literal notranslate"><span
 </dd>
 </dl>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Addition and subtraction symbol aliases.</p>
+<p><span class="versionmodified added">Added in version 1.0: </span>Addition and subtraction symbol aliases.</p>
 </div>
 </td>
 <td></td>
@@ -698,9 +696,9 @@ Use <a class="reference internal" href="../reference/basic.html#sc.cbrt" title="
 negative value.</p>
 </section>
 <section id="complex-numbers">
-<h2>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this heading">¶</a></h2>
+<h2>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Link to this heading">¶</a></h2>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 0.12.</span></p>
+<p><span class="versionmodified added">Added in version 0.12.</span></p>
 </div>
 <p>SpeedCrunch supports complex-number expressions by default. Enter the imaginary
 unit as <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">j</span></code>:</p>
@@ -744,7 +742,7 @@ cubic root for real inputs.</p>
   <div class="container">
     <p>
         &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/>
     </p>
   </div>
 </footer>
