@@ -25,35 +25,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Function Index &mdash; SpeedCrunch 0.12 documentation</title>
+    <title>Function Index &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="contents.html" />
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="contents.html" />
 
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -74,9 +67,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="index.html"><span class=""><img src="_static/logo.png"></span>
+        <a class="navbar-brand"  href="index.html">
+              <span class=""><img src="_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -98,19 +92,16 @@
 <li class="toctree-l2"><a class="reference internal" href="userguide/installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/first_steps.html">First Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/syntax.html">Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables and Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#complex-numbers">Complex numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables, Functions and Units</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/theme_json_schema.html">Theme JSON Schema</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#built-in-functions">Built-in Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#constants">Constants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">Advanced Topics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#units">Units</a></li>
 </ul>
 </li>
 </ul>
@@ -123,7 +114,7 @@
                 
 
 <script>
-$(document).ready(function(){
+$jqTheme(document).ready(function(){
     $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 </script>
@@ -159,7 +150,7 @@ $(document).ready(function(){
   <div class="row">
     <ul class="breadcrumb">
       <li><a href="index.html">Home </a></li>
-      <li><a href="contents.html">Documentation </a></li>
+      <li><a href="contents.html">User Manual </a></li>
       <li class="active">Function Index</li>
     </ul> 
       <div class="col-md-3">
@@ -194,7 +185,7 @@ $(document).ready(function(){
    <a href="#cap-x"><strong>x</strong></a>
    </div>
 
-   <table class="indextable modindextable" cellspacing="0" cellpadding="2">
+   <table class="indextable modindextable">
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-a"><td></td><td>
        <strong>a</strong></td><td></td></tr>
@@ -281,14 +272,14 @@ $(document).ready(function(){
        <td>
        <a href="reference/statistical.html#sc.binomvar"><code class="xref">binomvar()</code></a></td><td>
        <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-c"><td></td><td>
-       <strong>c</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="reference/basic.html#sc.cart"><code class="xref">cart()</code></a></td><td>
+       <a href="reference/integer.html#sc.binpad"><code class="xref">binpad()</code></a></td><td>
        <em></em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-c"><td></td><td>
+       <strong>c</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
@@ -298,6 +289,36 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/integer.html#sc.ceil"><code class="xref">ceil()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.cis"><code class="xref">cis()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.cisform"><code class="xref">cisform()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.cols"><code class="xref">cols()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.conj"><code class="xref">conj()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.corrp"><code class="xref">corrp()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.corrs"><code class="xref">corrs()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -317,11 +338,36 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/statistical.html#sc.count"><code class="xref">count()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.covp"><code class="xref">covp()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.covs"><code class="xref">covs()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.cross"><code class="xref">cross()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/basic.html#sc.csc"><code class="xref">csc()</code></a></td><td>
        <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-d"><td></td><td>
        <strong>d</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.datetime"><code class="xref">datetime()</code></a></td><td>
+       <em></em></td></tr>
      <tr>
        <td></td>
        <td>
@@ -332,9 +378,39 @@ $(document).ready(function(){
        <td>
        <a href="reference/basic.html#sc.degrees"><code class="xref">degrees()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.det"><code class="xref">det()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.dms"><code class="xref">dms()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.dot"><code class="xref">dot()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-e"><td></td><td>
        <strong>e</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.emod"><code class="xref">emod()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.eng"><code class="xref">eng()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.epoch"><code class="xref">epoch()</code></a></td><td>
+       <em></em></td></tr>
      <tr>
        <td></td>
        <td>
@@ -350,9 +426,19 @@ $(document).ready(function(){
        <td>
        <a href="reference/basic.html#sc.exp"><code class="xref">exp()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.expform"><code class="xref">expform()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-f"><td></td><td>
        <strong>f</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.flatten"><code class="xref">flatten()</code></a></td><td>
+       <em></em></td></tr>
      <tr>
        <td></td>
        <td>
@@ -381,6 +467,11 @@ $(document).ready(function(){
        <td>
        <a href="reference/statistical.html#sc.geomean"><code class="xref">geomean()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.gradians"><code class="xref">gradians()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-h"><td></td><td>
        <strong>h</strong></td><td></td></tr>
@@ -388,6 +479,11 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/integer.html#sc.hex"><code class="xref">hex()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.hexpad"><code class="xref">hexpad()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -435,7 +531,17 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/ieee754.html#sc.ieee754_double_residual"><code class="xref">ieee754_double_residual()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/ieee754.html#sc.ieee754_encode"><code class="xref">ieee754_encode()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_float_residual"><code class="xref">ieee754_float_residual()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -450,12 +556,42 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/ieee754.html#sc.ieee754_half_residual"><code class="xref">ieee754_half_residual()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/ieee754.html#sc.ieee754_quad_decode"><code class="xref">ieee754_quad_decode()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
        <td>
        <a href="reference/ieee754.html#sc.ieee754_quad_encode"><code class="xref">ieee754_quad_encode()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_quad_residual"><code class="xref">ieee754_quad_residual()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_round_double"><code class="xref">ieee754_round_double()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_round_float"><code class="xref">ieee754_round_float()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_round_half"><code class="xref">ieee754_round_half()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/ieee754.html#sc.ieee754_round_quad"><code class="xref">ieee754_round_quad()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -477,6 +613,11 @@ $(document).ready(function(){
        <td>
        <a href="reference/basic.html#sc.int"><code class="xref">int()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.inv"><code class="xref">inv()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-l"><td></td><td>
        <strong>l</strong></td><td></td></tr>
@@ -484,6 +625,11 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/basic.html#sc.lb"><code class="xref">lb()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.lcm"><code class="xref">lcm()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -511,12 +657,27 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/statistical.html#sc.mad"><code class="xref">mad()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/integer.html#sc.mask"><code class="xref">mask()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
        <td>
+       <a href="reference/basic.html#sc.mass"><code class="xref">mass()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/statistical.html#sc.max"><code class="xref">max()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/statistical.html#sc.mean"><code class="xref">mean()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -533,6 +694,16 @@ $(document).ready(function(){
        <td>
        <a href="reference/integer.html#sc.mod"><code class="xref">mod()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.molarity"><code class="xref">molarity()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.molmass"><code class="xref">molmass()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-n"><td></td><td>
        <strong>n</strong></td><td></td></tr>
@@ -544,12 +715,22 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/basic.html#sc.norm"><code class="xref">norm()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/integer.html#sc.not"><code class="xref">not()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
        <td>
        <a href="reference/statistical.html#sc.npr"><code class="xref">npr()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.numval"><code class="xref">numval()</code></a></td><td>
        <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-o"><td></td><td>
@@ -558,6 +739,11 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/integer.html#sc.oct"><code class="xref">oct()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.octpad"><code class="xref">octpad()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -571,6 +757,11 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/basic.html#sc.phase"><code class="xref">phase()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.phasorform"><code class="xref">phasorform()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -595,7 +786,12 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
-       <a href="reference/basic.html#sc.polar"><code class="xref">polar()</code></a></td><td>
+       <a href="reference/integer.html#sc.popcount"><code class="xref">popcount()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.powmod"><code class="xref">powmod()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -613,16 +809,66 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/statistical.html#sc.rand"><code class="xref">rand()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/statistical.html#sc.randint"><code class="xref">randint()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.rank"><code class="xref">rank()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.rat"><code class="xref">rat()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.ratio"><code class="xref">ratio()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.rational"><code class="xref">rational()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/basic.html#sc.real"><code class="xref">real()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.rectform"><code class="xref">rectform()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
        <td>
        <a href="reference/integer.html#sc.round"><code class="xref">round()</code></a></td><td>
        <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.roundeven"><code class="xref">roundeven()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.rows"><code class="xref">rows()</code></a></td><td>
+       <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-s"><td></td><td>
        <strong>s</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/integer.html#sc.sci"><code class="xref">sci()</code></a></td><td>
+       <em></em></td></tr>
      <tr>
        <td></td>
        <td>
@@ -632,6 +878,11 @@ $(document).ready(function(){
        <td></td>
        <td>
        <a href="reference/basic.html#sc.sgn"><code class="xref">sgn()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.shape"><code class="xref">shape()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
@@ -661,12 +912,22 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
-       <a href="reference/statistical.html#sc.stddev"><code class="xref">stddev()</code></a></td><td>
+       <a href="reference/statistical.html#sc.stdevp"><code class="xref">stdevp()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/statistical.html#sc.stdevs"><code class="xref">stdevs()</code></a></td><td>
        <em></em></td></tr>
      <tr>
        <td></td>
        <td>
        <a href="reference/statistical.html#sc.sum"><code class="xref">sum()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/statistical.html#sc.summation"><code class="xref">summation()</code></a></td><td>
        <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-t"><td></td><td>
@@ -684,7 +945,27 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
+       <a href="reference/basic.html#sc.trace"><code class="xref">trace()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.transpose"><code class="xref">transpose()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.trigform"><code class="xref">trigform()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
        <a href="reference/integer.html#sc.trunc"><code class="xref">trunc()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/basic.html#sc.turns"><code class="xref">turns()</code></a></td><td>
        <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-u"><td></td><td>
@@ -700,7 +981,12 @@ $(document).ready(function(){
      <tr>
        <td></td>
        <td>
-       <a href="reference/statistical.html#sc.variance"><code class="xref">variance()</code></a></td><td>
+       <a href="reference/statistical.html#sc.varp"><code class="xref">varp()</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="reference/statistical.html#sc.vars"><code class="xref">vars()</code></a></td><td>
        <em></em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-x"><td></td><td>
@@ -718,20 +1004,11 @@ $(document).ready(function(){
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-

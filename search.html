@@ -25,39 +25,31 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Search &mdash; SpeedCrunch 0.12 documentation</title>
+    <title>Search &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/searchtools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="#" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="contents.html" />
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="contents.html" />
+  <script type="text/javascript" src="_static/searchtools.js"></script>
+  <script type="text/javascript" src="_static/language_data.js"></script>
+  <script type="text/javascript" src="searchindex.js"></script>
   
   <script type="text/javascript" id="searchindexloader"></script>
   
@@ -79,9 +71,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="index.html"><span class=""><img src="_static/logo.png"></span>
+        <a class="navbar-brand"  href="index.html">
+              <span class=""><img src="_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -103,19 +96,16 @@
 <li class="toctree-l2"><a class="reference internal" href="userguide/installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/first_steps.html">First Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/syntax.html">Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables and Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#complex-numbers">Complex numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables, Functions and Units</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/theme_json_schema.html">Theme JSON Schema</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#built-in-functions">Built-in Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#constants">Constants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">Advanced Topics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#units">Units</a></li>
 </ul>
 </li>
 </ul>
@@ -128,7 +118,7 @@
                 
 
 <script>
-$(document).ready(function(){
+$jqTheme(document).ready(function(){
     $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 </script>
@@ -156,7 +146,7 @@ $(document).ready(function(){
   <div class="row">
     <ul class="breadcrumb">
       <li><a href="index.html">Home </a></li>
-      <li><a href="contents.html">Documentation </a></li>
+      <li><a href="contents.html">User Manual </a></li>
       <li class="active">Search</li>
     </ul> 
       <div class="col-md-3">
@@ -187,9 +177,9 @@ $(document).ready(function(){
     </div>
     <input type="submit" class="btn btn-default" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
-  </form>  
+  </form>
   
-  
+
   
   <div id="search-results">
   
@@ -200,20 +190,11 @@ $(document).ready(function(){
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-

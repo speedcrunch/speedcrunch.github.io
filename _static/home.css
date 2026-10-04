@@ -1,0 +1,237 @@
+/* Home page content only. The shared navigation and footer keep their styles. */
+.home-page {
+  margin-top: -15px;
+  background: #fff;
+  color: #252231;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.home-page .home-hero {
+  padding: 64px 0 56px;
+}
+
+.home-page .home-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Bootstrap's clearfix pseudo-elements would otherwise become grid items. */
+.home-page .container::before,
+.home-page .container::after {
+  display: none;
+}
+
+.home-page .home-eyebrow {
+  margin: 0 0 18px;
+  color: #65558f;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.home-page h1 {
+  margin: 0 0 24px;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: -1.9px;
+  line-height: 1.12;
+}
+
+.home-page .home-description {
+  max-width: 440px;
+  margin: 0 0 28px;
+  color: #595663;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.home-page .home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.home-page .home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 23px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.home-page .home-button-primary {
+  border-color: #58458b;
+  background: #58458b;
+  color: #fff;
+}
+
+.home-page .home-button-primary:hover {
+  border-color: #44346e;
+  background: #44346e;
+}
+
+.home-page .home-button-secondary {
+  border-color: #d6d3dd;
+  background: #fff;
+  color: #393442;
+}
+
+.home-page .home-button-secondary:hover {
+  border-color: #a69cb9;
+  background: #f7f6f9;
+}
+
+.home-page a:focus-visible {
+  outline: 3px solid #8069b8;
+  outline-offset: 4px;
+}
+
+.home-page .home-license {
+  margin: 0;
+  color: #6a6672;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.home-page p a {
+  color: #58458b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.home-page p a:hover {
+  color: #392a60;
+}
+
+.home-page .home-demo {
+  min-width: 0;
+  margin: 0;
+  background: #fff;
+}
+
+.home-page .home-demo video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.home-page .home-demo figcaption {
+  margin-top: 14px;
+  color: #6a6672;
+  font-size: 13px;
+  text-align: center;
+}
+
+.home-page .home-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 72px;
+  padding-bottom: 44px;
+}
+
+.home-page .home-feature {
+  padding: 34px 0 32px;
+  border-top: 1px solid #e4e1e9;
+}
+
+.home-page .home-feature h2 {
+  margin: 0 0 18px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+}
+
+.home-page .home-feature p {
+  margin: 0 0 14px;
+  color: #595663;
+}
+
+.home-page .home-feature p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .home-page h1 {
+    font-size: 46px;
+  }
+
+  .home-page .home-hero-grid {
+    gap: 32px;
+  }
+
+  .home-page .home-features {
+    column-gap: 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-page .home-hero {
+    padding-top: 44px;
+  }
+
+  .home-page .home-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home-page .home-description {
+    max-width: 520px;
+  }
+
+  .home-page .home-demo {
+    width: 100%;
+    max-width: 580px;
+    justify-self: center;
+  }
+
+  .home-page .home-feature h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .home-page h1 {
+    font-size: 38px;
+    letter-spacing: -1.3px;
+  }
+
+  .home-page .home-description {
+    font-size: 18px;
+  }
+
+  .home-page .home-hero {
+    padding-bottom: 36px;
+  }
+
+  .home-page .home-features {
+    grid-template-columns: 1fr;
+    padding-bottom: 24px;
+  }
+
+  .home-page .home-feature {
+    padding: 28px 0;
+  }
+}
+
+@media (max-width: 359px) {
+  .home-page h1 {
+    font-size: 33px;
+  }
+}

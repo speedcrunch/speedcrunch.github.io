@@ -24,36 +24,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>User-Defined Variables, Functions and Units &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <title>User-Defined Variables and Functions &mdash; SpeedCrunch 0.12 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="../contents.html" />
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="../contents.html" />
     <link rel="up" title="User Guide" href="index.html" />
     <link rel="next" title="User Interface" href="interface.html" />
     <link rel="prev" title="Syntax" href="syntax.html" />
@@ -74,9 +68,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="../index.html"><span class=""><img src="../_static/logo.png"></span>
+        <a class="navbar-brand"  href="../index.html">
+              <span class=""><img src="../_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -98,19 +93,16 @@
 <li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="first_steps.html">First Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html">Syntax</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">User-Defined Variables and Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#complex-numbers">Complex numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#units">Units</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">User-Defined Variables, Functions and Units</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_json_schema.html">Theme JSON Schema</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/index.html#built-in-functions">Built-in Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/index.html#constants">Constants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced Topics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/index.html#units">Units</a></li>
 </ul>
 </li>
 </ul>
@@ -131,7 +123,7 @@
   </li>
 
 <script>
-$(document).ready(function(){
+$jqTheme(document).ready(function(){
     $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 </script>
@@ -167,174 +159,255 @@ $(document).ready(function(){
   <div class="row">
     <ul class="breadcrumb">
       <li><a href="../index.html">Home </a></li>
-      <li><a href="../contents.html">Documentation </a></li><li><a href="index.html">User Guide</a></li>
-      <li class="active">User-Defined Variables and Functions</li>
+      <li><a href="../contents.html">User Manual </a></li><li><a href="index.html">User Guide</a></li>
+      <li class="active">User-Defined Variables, Functions and Units</li>
     </ul> 
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><div id="myScrollspy"><ul>
-<li><a class="reference internal" href="#">User-Defined Variables and Functions</a><ul>
+<li><a class="reference internal" href="#">User-Defined Variables, Functions and Units</a><ul>
 <li><a class="reference internal" href="#variables">Variables</a></li>
 <li><a class="reference internal" href="#user-functions">User Functions</a></li>
+<li><a class="reference internal" href="#units">Units</a></li>
+<li><a class="reference internal" href="#information-units-bit-byte">Information units (bit/byte)</a><ul>
+<li><a class="reference internal" href="#prefixes">Prefixes</a></li>
+<li><a class="reference internal" href="#family-mixing-rules">Family mixing rules</a></li>
+<li><a class="reference internal" href="#result-unit-selection">Result unit selection</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#complex-numbers">Complex numbers</a></li>
-<li><a class="reference internal" href="#units">Units</a></li>
+<li><a class="reference internal" href="#user-units">User Units</a></li>
+</ul>
+</li>
 </ul>
 </div>
         </div>
       </div> 
     <div class="col-md-9 content">
       
-  <div class="section" id="user-defined-variables-and-functions">
-<h1>User-Defined Variables and Functions<a class="headerlink" href="#user-defined-variables-and-functions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="variables">
-<span id="id1"></span><h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+  <section id="user-defined-variables-functions-and-units">
+<h1>User-Defined Variables, Functions and Units<a class="headerlink" href="#user-defined-variables-functions-and-units" title="Permalink to this heading">¶</a></h1>
+<section id="variables">
+<span id="id1"></span><h2>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">¶</a></h2>
 <p>When working on more sophisticated problems, you will likely find that you frequently need to access
 results from previous computations. As we have already seen, you can simply recall results from the
 result window. However, SpeedCrunch also offers another more powerful way: Variables. Variables allow
-you to store and recall any value, by assigning it a name. Variables are defined using the <code class="samp docutils literal"><em><span class="pre">variable</span></em><span class="pre">=</span><em><span class="pre">value</span></em></code> syntax:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">5.123</span>
+you to store and recall any value, by assigning it a name. Variables are defined using the <code class="samp docutils literal notranslate"><em><span class="pre">variable</span></em><span class="pre">=</span><em><span class="pre">value</span></em></code> syntax:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">5.123</span>
 </pre></div>
 </div>
-<p>Now you can access this value via the name <code class="docutils literal"><span class="pre">a</span></code> much like you would use a built-in constant like <a class="reference internal" href="../reference/constants.html#sc.pi" title="pi"><code class="xref sc sc-const docutils literal"><span class="pre">pi</span></code></a>.</p>
+<p>You can attach a comment to the definition by appending <code class="docutils literal notranslate"><span class="pre">?</span></code> and text:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">5.123 </span><span class="c">? calibration value</span>
+</pre></div>
+</div>
+<p>This comment is displayed in the User Variables dock widget and in autocomplete suggestions.</p>
+<p>Now you can access this value via the name <code class="docutils literal notranslate"><span class="pre">a</span></code> much like you would use a built-in constant like <a class="reference internal" href="../reference/constants.html#sc.pi" title="pi"><code class="xref sc sc-const docutils literal notranslate"><span class="pre">pi</span></code></a>.</p>
 <p>Naturally, when assigning a value, the right-hand-side can be an arbitrarily complex expression:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="mi">100</span><span class="o">+</span><span class="mi">20</span><span class="ge"></span>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="mi">100</span><span class="o">+</span><span class="mi">20</span>
 <span class="ge">= 120</span>
 
-<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span><span class="ge"></span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
 <span class="ge">= 9.81</span>
 
-<span class="n">weight</span> <span class="o">=</span> <span class="n">mass</span><span class="o">*</span><span class="n">g</span><span class="ge"></span>
+<span class="n">weight</span> <span class="o">=</span> <span class="n">mass</span><span class="o">*</span><span class="n">g</span>
 <span class="ge">= 1177.2</span>
 
-<span class="n">somethingelse</span> <span class="o">=</span> <span class="n">ln</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span> <span class="o">+</span> <span class="no">ans</span><span class="p">)</span><span class="ge"></span>
+<span class="n">somethingelse</span> <span class="o">=</span> <span class="n">ln</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span> <span class="o">+</span> <span class="no">ans</span><span class="p">)</span>
 <span class="ge">= 7.08027102937165690787</span>
 </pre></div>
 </div>
 <p>As you see, using descriptive variable names can make the calculation history much more readable.</p>
-</div>
-<div class="section" id="user-functions">
-<span id="id2"></span><h2>User Functions<a class="headerlink" href="#user-functions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="user-functions">
+<span id="id2"></span><h2>User Functions<a class="headerlink" href="#user-functions" title="Permalink to this heading">¶</a></h2>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 0.12.</span></p>
+<p><span class="versionmodified added">New in version 0.12.</span></p>
 </div>
 <p>Just as you can define your own variables, it is also possible to define your own functions. While SpeedCrunch comes with an extensive collection of built-in functions (<a class="reference internal" href="../sc-functionindex.html"><span class="std std-ref">Function Index</span></a>), defining
 your own functions can be very useful when you find yourself repeating a similar computation over and over again.</p>
 <p>Defining a custom function is similar to defining a variable:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">8</span>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">8</span>
 </pre></div>
 </div>
-<p>You can now use the new function <code class="docutils literal"><span class="pre">f</span></code> just like any of the built-in ones:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="ge"></span>
+<p>Function definitions can also include a trailing comment:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">8 </span><span class="c">? affine transform</span>
+</pre></div>
+</div>
+<p>Like variable comments, this comment is shown in the Functions dock widget and in autocomplete suggestions.</p>
+<p>You can now use the new function <code class="docutils literal notranslate"><span class="pre">f</span></code> just like any of the built-in ones:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="ge">= 33</span>
 </pre></div>
 </div>
 <p>Functions with more arguments are possible as well; simply separate the parameters with a semicolon:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">;</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">x</span>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">;</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">x</span>
 
-<span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">;</span> <span class="mi">3</span><span class="p">)</span><span class="ge"></span>
+<span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">;</span> <span class="mi">3</span><span class="p">)</span>
 <span class="ge">= 8</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="complex-numbers">
-<span id="id3"></span><h1>Complex numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="units">
+<span id="id3"></span><h2>Units<a class="headerlink" href="#units" title="Permalink to this heading">¶</a></h2>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 0.12.</span></p>
-</div>
-<p>SpeedCrunch supports calculations involving complex numbers. To use them, make sure that the menu item <span class="menuselection">Settings ‣ Behaviour ‣ Enable Complex Numbers</span> is checked. The imaginary unit is now available under the name <a class="reference internal" href="../reference/constants.html#sc.j" title="j"><code class="xref sc sc-const docutils literal"><span class="pre">j</span></code></a>:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="no">j</span><span class="o">^</span><span class="mi">2</span><span class="ge"></span>
-<span class="ge">= -1</span>
-
-<span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span><span class="no">j</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">8</span><span class="o">-</span><span class="mi">2</span><span class="no">j</span><span class="p">)</span><span class="ge"></span>
-<span class="ge">= 0.5+0.5j</span>
-</pre></div>
-</div>
-<p>A note on the syntax of complex numbers: <code class="docutils literal"><span class="pre">5j</span></code> denotes the number <code class="docutils literal"><span class="pre">5*j</span></code> while <code class="docutils literal"><span class="pre">j5</span></code> is a variable named &#8216;j5&#8217;. If necessary, consider writing the multiplication explicitly, i.e. <code class="docutils literal"><span class="pre">j*5</span></code>.</p>
-<p>Some users (especially mathematicians or physicists) may prefer to use the letter <code class="docutils literal"><span class="pre">i</span></code> for the imaginary unit. Although SpeedCrunch does not support this notation by default, it is added easily enough.
-Simply defining <code class="docutils literal"><span class="pre">i=j</span></code> allows you to use <code class="docutils literal"><span class="pre">i</span></code> as an alias for <a class="reference internal" href="../reference/constants.html#sc.j" title="j"><code class="xref sc sc-const docutils literal"><span class="pre">j</span></code></a>.</p>
-<p>Not every function in SpeedCrunch supports complex arguments. Refer to a function&#8217;s documentation for more information.</p>
-<p>Caution is advised when using functions like <a class="reference internal" href="../reference/basic.html#sc.cbrt" title="cbrt"><code class="xref sc sc-func docutils literal"><span class="pre">cbrt()</span></code></a> or any fractional power operation with complex numbers.
-With complex number support enabled, the power operation <code class="docutils literal"><span class="pre">x^(1/3)</span></code> will return the first complex cubic root of <code class="docutils literal"><span class="pre">x</span></code> which is usually non-real.
-However, when given a real argument, <a class="reference internal" href="../reference/basic.html#sc.cbrt" title="cbrt"><code class="xref sc sc-func docutils literal"><span class="pre">cbrt()</span></code></a> will <em>always</em> return the real cubic root, regardless of whether or not complex numbers are enabled.</p>
-<p>When complex numbers are disabled, the constant <a class="reference internal" href="../reference/constants.html#sc.j" title="j"><code class="xref sc sc-const docutils literal"><span class="pre">j</span></code></a> is not available. However, previously stored variables may still contain complex values.
-In that case, the imaginary part of these numbers is discarded when passing them as an argument to a built-in function.</p>
-</div>
-<div class="section" id="units">
-<span id="id4"></span><h1>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h1>
-<div class="versionadded">
-<p><span class="versionmodified">New in version 0.12.</span></p>
+<p><span class="versionmodified added">New in version 0.12.</span></p>
 </div>
 <p>SpeedCrunch includes a powerful system for units and unit conversions. It provides an extensive list of built-in units and easily allows you to define your own.</p>
-<p>Just as in common textbook notation, you specify a value&#8217;s unit by multiplication:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">5 </span><span class="n">foot</span><span class="ge"></span>
-<span class="ge">= 1.524 meter</span>
+<p>Units are attached to the term on their left using square brackets:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="p">[</span><span class="n">ft</span><span class="p">]</span>
+<span class="ge">= 1.524 [m]</span>
 </pre></div>
 </div>
-<p>Note that this is an actual multiplication internally. However, the <code class="docutils literal"><span class="pre">*</span></code> operator can
-often be omitted (using implicit multiplication), as shown by the previous example.
-By default SpeedCrunch converts the quantity into SI units:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">60 </span><span class="n">mile</span><span class="o">/</span><span class="n">hour</span><span class="ge"></span>
-<span class="ge">= 26.8224 meter second⁻¹</span>
+<p>If the left-hand side is parenthesized, the bracket applies to the whole parenthesized expression:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">6</span><span class="p">)[</span><span class="n">ly</span><span class="p">]</span>
+<span class="ge">= 11 [ly]</span>
 </pre></div>
 </div>
-<p>This alone would not be terribly useful. However, it is possible to convert the value to a different unit using the conversion operator <code class="docutils literal"><span class="pre">-&gt;</span></code>
-(<code class="docutils literal"><span class="pre">in</span></code> can be used as an alias):</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">50 </span><span class="n">yard</span> <span class="o">+</span> <span class="mi">2 </span><span class="n">foot</span> <span class="ow">in</span> <span class="n">centi</span> <span class="n">meter</span><span class="ge"></span>
-<span class="ge">= 4632.96 centi meter</span>
+<p>By default SpeedCrunch converts the quantity into SI units:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">60</span><span class="p">[</span><span class="n">mi</span><span class="o">/</span><span class="n">h</span><span class="p">]</span>
+<span class="ge">= 26.8224 [m⋅s⁻¹]</span>
+</pre></div>
+</div>
+<p>This alone would not be terribly useful. However, it is possible to convert the value to a different unit using the conversion operator <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code>
+(<code class="docutils literal notranslate"><span class="pre">in</span></code> can be used as an alias):</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">50</span><span class="p">[</span><span class="n">yd</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">[</span><span class="n">ft</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="n">cm</span><span class="p">]</span>
+<span class="ge">= 4632.96 [cm]</span>
 
-<span class="mi">10 </span><span class="n">knot</span> <span class="o">-&gt;</span> <span class="n">kilo</span> <span class="n">meter</span> <span class="o">/</span> <span class="n">hour</span><span class="ge"></span>
-<span class="ge">= 18.52 (kilo meter/hour)</span>
+<span class="mi">10</span><span class="p">[</span><span class="n">kn</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">km</span><span class="o">/</span><span class="n">h</span><span class="p">]</span>
+<span class="ge">= 18.52 [km/h]</span>
 </pre></div>
 </div>
-<p>Note that all built-in unit names are singular and use American English spelling. This is independent of the language selected for SpeedCrunch&#8217;s interface.</p>
-<p>As seen in the example above, you can use any SI prefix like <code class="docutils literal"><span class="pre">kilo</span></code> or <code class="docutils literal"><span class="pre">centi</span></code>.
-They are treated like any other unit, so separate them with a space from the base unit they refer to.</p>
+<p>Displayed value-unit formatting uses a narrow no-break space (U+202F) between
+the numeric value and the unit block, for example <code class="docutils literal notranslate"><span class="pre">1.23 [m]</span></code>. Input
+accepts unit attachment with or without that separator (for example both
+<code class="docutils literal notranslate"><span class="pre">1[m]</span></code> and <code class="docutils literal notranslate"><span class="pre">1 [m]</span></code>).</p>
+<p>In the result display, final value-with-unit result lines are shown without
+unit brackets (for example <code class="docutils literal notranslate"><span class="pre">1.23 m</span></code>) to improve readability. Interpreted
+and simplified expression lines keep bracketed units (for example <code class="docutils literal notranslate"><span class="pre">→</span> <span class="pre">[m]</span></code>)
+so conversion targets remain explicit. When a result is inserted back into the
+editor (for example by double-clicking), SpeedCrunch uses canonical bracketed
+unit syntax again.</p>
+<p>Note that all built-in unit names are singular and use American English spelling. This is independent of the language selected for SpeedCrunch’s interface.</p>
+<p>As seen in the example above, you can use any SI prefixes such as <code class="docutils literal notranslate"><span class="pre">k</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code>.
+They are treated like any other unit, so separate them with a space from the base unit they refer to inside brackets.
+For astronomical distances, <code class="docutils literal notranslate"><span class="pre">pc</span></code> supports positive SI-prefixed forms such as <code class="docutils literal notranslate"><span class="pre">kpc</span></code> and <code class="docutils literal notranslate"><span class="pre">Mpc</span></code>.</p>
+<p>Since units are now explicit in brackets, short identifiers such as <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">mg</span></code> and <code class="docutils literal notranslate"><span class="pre">l</span></code> are free to use as variable names without conflicting with units.</p>
+</section>
+<section id="information-units-bit-byte">
+<h2>Information units (bit/byte)<a class="headerlink" href="#information-units-bit-byte" title="Permalink to this heading">¶</a></h2>
+<p>For the information dimension, SpeedCrunch supports both <code class="docutils literal notranslate"><span class="pre">bit</span></code> (short form <code class="docutils literal notranslate"><span class="pre">b</span></code>)
+and <code class="docutils literal notranslate"><span class="pre">byte</span></code> (short form <code class="docutils literal notranslate"><span class="pre">B</span></code>).</p>
+<section id="prefixes">
+<h3>Prefixes<a class="headerlink" href="#prefixes" title="Permalink to this heading">¶</a></h3>
+<p>Positive SI prefixes are accepted for both families (for example <code class="docutils literal notranslate"><span class="pre">kB</span></code>, <code class="docutils literal notranslate"><span class="pre">MB</span></code>,
+<code class="docutils literal notranslate"><span class="pre">kb</span></code>, <code class="docutils literal notranslate"><span class="pre">Mb</span></code>), while negative SI prefixes are rejected.</p>
+</section>
+<section id="family-mixing-rules">
+<h3>Family mixing rules<a class="headerlink" href="#family-mixing-rules" title="Permalink to this heading">¶</a></h3>
+<p>When adding/subtracting information quantities, SpeedCrunch does not implicitly mix
+bit-family and byte-family values. Use an explicit conversion if you want to switch
+family:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">[</span><span class="n">B</span><span class="p">]</span> <span class="o">+</span> <span class="mi">8</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+<span class="ge">= error</span>
+
+<span class="mi">1</span><span class="p">[</span><span class="n">B</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="mi">8</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">B</span><span class="p">])</span>
+<span class="ge">= 2 [B]</span>
+</pre></div>
+</div>
+</section>
+<section id="result-unit-selection">
+<h3>Result unit selection<a class="headerlink" href="#result-unit-selection" title="Permalink to this heading">¶</a></h3>
+<p>For sums inside the same family, the displayed result keeps the coarsest unit used
+in the expression:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="p">[</span><span class="n">MB</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span><span class="p">[</span><span class="n">PB</span><span class="p">]</span> <span class="o">+</span> <span class="mi">4</span><span class="p">[</span><span class="n">TB</span><span class="p">]</span>
+<span class="ge">= 3.004000002 [PB]</span>
+</pre></div>
+</div>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p>In SpeedCrunch (unlike in textbook notation), prefixes can be used on their own. This limitation (or feature, depending on your point of view)
-means that their use follows the same rules of precedence as any other mathematical operation. For instance, if you intend to express the unit
-&#8216;newtons per centimeter&#8217;, don&#8217;t simply type <code class="docutils literal"><span class="pre">newton</span> <span class="pre">/</span> <span class="pre">centi</span> <span class="pre">meter</span></code> &#8211; this will be interpreted as <code class="docutils literal"><span class="pre">(newton</span> <span class="pre">/</span> <span class="pre">centi)</span> <span class="pre">meter</span></code>! Instead, make
-the order explicit by using <code class="docutils literal"><span class="pre">newton</span> <span class="pre">/</span> <span class="pre">(centi</span> <span class="pre">meter)</span></code>.</p>
-<p class="last">For the same reasons, expressions like <code class="docutils literal"><span class="pre">500</span> <span class="pre">gram</span> <span class="pre">/</span> <span class="pre">20</span> <span class="pre">gram</span></code> and <code class="docutils literal"><span class="pre">(500</span> <span class="pre">gram)</span> <span class="pre">/</span> <span class="pre">(20</span> <span class="pre">gram)</span></code> yield different results.</p>
+<p class="admonition-title">Warning</p>
+<p>Prefixes cannot be used on their own. Always attach them to a unit symbol.
+For instance, if you intend to express the unit ‘newtons per centimeter’, do not type <code class="docutils literal notranslate"><span class="pre">[N</span> <span class="pre">/</span> <span class="pre">c</span> <span class="pre">m]</span></code>. Make the order explicit with <code class="docutils literal notranslate"><span class="pre">[N</span> <span class="pre">/</span> <span class="pre">(cm)]</span></code>.</p>
 </div>
-<p>An important feature of SpeedCrunch&#8217;s unit system is <em>dimensional checking</em>. Simply put, it prevents comparing apples and pears: If you try to convert seconds to meters, SpeedCrunch will complain, stating that the dimensions of <code class="docutils literal"><span class="pre">second</span></code> and <code class="docutils literal"><span class="pre">meter</span></code> do not match. Indeed, the dimension of <code class="docutils literal"><span class="pre">second</span></code> is <em>time</em>, while <code class="docutils literal"><span class="pre">meter</span></code> denotes a <em>length</em>, thus they cannot be compared, added, etc. When adding, multiplying, or otherwise manipulating units, SpeedCrunch will track the dimension and raise an error if it detects an invalid operation. For instance if you type <code class="docutils literal"><span class="pre">meter^2</span></code>, the result will be a quantity with the dimension <em>length</em><sup>2</sup> which can only be compared to other quantities with the same dimension. Currently, the available dimensions and their associated primitive units are:</p>
+<p>An important feature of SpeedCrunch’s unit system is <em>dimensional checking</em>. Simply put, it prevents comparing apples and pears: if you try to convert <code class="docutils literal notranslate"><span class="pre">[s]</span></code> to <code class="docutils literal notranslate"><span class="pre">[m]</span></code>, SpeedCrunch will complain, stating that the dimensions do not match. Indeed, the dimension of <code class="docutils literal notranslate"><span class="pre">s</span></code> is <em>time</em>, while <code class="docutils literal notranslate"><span class="pre">m</span></code> denotes a <em>length</em>, thus they cannot be compared, added, etc. When adding, multiplying, or otherwise manipulating units, SpeedCrunch will track the dimension and raise an error if it detects an invalid operation. For instance, if you type <code class="docutils literal notranslate"><span class="pre">[m^2]</span></code>, the result will be a quantity with the dimension <em>length</em><sup>2</sup> which can only be compared to other quantities with the same dimension. Currently, the available dimensions and their associated primitive units are:</p>
 <ul class="simple">
-<li><em>Length</em>: <code class="docutils literal"><span class="pre">meter</span></code></li>
-<li><em>Mass</em>: <code class="docutils literal"><span class="pre">kilogram</span></code></li>
-<li><em>Time</em>: <code class="docutils literal"><span class="pre">second</span></code></li>
-<li><em>Electric current</em>: <code class="docutils literal"><span class="pre">ampere</span></code></li>
-<li><em>Amount</em>: <code class="docutils literal"><span class="pre">mole</span></code></li>
-<li><em>Luminous intensity</em>: <code class="docutils literal"><span class="pre">candela</span></code></li>
-<li><em>Temperature</em>: <code class="docutils literal"><span class="pre">kelvin</span></code></li>
-<li><em>Information</em>: <code class="docutils literal"><span class="pre">bit</span></code></li>
+<li><p><em>Length</em>: <code class="docutils literal notranslate"><span class="pre">m</span></code></p></li>
+<li><p><em>Mass</em>: <code class="docutils literal notranslate"><span class="pre">kg</span></code></p></li>
+<li><p><em>Time</em>: <code class="docutils literal notranslate"><span class="pre">s</span></code></p></li>
+<li><p><em>Electric current</em>: <code class="docutils literal notranslate"><span class="pre">A</span></code></p></li>
+<li><p><em>Amount</em>: <code class="docutils literal notranslate"><span class="pre">mol</span></code></p></li>
+<li><p><em>Luminous intensity</em>: <code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
+<li><p><em>Temperature</em>: <code class="docutils literal notranslate"><span class="pre">K</span></code></p></li>
+<li><p><em>Information</em>: <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
 </ul>
-<p>Since the current unit system does not support non-linear units like °C or °F, the only available unit for temperature quantities is <code class="docutils literal"><span class="pre">kelvin</span></code>.
-This might change in a future version of SpeedCrunch.</p>
-<p>Defining a custom unit works exactly like defining a variable:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">earth_radius</span> <span class="o">=</span> <span class="mi">6730 </span><span class="n">kilo</span> <span class="n">meter</span>
+<p>Temperature conversions also support the affine scales <code class="docutils literal notranslate"><span class="pre">degree_celsius</span></code> (short form
+<code class="docutils literal notranslate"><span class="pre">°C</span></code>) and <code class="docutils literal notranslate"><span class="pre">degree_fahrenheit</span></code> (short form <code class="docutils literal notranslate"><span class="pre">°F</span></code>). The input aliases <code class="docutils literal notranslate"><span class="pre">ºC</span></code>,
+<code class="docutils literal notranslate"><span class="pre">˚C</span></code>, <code class="docutils literal notranslate"><span class="pre">ºF</span></code> and <code class="docutils literal notranslate"><span class="pre">˚F</span></code> are accepted and normalized to <code class="docutils literal notranslate"><span class="pre">°C</span></code> and <code class="docutils literal notranslate"><span class="pre">°F</span></code>:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">77 </span><span class="p">[</span><span class="o">°</span><span class="n">F</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="o">°</span><span class="n">C</span><span class="p">]</span>
+<span class="ge">= 25 [°C]</span>
 
-<span class="mf">3.5 </span><span class="n">astronomical_unit</span> <span class="ow">in</span> <span class="n">earth_radius</span><span class="ge"></span>
-<span class="ge">= 77799.78416790490341753343 earth_radius</span>
+<span class="mi">25 </span><span class="p">[</span><span class="o">°</span><span class="n">C</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">K</span><span class="p">]</span>
+<span class="ge">= 298.15 [K]</span>
+
+<span class="mf">298.15 </span><span class="p">[</span><span class="n">K</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="o">°</span><span class="n">C</span><span class="p">]</span>
+<span class="ge">= 25 [°C]</span>
+
+<span class="mi">77 </span><span class="p">[</span><span class="o">°</span><span class="n">F</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="o">°</span><span class="n">C</span><span class="p">]</span>
+<span class="ge">= 25 [°C]</span>
 </pre></div>
 </div>
-<p>In fact, any unit is simply a user-defined variable or a built-in constant. This also means
-that any variable or even expression can be used as the right-hand side of a conversion expression:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="mi">10 </span><span class="n">meter</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1 </span><span class="n">yard</span> <span class="o">+</span> <span class="mi">2 </span><span class="n">foot</span><span class="p">)</span><span class="ge"></span>
-<span class="ge">= 6.56167979002624671916 (1 yard+2 foot)</span>
+<p>Defining a custom unit uses bracketed unit assignment:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">earth_radius</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6730</span><span class="p">[</span><span class="n">km</span><span class="p">]</span>
+
+<span class="mf">3.5</span><span class="p">[</span><span class="n">au</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="n">earth_radius</span><span class="p">]</span>
+<span class="ge">= 77799.78416790490341753343 [earth_radius]</span>
 </pre></div>
 </div>
-<p>As mentioned above, the built-in units are spelled out to avoid ambiguity. However, this also means that longer
-expressions can become tedious to input and hard to read. If you find yourself using a particular set of units frequently,
-consider defining shorter aliases:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">meter</span>
-<span class="n">cm</span> <span class="o">=</span> <span class="n">centi</span> <span class="n">meter</span>
-<span class="n">ft</span> <span class="o">=</span> <span class="n">foot</span>
+<p>Any variable or expression can be used as the right-hand side of a conversion expression:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">10</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">[</span><span class="n">yd</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">[</span><span class="n">ft</span><span class="p">])</span>
+<span class="ge">= 6.56167979002624671916 (1[yd] + 2[ft])</span>
 </pre></div>
 </div>
+<p>Use unit symbols by default (for example <code class="docutils literal notranslate"><span class="pre">m</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>). Full
+built-in names are accepted as an alternative input form.</p>
+<p>Built-in short forms include:</p>
+<ul class="simple">
+<li><p>Length/astronomy: <code class="docutils literal notranslate"><span class="pre">au</span></code> (<code class="docutils literal notranslate"><span class="pre">astronomical_unit</span></code>), <code class="docutils literal notranslate"><span class="pre">ly</span></code> (<code class="docutils literal notranslate"><span class="pre">lightyear</span></code>),
+<code class="docutils literal notranslate"><span class="pre">ls</span></code> (<code class="docutils literal notranslate"><span class="pre">lightsecond</span></code>), <code class="docutils literal notranslate"><span class="pre">lmin</span></code> (<code class="docutils literal notranslate"><span class="pre">lightminute</span></code>), <code class="docutils literal notranslate"><span class="pre">pc</span></code> (<code class="docutils literal notranslate"><span class="pre">parsec</span></code>),
+<code class="docutils literal notranslate"><span class="pre">in</span></code> (<code class="docutils literal notranslate"><span class="pre">inch</span></code>), <code class="docutils literal notranslate"><span class="pre">ft</span></code> (<code class="docutils literal notranslate"><span class="pre">foot</span></code>).</p></li>
+<li><p>Time: <code class="docutils literal notranslate"><span class="pre">min</span></code> (<code class="docutils literal notranslate"><span class="pre">minute</span></code>), <code class="docutils literal notranslate"><span class="pre">h</span></code> (<code class="docutils literal notranslate"><span class="pre">hour</span></code>), <code class="docutils literal notranslate"><span class="pre">cy</span></code> (<code class="docutils literal notranslate"><span class="pre">century</span></code>).</p></li>
+<li><p>Angle: <code class="docutils literal notranslate"><span class="pre">deg</span></code> (<code class="docutils literal notranslate"><span class="pre">degree</span></code>), <code class="docutils literal notranslate"><span class="pre">gon</span></code> (<code class="docutils literal notranslate"><span class="pre">gradian</span></code>).</p></li>
+<li><p>Information: <code class="docutils literal notranslate"><span class="pre">b</span></code> (<code class="docutils literal notranslate"><span class="pre">bit</span></code>), <code class="docutils literal notranslate"><span class="pre">B</span></code> (<code class="docutils literal notranslate"><span class="pre">byte</span></code>).</p></li>
+<li><p>Other common aliases: <code class="docutils literal notranslate"><span class="pre">u</span></code>/<code class="docutils literal notranslate"><span class="pre">Da</span></code> (<code class="docutils literal notranslate"><span class="pre">atomic_mass_unit</span></code>), <code class="docutils literal notranslate"><span class="pre">nmi</span></code> (<code class="docutils literal notranslate"><span class="pre">nautical_mile</span></code>).</p></li>
+</ul>
+<p>For units that allow prefixes, the same short forms can be used in prefixed
+form as well (for example <code class="docutils literal notranslate"><span class="pre">kpc</span></code>, <code class="docutils literal notranslate"><span class="pre">Mpc</span></code>, <code class="docutils literal notranslate"><span class="pre">MB</span></code>, <code class="docutils literal notranslate"><span class="pre">kb</span></code>).
+Common examples include <code class="docutils literal notranslate"><span class="pre">mm</span></code>, <code class="docutils literal notranslate"><span class="pre">cm</span></code>, <code class="docutils literal notranslate"><span class="pre">km</span></code>, <code class="docutils literal notranslate"><span class="pre">mg</span></code>, <code class="docutils literal notranslate"><span class="pre">kg</span></code>, <code class="docutils literal notranslate"><span class="pre">mV</span></code>,
+<code class="docutils literal notranslate"><span class="pre">kW</span></code>, <code class="docutils literal notranslate"><span class="pre">MeV</span></code>, <code class="docutils literal notranslate"><span class="pre">dL</span></code> and <code class="docutils literal notranslate"><span class="pre">dl</span></code>.</p>
+<p>SI-accepted mass unit <code class="docutils literal notranslate"><span class="pre">t</span></code> (full name <code class="docutils literal notranslate"><span class="pre">tonne</span></code>) is available and equals
+<code class="docutils literal notranslate"><span class="pre">1000[kg]</span></code>:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">kg</span><span class="p">]</span>
+<span class="ge">= 1000 [kg]</span>
+
+<span class="mi">1000</span><span class="p">[</span><span class="n">kg</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">t</span><span class="p">]</span>
+<span class="ge">= 1 [t]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="user-units">
+<span id="id4"></span><h2>User Units<a class="headerlink" href="#user-units" title="Permalink to this heading">¶</a></h2>
+<p>You can define your own unit identifiers using square brackets on the left-hand side:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">two_cubic_metres</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">[</span><span class="n">m</span><span class="o">^</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="n">ten_metres</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">[</span><span class="n">m</span><span class="p">]</span>
+<span class="p">[</span><span class="n">cm_s</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">cm</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>User unit definitions can also include a trailing comment:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">cm_s</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">cm</span><span class="o">/</span><span class="n">s</span><span class="p">]</span> <span class="c">? centimeters per second</span>
+</pre></div>
+</div>
+<p>Like user variables and functions, comments are shown in the corresponding dock widget and in autocomplete suggestions.</p>
 <p>Some of the built-in functions are able to handle arguments with a dimension. Refer to the documentation of a particular function for more information.</p>
-</div>
+</section>
+</section>
 
 
     </div> 
@@ -342,24 +415,11 @@ consider defining shorter aliases:</p>
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-<div id="sourcelink">
-  <a href="../_sources/userguide/advanced.txt"
-     rel="nofollow">Source</a>
-</div>
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-

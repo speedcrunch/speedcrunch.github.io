@@ -24,36 +24,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Integer &amp; Bitwise Arithmetic Functions &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <title>Integer &amp; Bitwise Arithmetic Functions &mdash; SpeedCrunch 0.12 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="../contents.html" />
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="../contents.html" />
     <link rel="up" title="Reference" href="index.html" />
     <link rel="next" title="Statistical Functions" href="statistical.html" />
     <link rel="prev" title="Basic Math Functions" href="basic.html" />
@@ -74,9 +69,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="../index.html"><span class=""><img src="../_static/logo.png"></span>
+        <a class="navbar-brand"  href="../index.html">
+              <span class=""><img src="../_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -98,19 +94,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../userguide/installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../userguide/first_steps.html">First Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../userguide/syntax.html">Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html">User-Defined Variables and Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html#complex-numbers">Complex numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/advanced.html">User-Defined Variables, Functions and Units</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../userguide/interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/theme_json_schema.html">Theme JSON Schema</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#built-in-functions">Built-in Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#constants">Constants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced Topics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#units">Units</a></li>
 </ul>
 </li>
 </ul>
@@ -131,7 +124,7 @@
   </li>
 
 <script>
-$(document).ready(function(){
+$jqTheme(document).ready(function(){
     $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 </script>
@@ -167,7 +160,7 @@ $(document).ready(function(){
   <div class="row">
     <ul class="breadcrumb">
       <li><a href="../index.html">Home </a></li>
-      <li><a href="../contents.html">Documentation </a></li><li><a href="index.html">Reference</a></li>
+      <li><a href="../contents.html">User Manual </a></li><li><a href="index.html">Reference</a></li>
       <li class="active">Integer &amp; Bitwise Arithmetic Functions</li>
     </ul> 
       <div class="col-md-3">
@@ -185,217 +178,415 @@ $(document).ready(function(){
       </div> 
     <div class="col-md-9 content">
       
-  <div class="section" id="integer-bitwise-arithmetic-functions">
-<h1>Integer &amp; Bitwise Arithmetic Functions<a class="headerlink" href="#integer-bitwise-arithmetic-functions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="bitwise-operations">
-<h2>Bitwise Operations<a class="headerlink" href="#bitwise-operations" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="sc.and">
-<code class="descname">and</code><span class="sig-paren">(</span><em>x1</em>; <em>x2</em>; <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.and" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a bitwise logical AND on the submitted parameters (one or more). All parameters have to be real integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1 (signed or unsigned 256 bit integers), non integer arguments are rounded toward zero. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer). Note that <code class="docutils literal"><span class="pre">and(x)</span></code> is not the identity, because the unsigned +2<sup>255</sup> is mapped to the signed -2<sup>255</sup> for example. An error is returned if the parameters are not in the valid range.</p>
+  <section id="integer-bitwise-arithmetic-functions">
+<h1>Integer &amp; Bitwise Arithmetic Functions<a class="headerlink" href="#integer-bitwise-arithmetic-functions" title="Permalink to this heading">¶</a></h1>
+<section id="bitwise-operations">
+<h2>Bitwise Operations<a class="headerlink" href="#bitwise-operations" title="Permalink to this heading">¶</a></h2>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.and">
+<span class="sig-name descname"><span class="pre">and</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.and" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a bitwise logical AND on the submitted parameters (at least two). All parameters have to be real integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1 (signed or unsigned 256 bit integers), non integer arguments are rounded toward zero. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer).</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.or">
-<code class="descname">or</code><span class="sig-paren">(</span><em>x1</em>; <em>x2</em>; <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.or" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a bitwise logical OR on the submitted parameters (one or more). All parameters have to be integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer), non integer arguments are rounded toward zero. Note that <code class="docutils literal"><span class="pre">or(x)</span></code> is not the identity, because the unsigned 2<sup>255</sup>     is mapped to the signed -2<sup>255</sup>, for example.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.or">
+<span class="sig-name descname"><span class="pre">or</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.or" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a bitwise logical OR on the submitted parameters (at least two). All parameters have to be integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer), non integer arguments are rounded toward zero.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.xor">
-<code class="descname">xor</code><span class="sig-paren">(</span><em>x1</em>; <em>x2</em>; <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.xor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a bitwise logical XOR on the submitted parameters (one or more). All parameters have to be integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1  (signed integer), non integer arguments are rounded toward zero. Note that <code class="docutils literal"><span class="pre">xor(x)</span></code> is not the identity, because the unsigned 2<sup>255</sup> is mapped to the signed -2<sup>255</sup>, for example.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.xor">
+<span class="sig-name descname"><span class="pre">xor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x1</span></em>; <em class="sig-param"><span class="pre">x2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.xor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a bitwise logical XOR on the submitted parameters (at least two). All parameters have to be integers from the range -2<sup>255</sup> to +2<sup>255</sup>-1  (signed integer), non integer arguments are rounded toward zero.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.not">
-<code class="descname">not</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.not" title="Permalink to this definition">¶</a></dt>
-<dd><p>The <a class="reference internal" href="#sc.not" title="not"><code class="xref sc sc-func docutils literal"><span class="pre">not()</span></code></a> function is defined by <code class="docutils literal"><span class="pre">not(x)</span> <span class="pre">=</span> <span class="pre">-x-1</span></code>, giving the same result as the one&#8217;s complement operator <code class="docutils literal"><span class="pre">~</span></code> in C/C++.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.popcount">
+<span class="sig-name descname"><span class="pre">popcount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.popcount" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
+</div>
+<p>Returns the number of set bits (<code class="docutils literal notranslate"><span class="pre">1</span></code> bits) in the 256-bit two’s complement
+representation of <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+<p>The argument must be real and dimensionless, in the logic range used by
+the bitwise functions. Non-integer arguments are rounded toward zero.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.not">
+<span class="sig-name descname"><span class="pre">not</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.not" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#sc.not" title="not"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">not()</span></code></a> function is defined by <code class="docutils literal notranslate"><span class="pre">not(x)</span> <span class="pre">=</span> <span class="pre">-x-1</span></code>, giving the same result as the one’s complement operator <code class="docutils literal notranslate"><span class="pre">~</span></code> in C/C++.</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">This function does <em>not</em> simply flip the bits!</p>
+<p class="admonition-title">Warning</p>
+<p>This function does <em>not</em> simply flip the bits!</p>
+</div>
+<p>The unary prefix operator <code class="docutils literal notranslate"><span class="pre">~</span></code> is equivalent to <a class="reference internal" href="#sc.not" title="not"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">not()</span></code></a>:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="o">~</span><span class="mi">5</span>
+<span class="ge">= -6</span>
+<span class="n">not</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="ge">= -6</span>
+
+<span class="o">-~</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="ge">= 0</span>
+<span class="o">-</span><span class="n">not</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="ge">= 0</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.shl">
-<code class="descname">shl</code><span class="sig-paren">(</span><em>x</em>; <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.shl" title="Permalink to this definition">¶</a></dt>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.shl">
+<span class="sig-name descname"><span class="pre">shl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.shl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs an arithmetic left shift.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>x</strong> &#8211; The number (bit pattern) to shift, -2<sup>255</sup> &lt;= <code class="docutils literal"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1.</li>
-<li><strong>n</strong> &#8211; Number of bits to shift, -255 &lt;= <code class="docutils literal"><span class="pre">n</span></code> &lt;= 255. Must be integer.</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – The number (bit pattern) to shift, -2<sup>255</sup> &lt;= <code class="docutils literal notranslate"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1.</p></li>
+<li><p><strong>n</strong> – Number of bits to shift, -255 &lt;= <code class="docutils literal notranslate"><span class="pre">n</span></code> &lt;= 255. Must be integer.</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Note that <code class="docutils literal"><span class="pre">n</span></code> &lt; 0 results in a right shift. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer). <code class="docutils literal"><span class="pre">x</span></code> is rounded toward zero before shifting.  If <code class="docutils literal"><span class="pre">n</span></code> = 0, <code class="docutils literal"><span class="pre">x</span></code> is returned without rounding.</p>
+</dd>
+</dl>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">n</span></code> &lt; 0 results in a right shift. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer). <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded toward zero before shifting.  If <code class="docutils literal notranslate"><span class="pre">n</span></code> = 0, <code class="docutils literal notranslate"><span class="pre">x</span></code> is returned without rounding.</p>
 <p>Shifted out bits are always dropped. During a right shift, the most significant bit (bit 255) is copied. During a left shift, zero bits are shifted in.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.shr">
-<code class="descname">shr</code><span class="sig-paren">(</span><em>x</em>; <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.shr" title="Permalink to this definition">¶</a></dt>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.shr">
+<span class="sig-name descname"><span class="pre">shr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.shr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs an arithmetic right shift.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>x</strong> &#8211; The number (bit pattern) to shift, -2<sup>255</sup> &lt;= <code class="docutils literal"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1.</li>
-<li><strong>n</strong> &#8211; Number of bits to shift, -255 &lt;= <code class="docutils literal"><span class="pre">n</span></code> &lt;= 255. Must be integer.</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – The number (bit pattern) to shift, -2<sup>255</sup> &lt;= <code class="docutils literal notranslate"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1.</p></li>
+<li><p><strong>n</strong> – Number of bits to shift, -255 &lt;= <code class="docutils literal notranslate"><span class="pre">n</span></code> &lt;= 255. Must be integer.</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Note that <code class="docutils literal"><span class="pre">n</span></code> &lt; 0 results in a left shift. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer). <code class="docutils literal"><span class="pre">x</span></code> is rounded toward zero before shifting.  If <code class="docutils literal"><span class="pre">n</span></code> = 0, <code class="docutils literal"><span class="pre">x</span></code> is returned without rounding.</p>
+</dd>
+</dl>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">n</span></code> &lt; 0 results in a left shift. The result ranges from -2<sup>255</sup> to +2<sup>255</sup>-1 (signed integer). <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded toward zero before shifting.  If <code class="docutils literal notranslate"><span class="pre">n</span></code> = 0, <code class="docutils literal notranslate"><span class="pre">x</span></code> is returned without rounding.</p>
 <p>Shifted out bits are always dropped. During a right shift, the most significant bit (bit 255) is copied. During a left shift, zero bits are shifted in.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.mask">
-<code class="descname">mask</code><span class="sig-paren">(</span><em>x</em>; <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mask" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the lowest <code class="docutils literal"><span class="pre">n</span></code> bits from <code class="docutils literal"><span class="pre">x</span></code>. For this, <code class="docutils literal"><span class="pre">x</span></code> must be in the range -2<sup>255</sup> &lt;= <code class="docutils literal"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1, and <code class="docutils literal"><span class="pre">n</span></code> must be an integer, 1 &lt;= <code class="docutils literal"><span class="pre">n</span></code> &lt;= 255. <code class="docutils literal"><span class="pre">x</span></code> is rounded toward zero.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.mask">
+<span class="sig-name descname"><span class="pre">mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the lowest <code class="docutils literal notranslate"><span class="pre">n</span></code> bits from <code class="docutils literal notranslate"><span class="pre">x</span></code>. For this, <code class="docutils literal notranslate"><span class="pre">x</span></code> must be in the range -2<sup>255</sup> &lt;= <code class="docutils literal notranslate"><span class="pre">x</span></code> &lt;= +2<sup>256</sup>-1, and <code class="docutils literal notranslate"><span class="pre">n</span></code> must be an integer, 1 &lt;= <code class="docutils literal notranslate"><span class="pre">n</span></code> &lt;= 255. <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded toward zero.</p>
 <p>The result is always unsigned.</p>
-<p>Example: Getting the two&#8217;s complement of -1 in a 16-bit system:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">hex</span><span class="p">(</span><span class="n">mask</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="mi">16</span><span class="p">))</span><span class="ge"></span>
+<p>Example: Getting the two’s complement of -1 in a 16-bit system:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">hex</span><span class="p">(</span><span class="n">mask</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="mi">16</span><span class="p">))</span>
 <span class="ge">= 0xFFFF</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.unmask">
-<code class="descname">unmask</code><span class="sig-paren">(</span><em>x</em>; <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.unmask" title="Permalink to this definition">¶</a></dt>
-<dd><p>Takes the lower <code class="docutils literal"><span class="pre">n</span></code> bits from <code class="docutils literal"><span class="pre">x</span></code> and sign-extends them to full 256 bits. This means that bit at position <em>n-1</em> is copied to all upper bits.</p>
-<p>The value of <code class="docutils literal"><span class="pre">x</span></code> must be in the range <em>-2</em> <sup>255</sup> <em>&lt;= x &lt;= +2</em> <sup>256</sup> <em>-1</em>, and <code class="docutils literal"><span class="pre">n</span></code> must be an integer, <em>1 &lt;= n &lt;= 255</em>. <code class="docutils literal"><span class="pre">x</span></code> is rounded toward zero.</p>
-<p>Example: Converting a number in two&#8217;s complement representation to a signed number:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">unmask</span><span class="p">(</span><span class="mh">0xFFFF</span><span class="p">;</span> <span class="mi">16</span><span class="p">)</span><span class="ge"></span>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.unmask">
+<span class="sig-name descname"><span class="pre">unmask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>; <em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.unmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the lower <code class="docutils literal notranslate"><span class="pre">n</span></code> bits from <code class="docutils literal notranslate"><span class="pre">x</span></code> and sign-extends them to full 256 bits. This means that bit at position <em>n-1</em> is copied to all upper bits.</p>
+<p>The value of <code class="docutils literal notranslate"><span class="pre">x</span></code> must be in the range <em>-2</em> <sup>255</sup> <em>&lt;= x &lt;= +2</em> <sup>256</sup> <em>-1</em>, and <code class="docutils literal notranslate"><span class="pre">n</span></code> must be an integer, <em>1 &lt;= n &lt;= 255</em>. <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded toward zero.</p>
+<p>Example: Converting a number in two’s complement representation to a signed number:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">unmask</span><span class="p">(</span><span class="mh">0xFFFF</span><span class="p">;</span> <span class="mi">16</span><span class="p">)</span>
 <span class="ge">= -1</span>
-<span class="n">unmask</span><span class="p">(</span><span class="mh">0x1FFF</span><span class="p">;</span> <span class="mi">16</span><span class="p">)</span><span class="ge"></span>
+<span class="n">unmask</span><span class="p">(</span><span class="mh">0x1FFF</span><span class="p">;</span> <span class="mi">16</span><span class="p">)</span>
 <span class="ge">= 0x1FFF</span>
 </pre></div>
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="numeral-bases">
-<h2>Numeral Bases<a class="headerlink" href="#numeral-bases" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="numeral-bases">
+<h2>Numeral Bases<a class="headerlink" href="#numeral-bases" title="Permalink to this heading">¶</a></h2>
 <p>The following functions only change the format for the current result. To change the base
-that is used for displaying results, select one of the corresponding settings in <span class="menuselection">Settings ‣ Result Format</span>.</p>
-<dl class="function">
-<dt id="sc.bin">
-<code class="descname">bin</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.bin" title="Permalink to this definition">¶</a></dt>
-<dd><p>Format <code class="docutils literal"><span class="pre">n</span></code> as binary (base-2).</p>
+that is used for displaying results, select one of the corresponding settings in <span class="menuselection">Settings ‣ Results ‣ Format</span>.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.bin">
+<span class="sig-name descname"><span class="pre">bin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> as binary (base-2).</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.oct">
-<code class="descname">oct</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.oct" title="Permalink to this definition">¶</a></dt>
-<dd><p>Format <code class="docutils literal"><span class="pre">n</span></code> as octal (base-8).</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.oct">
+<span class="sig-name descname"><span class="pre">oct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.oct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> as octal (base-8).</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.dec">
-<code class="descname">dec</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.dec" title="Permalink to this definition">¶</a></dt>
-<dd><p>Format <code class="docutils literal"><span class="pre">n</span></code> as decimal (base-10).</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.dec">
+<span class="sig-name descname"><span class="pre">dec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.dec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> as decimal (base-10).</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.hex">
-<code class="descname">hex</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hex" title="Permalink to this definition">¶</a></dt>
-<dd><p>Format <code class="docutils literal"><span class="pre">n</span></code> as hexadecimal (base-16).</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.sci">
+<span class="sig-name descname"><span class="pre">sci</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.sci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> in scientific notation.</p>
 </dd></dl>
 
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.dms">
+<span class="sig-name descname"><span class="pre">dms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.dms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> in sexagesimal notation, using the same convention as the
+Sexagesimal notation setting. Time quantities display as <code class="docutils literal notranslate"><span class="pre">h:mm:ss</span></code>;
+angles and dimensionless values display as degrees, minutes, and seconds.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.eng">
+<span class="sig-name descname"><span class="pre">eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">exponent</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.eng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> in engineering notation.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exponent</span></code> is provided, force the <code class="docutils literal notranslate"><span class="pre">e</span></code> exponent suffix to that value. <code class="docutils literal notranslate"><span class="pre">exponent</span></code> can be:</p>
+<ul class="simple">
+<li><p>an integer exponent that is a multiple of 3 (for example, <code class="docutils literal notranslate"><span class="pre">-3</span></code> or <code class="docutils literal notranslate"><span class="pre">6</span></code>), or</p></li>
+<li><p>a power of ten with exponent a multiple of 3 (for example, <code class="docutils literal notranslate"><span class="pre">milli</span></code>, <code class="docutils literal notranslate"><span class="pre">micro</span></code>, <code class="docutils literal notranslate"><span class="pre">kilo</span></code>, <code class="docutils literal notranslate"><span class="pre">mega</span></code>, <code class="docutils literal notranslate"><span class="pre">pico</span></code>).</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">eng(0.000123456;</span> <span class="pre">milli)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">eng(0.000123456;</span> <span class="pre">-3)</span></code>.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.rat">
+<span class="sig-name descname"><span class="pre">rat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.rat" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object sc" id="sc.ratio">
+<span class="sig-name descname"><span class="pre">ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ratio" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object sc" id="sc.rational">
+<span class="sig-name descname"><span class="pre">rational</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.rational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> in rational form when possible. If a suitable rational form is not found,
+the result falls back to decimal automatic formatting.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.hex">
+<span class="sig-name descname"><span class="pre">hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.hex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format <code class="docutils literal notranslate"><span class="pre">n</span></code> as hexadecimal (base-16).</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.binpad">
+<span class="sig-name descname"><span class="pre">binpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">bits</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.binpad" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
 </div>
-<div class="section" id="rounding">
-<h2>Rounding<a class="headerlink" href="#rounding" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="sc.ceil">
-<code class="descname">ceil</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ceil" title="Permalink to this definition">¶</a></dt>
-<dd><p>Round <code class="docutils literal"><span class="pre">x</span></code> to the next largest integer. Only real, dimensionless arguments are allowed.</p>
+<p>Format integer <code class="docutils literal notranslate"><span class="pre">n</span></code> as binary (base-2) and left-pad the integer part with zeros.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is omitted, the width is padded to the next multiple of 8 bits (byte boundary).
+If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is provided, the width is padded to at least <code class="docutils literal notranslate"><span class="pre">bits</span></code> (it never truncates).</p>
+<p>Only real, dimensionless integer arguments are allowed.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.floor">
-<code class="descname">floor</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.floor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Round <code class="docutils literal"><span class="pre">x</span></code> to the next smallest integer. Only real, dimensionless arguments are allowed.</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.octpad">
+<span class="sig-name descname"><span class="pre">octpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">bits</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.octpad" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
+</div>
+<p>Format integer <code class="docutils literal notranslate"><span class="pre">n</span></code> as octal (base-8) and left-pad the integer part with zeros.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is omitted, the width is padded to the next multiple of 8 bits (byte boundary).
+If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is provided, the width is padded to at least <code class="docutils literal notranslate"><span class="pre">bits</span></code> (it never truncates).</p>
+<p>Only real, dimensionless integer arguments are allowed.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.round">
-<code class="descname">round</code><span class="sig-paren">(</span><em>x</em><span class="optional">[</span>; <em>n</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.round" title="Permalink to this definition">¶</a></dt>
-<dd><p>Round <code class="docutils literal"><span class="pre">x</span></code> to the nearest number with <code class="docutils literal"><span class="pre">n</span></code> fractional digits; <code class="docutils literal"><span class="pre">n</span></code> may be omitted, in which case <code class="docutils literal"><span class="pre">x</span></code> is rounded to the closest integer. Ties are broken by rounding to the nearest <em>even</em> integer. This rounding strategy, commonly known as <em>Banker&#8217;s rounding</em>, serves to avoid a bias (for instance when averaging or summing).</p>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.hexpad">
+<span class="sig-name descname"><span class="pre">hexpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">bits</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.hexpad" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
+</div>
+<p>Format integer <code class="docutils literal notranslate"><span class="pre">n</span></code> as hexadecimal (base-16) and left-pad the integer part with zeros.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is omitted, the width is padded to the next multiple of 8 bits (byte boundary).
+If <code class="docutils literal notranslate"><span class="pre">bits</span></code> is provided, the width is padded to at least <code class="docutils literal notranslate"><span class="pre">bits</span></code> (it never truncates).</p>
+<p>Only real, dimensionless integer arguments are allowed.</p>
+</dd></dl>
+
+</section>
+<section id="rounding">
+<h2>Rounding<a class="headerlink" href="#rounding" title="Permalink to this heading">¶</a></h2>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.ceil">
+<span class="sig-name descname"><span class="pre">ceil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.ceil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> upward to the least integer value greater than or equal to
+<code class="docutils literal notranslate"><span class="pre">x</span></code>. For quantities with dimensions, the numeric value is rounded and the
+original dimensions are preserved.</p>
+<p>This is the expression-level counterpart to the <code class="docutils literal notranslate"><span class="pre">Toward</span> <span class="pre">+∞</span> <span class="pre">(ceil)</span></code>
+rounding mode. Only real arguments are allowed.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.floor">
+<span class="sig-name descname"><span class="pre">floor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.floor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> downward to the greatest integer value less than or equal to
+<code class="docutils literal notranslate"><span class="pre">x</span></code>. For quantities with dimensions, the numeric value is rounded and the
+original dimensions are preserved.</p>
+<p>This is the expression-level counterpart to the <code class="docutils literal notranslate"><span class="pre">Toward</span> <span class="pre">−∞</span> <span class="pre">(floor)</span></code>
+rounding mode. Only real arguments are allowed.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.round">
+<span class="sig-name descname"><span class="pre">round</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">n</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.round" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest value with <code class="docutils literal notranslate"><span class="pre">n</span></code> fractional digits using
+half-away-from-zero rounding; <code class="docutils literal notranslate"><span class="pre">n</span></code> may be omitted, in which case <code class="docutils literal notranslate"><span class="pre">x</span></code> is
+rounded to the closest integer. When a value is exactly halfway between two
+candidates, the result with the larger absolute value is chosen.</p>
+<p>For quantities with dimensions, the numeric value is rounded and the
+original dimensions are preserved.</p>
+<p>This is the expression-level counterpart to the <code class="docutils literal notranslate"><span class="pre">Nearest,</span> <span class="pre">Half</span> <span class="pre">Away</span>
+<span class="pre">(round)</span></code> rounding mode. It does not depend on the global rounding mode.</p>
 <p>Example:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">round</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="ge"></span>
-<span class="ge">= 0</span>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">round</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="ge">= 1</span>
 
-<span class="n">round</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span><span class="ge"></span>
+<span class="n">round</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="ge">= -1</span>
+
+<span class="n">round</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
 <span class="ge">= 2</span>
 
-<span class="n">round</span><span class="p">(</span><span class="mf">12.345</span><span class="p">;</span> <span class="mi">2</span><span class="p">)</span><span class="ge"></span>
+<span class="n">round</span><span class="p">(</span><span class="mf">12.345</span><span class="p">;</span> <span class="mi">2</span><span class="p">)</span>
 <span class="ge">= 12.34</span>
 
-<span class="n">round</span><span class="p">(</span><span class="mi">12345</span><span class="p">;</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="ge"></span>
+<span class="n">round</span><span class="p">(</span><span class="mi">12345</span><span class="p">;</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="ge">= 12300</span>
 </pre></div>
 </div>
-<p>Only real, dimensionless arguments are allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span></code> must be real. <code class="docutils literal notranslate"><span class="pre">n</span></code> must be a real, dimensionless integer.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sc.trunc">
-<code class="descname">trunc</code><span class="sig-paren">(</span><em>x</em><span class="optional">[</span>; <em>n</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.trunc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Truncate (rounds toward zero) <code class="docutils literal"><span class="pre">x</span></code> to the next number with <code class="docutils literal"><span class="pre">n</span></code> fractional digits; <code class="docutils literal"><span class="pre">n</span></code> may be omitted, in which case <code class="docutils literal"><span class="pre">x</span></code> is rounded to integer. Only real, dimensionless arguments are allowed.</p>
-<div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<div class="last line-block">
-<div class="line"><a class="reference internal" href="basic.html#sc.int" title="int"><code class="xref sc sc-func docutils literal"><span class="pre">int()</span></code></a></div>
-<div class="line"><a class="reference internal" href="basic.html#sc.frac" title="frac"><code class="xref sc sc-func docutils literal"><span class="pre">frac()</span></code></a></div>
-</div>
-</div>
-</dd></dl>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.roundeven">
+<span class="sig-name descname"><span class="pre">roundeven</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">n</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.roundeven" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round <code class="docutils literal notranslate"><span class="pre">x</span></code> to the nearest value with <code class="docutils literal notranslate"><span class="pre">n</span></code> fractional digits using
+half-even, also known as banker’s rounding; <code class="docutils literal notranslate"><span class="pre">n</span></code> may be omitted, in which
+case <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded to the closest integer.</p>
+<p>For quantities with dimensions, the numeric value is rounded and the
+original dimensions are preserved.</p>
+<p>Ties are rounded to the value whose last kept digit is even. This is the
+expression-level counterpart to the <code class="docutils literal notranslate"><span class="pre">Nearest,</span> <span class="pre">Half</span> <span class="pre">Even</span> <span class="pre">(roundeven)</span></code>
+rounding mode. This strategy is commonly known as Banker’s rounding. It
+does not depend on the global rounding mode.</p>
+<p>Example:</p>
+<div class="highlight-speedcrunch notranslate"><div class="highlight"><pre><span></span><span class="n">roundeven</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="ge">= 0</span>
 
-</div>
-<div class="section" id="integer-division">
-<h2>Integer Division<a class="headerlink" href="#integer-division" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="sc.idiv">
-<code class="descname">idiv</code><span class="sig-paren">(</span><em>a</em>; <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.idiv" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the integer part of the division <code class="docutils literal"><span class="pre">a/b</span></code>. The result is guaranteed to be exact. While <code class="docutils literal"><span class="pre">int(a/b)</span></code> covers a larger range of arguments, the result is computed via floating point arithmetics and may be subject to rounding errors. This function will instead yield an error if the parameters exceed the safe bounds.</p>
-<p>It is possible to apply <a class="reference internal" href="#sc.idiv" title="idiv"><code class="xref sc sc-func docutils literal"><span class="pre">idiv()</span></code></a> to non-integers as well, but be aware that rounding errors might be lead to off-by-one errors. If the result depends on the validity of the guard digits, <em>NaN</em> is returned.</p>
-<p>Only real, dimensionless arguments are allowed.</p>
-</dd></dl>
+<span class="n">roundeven</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="ge">= 2</span>
 
-<dl class="function">
-<dt id="sc.mod">
-<code class="descname">mod</code><span class="sig-paren">(</span><em>a</em>; <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mod" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the remainder of the integer division <code class="docutils literal"><span class="pre">a/b</span></code>. The divisor <code class="docutils literal"><span class="pre">b</span></code> must be non-zero. The result takes the sign of <code class="docutils literal"><span class="pre">a</span></code>.</p>
-<p>This function always returns an exact result, provided that the parameters are exact.</p>
-<p>You can use this function with non-integers as well, but rounding errors might lead to off-by-one errors. Evaluating <a class="reference internal" href="#sc.mod" title="mod"><code class="xref sc sc-func docutils literal"><span class="pre">mod()</span></code></a> can be computationally expensive, so the function is internally restricted to 250 division loops.</p>
-<p>Only real, dimensionless arguments are allowed.</p>
-</dd></dl>
+<span class="n">roundeven</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+<span class="ge">= 2</span>
 
-<dl class="function">
-<dt id="sc.gcd">
-<code class="descname">gcd</code><span class="sig-paren">(</span><em>n1</em>; <em>n2</em>; <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#sc.gcd" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the greatest common divisor of the arguments (at least two must be given). You can use this function to reduce a rational number.
-If a rational number is given as <code class="docutils literal"><span class="pre">p/q</span></code>, its reduced form is <code class="docutils literal"><span class="pre">(p</span> <span class="pre">/</span> <span class="pre">gcd(p;</span> <span class="pre">q))</span> <span class="pre">/</span> <span class="pre">(q</span> <span class="pre">/</span> <span class="pre">gcd(p;</span> <span class="pre">q))</span></code>.</p>
-<p>A closely related function is <code class="docutils literal"><span class="pre">lcm()</span></code> (<em>least common multiple</em>). While <code class="docutils literal"><span class="pre">lcm()</span></code> is not defined by default
-in SpeedCrunch, you can define it yourself as:</p>
-<div class="highlight-speedcrunch"><div class="highlight"><pre><span></span><span class="n">lcm</span><span class="p">(</span><span class="n">n1</span><span class="p">;</span> <span class="n">n2</span><span class="p">)</span> <span class="o">=</span> <span class="n">n1</span> <span class="o">*</span> <span class="n">n2</span> <span class="o">/</span> <span class="n">gcd</span><span class="p">(</span><span class="n">n1</span><span class="p">;</span> <span class="n">n2</span><span class="p">)</span>
+<span class="n">roundeven</span><span class="p">(</span><span class="mf">12.345</span><span class="p">;</span> <span class="mi">2</span><span class="p">)</span>
+<span class="ge">= 12.34</span>
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">x</span></code> must be real. <code class="docutils literal notranslate"><span class="pre">n</span></code> must be a real, dimensionless integer.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.trunc">
+<span class="sig-name descname"><span class="pre">trunc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em><span class="optional">[</span>; <em class="sig-param"><span class="pre">n</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#sc.trunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncate <code class="docutils literal notranslate"><span class="pre">x</span></code> toward zero to the next value with <code class="docutils literal notranslate"><span class="pre">n</span></code> fractional digits;
+<code class="docutils literal notranslate"><span class="pre">n</span></code> may be omitted, in which case <code class="docutils literal notranslate"><span class="pre">x</span></code> is rounded to an integer. This
+discards extra digits without increasing the absolute value.</p>
+<p>For quantities with dimensions, the numeric value is rounded and the
+original dimensions are preserved.</p>
+<p>This is the expression-level counterpart to the <code class="docutils literal notranslate"><span class="pre">Toward</span> <span class="pre">Zero</span> <span class="pre">(trunc)</span></code>
+rounding mode. <code class="docutils literal notranslate"><span class="pre">x</span></code> must be real. <code class="docutils literal notranslate"><span class="pre">n</span></code> must be a real, dimensionless
+integer.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="basic.html#sc.int" title="int"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">int()</span></code></a></div>
+<div class="line"><a class="reference internal" href="basic.html#sc.frac" title="frac"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">frac()</span></code></a></div>
+<div class="line"><a class="reference internal" href="#sc.ceil" title="ceil"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">ceil()</span></code></a></div>
+<div class="line"><a class="reference internal" href="#sc.floor" title="floor"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">floor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="#sc.round" title="round"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">round()</span></code></a></div>
+<div class="line"><a class="reference internal" href="#sc.roundeven" title="roundeven"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">roundeven()</span></code></a></div>
+</div>
+</div>
+</dd></dl>
+
+</section>
+<section id="integer-division">
+<h2>Integer Division<a class="headerlink" href="#integer-division" title="Permalink to this heading">¶</a></h2>
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.idiv">
+<span class="sig-name descname"><span class="pre">idiv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">a</span></em>; <em class="sig-param"><span class="pre">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.idiv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the integer part of the division <code class="docutils literal notranslate"><span class="pre">a/b</span></code>. The result is guaranteed to be exact. While <code class="docutils literal notranslate"><span class="pre">int(a/b)</span></code> covers a larger range of arguments, the result is computed via floating point arithmetics and may be subject to rounding errors. This function will instead yield an error if the parameters exceed the safe bounds.</p>
+<p>It is possible to apply <a class="reference internal" href="#sc.idiv" title="idiv"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">idiv()</span></code></a> to non-integers as well, but be aware that rounding errors might be lead to off-by-one errors. If the result depends on the validity of the guard digits, <em>NaN</em> is returned.</p>
+<p>Only real, dimensionless arguments are allowed.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.mod">
+<span class="sig-name descname"><span class="pre">mod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">a</span></em>; <em class="sig-param"><span class="pre">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.mod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the remainder of the integer division <code class="docutils literal notranslate"><span class="pre">a/b</span></code>. The divisor <code class="docutils literal notranslate"><span class="pre">b</span></code> must be non-zero. The result takes the sign of <code class="docutils literal notranslate"><span class="pre">a</span></code>.</p>
+<p>This function is paired with <a class="reference internal" href="#sc.idiv" title="idiv"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">idiv()</span></code></a> (truncating integer quotient), so
+<code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">idiv(a;</span> <span class="pre">b)</span> <span class="pre">*</span> <span class="pre">b</span> <span class="pre">+</span> <span class="pre">mod(a;</span> <span class="pre">b)</span></code>.</p>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">mod(-1;</span> <span class="pre">360)</span> <span class="pre">=</span> <span class="pre">-1</span></code>.
+If you want wrap-around behavior in <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">360)</span></code>, use <a class="reference internal" href="#sc.emod" title="emod"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">emod()</span></code></a>:
+<code class="docutils literal notranslate"><span class="pre">emod(-1;</span> <span class="pre">360)</span> <span class="pre">=</span> <span class="pre">359</span></code>.</p>
+<p>For large powers, avoid computing the full power first (for example,
+<code class="docutils literal notranslate"><span class="pre">mod(3^233;</span> <span class="pre">353)</span></code>), since the intermediate value may lose precision.
+Use <a class="reference internal" href="#sc.powmod" title="powmod"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">powmod()</span></code></a> instead.</p>
+<p>This function always returns an exact result, provided that the parameters are exact.</p>
+<p>You can use this function with non-integers as well, but rounding errors might lead to off-by-one errors. Evaluating <a class="reference internal" href="#sc.mod" title="mod"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">mod()</span></code></a> can be computationally expensive, so the function is internally restricted to 250 division loops.</p>
+<p>Only real, dimensionless arguments are allowed.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.emod">
+<span class="sig-name descname"><span class="pre">emod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">a</span></em>; <em class="sig-param"><span class="pre">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.emod" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
+</div>
+<p>Compute the Euclidean remainder of <code class="docutils literal notranslate"><span class="pre">a/b</span></code>. The divisor <code class="docutils literal notranslate"><span class="pre">b</span></code> must be non-zero.
+The result has the sign of <code class="docutils literal notranslate"><span class="pre">b</span></code> (or is zero), and its absolute value is
+smaller than the absolute value of <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p>
+<p>For positive <code class="docutils literal notranslate"><span class="pre">b</span></code>, this maps values to <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">b)</span></code>; for example,
+<code class="docutils literal notranslate"><span class="pre">emod(-1;</span> <span class="pre">360)</span> <span class="pre">=</span> <span class="pre">359</span></code>.</p>
+<p>This function always returns an exact result, provided that the parameters are exact.</p>
+<p>You can use this function with non-integers as well, but rounding errors might lead to off-by-one errors.</p>
+<p>Only real, dimensionless arguments are allowed.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.powmod">
+<span class="sig-name descname"><span class="pre">powmod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">base</span></em>; <em class="sig-param"><span class="pre">exponent</span></em>; <em class="sig-param"><span class="pre">modulo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.powmod" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
+</div>
+<p>Compute <code class="docutils literal notranslate"><span class="pre">base^exponent</span></code> reduced by <code class="docutils literal notranslate"><span class="pre">modulo</span></code> using modular exponentiation.
+This avoids building huge intermediate powers and is therefore the recommended
+approach for large exponents (for example in cryptography).</p>
+<p>Arguments must be real, integer, and dimensionless.
+<code class="docutils literal notranslate"><span class="pre">modulo</span></code> must be non-zero, and <code class="docutils literal notranslate"><span class="pre">exponent</span></code> must be non-negative.</p>
+<p>The result follows <a class="reference internal" href="#sc.emod" title="emod"><code class="xref sc sc-func docutils literal notranslate"><span class="pre">emod()</span></code></a> semantics (same sign as <code class="docutils literal notranslate"><span class="pre">modulo</span></code> or zero).
+Example: <code class="docutils literal notranslate"><span class="pre">powmod(3;</span> <span class="pre">233;</span> <span class="pre">353)</span> <span class="pre">=</span> <span class="pre">248</span></code>.</p>
+</dd></dl>
+
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.gcd">
+<span class="sig-name descname"><span class="pre">gcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n1</span></em>; <em class="sig-param"><span class="pre">n2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.gcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the greatest common divisor of the arguments (at least two must be given). You can use this function to reduce a rational number.
+If a rational number is given as <code class="docutils literal notranslate"><span class="pre">p/q</span></code>, its reduced form is <code class="docutils literal notranslate"><span class="pre">(p</span> <span class="pre">/</span> <span class="pre">gcd(p;</span> <span class="pre">q))</span> <span class="pre">/</span> <span class="pre">(q</span> <span class="pre">/</span> <span class="pre">gcd(p;</span> <span class="pre">q))</span></code>.</p>
 <p>Only real, integer arguments are allowed.</p>
 </dd></dl>
 
+<dl class="sc function">
+<dt class="sig sig-object sc" id="sc.lcm">
+<span class="sig-name descname"><span class="pre">lcm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">n1</span></em>; <em class="sig-param"><span class="pre">n2</span></em>; <em class="sig-param"><span class="pre">...</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sc.lcm" title="Permalink to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 1.0.</span></p>
 </div>
-</div>
+<p>Returns the least common multiple of the arguments (at least two must be given).
+The result is always non-negative.</p>
+<p><code class="docutils literal notranslate"><span class="pre">gcd()</span></code> and <code class="docutils literal notranslate"><span class="pre">lcm()</span></code> are related by:</p>
+<div class="math notranslate nohighlight">
+\[lcm(n1; n2) = n1 * n2 / gcd(n1; n2)\]</div>
+<p>Only real, integer arguments are allowed.</p>
+</dd></dl>
+
+</section>
+</section>
 
 
     </div> 
@@ -403,24 +594,11 @@ in SpeedCrunch, you can define it yourself as:</p>
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-<div id="sourcelink">
-  <a href="../_sources/reference/integer.txt"
-     rel="nofollow">Source</a>
-</div>
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-

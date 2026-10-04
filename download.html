@@ -27,33 +27,26 @@
     
 <title>SpeedCrunch</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="contents.html" />
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="contents.html" />
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -71,9 +64,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="index.html"><span class=""><img src="_static/logo.png"></span>
+        <a class="navbar-brand"  href="index.html">
+              <span class=""><img src="_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -81,7 +75,7 @@
   <ul class="nav navbar-nav">
     <li><a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a></li>
     <li><a href="#"><i class="fa fa-download"></i>&nbsp;Get It</a></li>
-    <li><a href="introduction.html"><i class="fa fa-book"></i>&nbsp;Documentation</a></li>
+    <li><a href="introduction.html"><i class="fa fa-book"></i>&nbsp;User Manual</a></li>
     <li class="dropdown">
       <a role="button"
          id="languageSelector"
@@ -90,10 +84,9 @@
          data-target="#"
          href=""><i class="fa fa-user"></i>&nbsp;  Help<b class="caret"></b></a>
       <ul class="dropdown-menu">                                      
-       <li> <a href="https://bitbucket.org/heldercorreia/speedcrunch/issues"> <i class="fa fa-bug"></i>&nbsp;Report Bug </a></li>
-       <li> <a href="https://bitbucket.org/heldercorreia/speedcrunch/issues"> <i class="fa fa-thumbs-up"></i>&nbsp;Request Feature </a></li>
-       <li> <a href="https://groups.google.com/forum/#!forum/speedcrunch"> <i class="fa fa-at"></i>&nbsp;Send Message </a></li>
-       <li> <a href="https://bitbucket.org/heldercorreia/speedcrunch"> <i class="fa fa-git"></i>&nbsp;Code </a></li>
+       <li> <a href="https://speedcrunch.org/issues.html"> <i class="fa fa-bug"></i>&nbsp;Issue Tracker </a></li>
+       <li> <a href="community.html"> <i class="fa fa-users"></i>&nbsp;Community </a></li>
+       <li> <a href="https://speedcrunch.org/code.html"> <i class="fa fa-git"></i>&nbsp;Source Code </a></li>
        <li> <a href="donate.html"> <i class="fa fa-money"></i>&nbsp;Donate </a></li>
       </ul>
     </li>
@@ -119,7 +112,7 @@
     </ul>
 
     <div class="container">
-      <h1>Version 0.12</h1>
+      <h1>Version 1.0</h1>
       <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 center-div">
@@ -140,6 +133,154 @@
         <p>
             <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12.dmg"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
           </p>
+        <div class="alert alert-warning text-left" role="alert">
+          <p><strong>macOS first launch</strong></p>
+          <p>If macOS blocks SpeedCrunch, open System Settings &gt; Privacy &amp; Security and click Open Anyway. <a href="https://support.apple.com/en-am/guide/mac-help/mh40616/27/mac/27">Apple's instructions</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 center-div">
+        <p><i class="fa fa-linux" style="vertical-align:middle; font-size:8em;"></i></p>
+        <p><b>Linux</b></p>
+
+        <p>
+            <a href="https://flathub.org/apps/details/org.speedcrunch.SpeedCrunch"><img width="180" alt="Download on Flathub" src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+          </p>
+
+        <p>
+          If available, we recommend installing SpeedCrunch directly via your distribution's package manager.
+          Note that the latest version may not be available.
+        </p>
+      </div>
+    </div><!-- /.row -->
+  </div>
+      <hr/>
+
+      <p>
+        Unsure about the installation?
+        <a href="userguide/installation.html">Have a look at the instructions.</a>
+      </p>
+      <p><a href="#older-versions">Older versions (0.12)</a></p>
+      <hr/>
+
+      <section aria-labelledby="whats-new-in-1-0">
+        <h2 id="whats-new-in-1-0" style="scroll-margin-top: 80px;">What's new in 1.0</h2>
+        <ul class="list-inline">
+          <li><a href="#release-1-0-workspace">Workspace and history</a></li>
+          <li><a href="#release-1-0-expressions">Expressions and editing</a></li>
+          <li><a href="#release-1-0-results">Results and formatting</a></li>
+          <li><a href="#release-1-0-functions">New functions</a></li>
+          <li><a href="#release-1-0-units">Units</a></li>
+          <li><a href="#release-1-0-settings">Appearance and settings</a></li>
+        </ul>
+
+        <h3 id="release-1-0-workspace" style="scroll-margin-top: 80px;">Workspace and history</h3>
+        <ul>
+          <li>Work in tabs and split panes to keep several calculations open side by side.</li>
+          <li>Save calculation history between launches and set a history size limit.</li>
+          <li>Load your own functions and variables at startup.</li>
+          <li>Choose a keypad preset or build a custom keypad.</li>
+          <li>Show or hide the main menu. The result display now has a right-click context menu with an entry for the main menu.</li>
+          <li>Re-edit an earlier expression and recalculate all the expressions below it.</li>
+          <li>Check for updates from within the app.</li>
+        </ul>
+
+        <h3 id="release-1-0-expressions" style="scroll-margin-top: 80px;">Expressions and editing</h3>
+        <ul>
+          <li>Use lists and matrices in expressions.</li>
+          <li>See the interpreted expression alongside the result, with implicit multiplication made explicit.</li>
+          <li>Write integer powers with superscript digits.</li>
+          <li>Use <code>√</code>, <code>∛</code>, <code>Σ</code> (summation), and <code>π</code> as aliases. The <code>~</code> operator is an alias for <code>not()</code>.</li>
+          <li>More symbol aliases are accepted for addition, subtraction, multiplication, and division.</li>
+          <li>Autocomplete suggestions now show category icons.</li>
+          <li>Pasted numbers are automatically formatted to match the global Number Format setting.</li>
+          <li>Insert constants and formula book entries with their units included.</li>
+        </ul>
+
+        <h3 id="release-1-0-results" style="scroll-margin-top: 80px;">Results and formatting</h3>
+        <ul>
+          <li>Show a calculation in several result formats at once. Number-format choices include Indian 3-2-2 digit grouping.</li>
+          <li>Show rational results as fractions, or use sexagesimal notation for angles and time.</li>
+          <li>Show angles as multiples of pi in radian mode or through an explicit conversion.</li>
+          <li>Choose how complex numbers are displayed, with polar forms and options for the imaginary unit.</li>
+          <li>Set a custom precision with the Custom... option.</li>
+          <li>Choose from five rounding modes.</li>
+          <li>Changing the primary result format updates only the last expression. Earlier history entries keep their formatting.</li>
+        </ul>
+
+        <h3 id="release-1-0-functions" style="scroll-margin-top: 80px;">New functions</h3>
+        <ul>
+          <li><strong>Integer arithmetic:</strong> <a href="reference/integer.html#powmod"><code>powmod</code></a> for modular exponentiation, <a href="reference/integer.html#emod"><code>emod</code></a> for Euclidean modulo, <a href="reference/integer.html#lcm"><code>lcm</code></a> for least common multiples, and <a href="reference/integer.html#popcount"><code>popcount</code></a> for counting set bits.</li>
+          <li><strong>Number formatting:</strong> <a href="reference/integer.html#binpad"><code>binpad</code></a>, <a href="reference/integer.html#octpad"><code>octpad</code></a>, and <a href="reference/integer.html#hexpad"><code>hexpad</code></a> for padded binary, octal, and hexadecimal output. Use <a href="reference/integer.html#sci"><code>sci</code></a> and <a href="reference/integer.html#eng"><code>eng</code></a> for scientific and engineering notation.</li>
+          <li><strong>Random numbers:</strong> <a href="reference/statistical.html#rand"><code>rand</code></a> and <a href="reference/statistical.html#randint"><code>randint</code></a> generate random decimals and integers.</li>
+          <li><strong>Dates and time:</strong> <a href="reference/basic.html#datetime"><code>datetime</code></a> and <a href="reference/basic.html#epoch"><code>epoch</code></a> convert between date/time values and Unix timestamps.</li>
+          <li><strong>Summation:</strong> <a href="reference/statistical.html#summation"><code>sigma</code></a>, also written as <code>Σ</code>.</li>
+          <li><strong>Complex numbers:</strong> <a href="reference/basic.html#conj"><code>conj</code></a> for complex conjugates and <a href="reference/basic.html#cis"><code>cis</code></a> for constructing a complex number from an angle. Choose rectangular, exponential, or phasor output with <a href="reference/basic.html#rectform"><code>rectform</code></a>, <a href="reference/basic.html#expform"><code>expform</code></a>, and <a href="reference/basic.html#phasorform"><code>phasorform</code></a>.</li>
+          <li><strong>IEEE 754:</strong> <a href="reference/ieee754.html#ieee754_round_half"><code>ieee754_round_*</code></a> rounds to a floating-point format, and <a href="reference/ieee754.html#ieee754_half_residual"><code>ieee754_*_residual(x)</code></a> returns the rounding residual. Both families support <code>half</code>, <code>float</code>, <code>double</code>, and <code>quad</code>.</li>
+          <li><strong>Chemistry:</strong> <a href="reference/basic.html#molmass"><code>molmass</code></a>, <a href="reference/basic.html#mass"><code>mass</code></a>, and <a href="reference/basic.html#molarity"><code>molarity</code></a> for molar mass, mass from an amount of substance, and solution molarity.</li>
+          <li><strong>Linear algebra and data:</strong> List and matrix support with <a href="reference/basic.html#cols"><code>cols</code></a>, <a href="reference/basic.html#corrp"><code>corrp</code></a>, <a href="reference/basic.html#corrs"><code>corrs</code></a>, <a href="reference/basic.html#covp"><code>covp</code></a>, <a href="reference/basic.html#covs"><code>covs</code></a>, <a href="reference/basic.html#cross"><code>cross</code></a>, <a href="reference/basic.html#det"><code>det</code></a>, <a href="reference/basic.html#dot"><code>dot</code></a>, <a href="reference/basic.html#flatten"><code>flatten</code></a>, <a href="reference/basic.html#inv"><code>inv</code></a>, <a href="reference/basic.html#norm"><code>norm</code></a>, <a href="reference/basic.html#rank"><code>rank</code></a>, <a href="reference/basic.html#rows"><code>rows</code></a>, <a href="reference/basic.html#shape"><code>shape</code></a>, <a href="reference/basic.html#trace"><code>trace</code></a>, and <a href="reference/basic.html#transpose"><code>transpose</code></a>.</li>
+          <li><strong>Statistics:</strong> <a href="reference/statistical.html#stdevp"><code>stdevp</code></a>, <a href="reference/statistical.html#stdevs"><code>stdevs</code></a>, <a href="reference/statistical.html#varp"><code>varp</code></a>, <a href="reference/statistical.html#vars"><code>vars</code></a>, and <a href="reference/statistical.html#mad"><code>mad</code></a>, with list and matrix support.</li>
+        </ul>
+
+        <h3 id="release-1-0-units" style="scroll-margin-top: 80px;">Units</h3>
+        <p>Use square brackets to identify units explicitly in expressions, such as <code>[m]</code> or <code>[s]</code>. New units and aliases include:</p>
+        <ul>
+          <li><strong>Angles:</strong> <a href="reference/units.html#plane-angle"><code>gradian</code></a> (<code>gon</code>), <a href="reference/units.html#plane-angle"><code>turn</code></a> (<code>tr</code>, <code>pla</code>), <a href="reference/units.html#plane-angle"><code>revolution</code></a> (<code>rev</code>), <a href="reference/units.html#plane-angle"><code>degree</code></a> (<code>°</code>), <a href="reference/units.html#plane-angle"><code>arcmin</code></a> (<code>′</code>), and <a href="reference/units.html#plane-angle"><code>arcsec</code></a> (<code>″</code>).</li>
+          <li><strong>Time:</strong> Julian century (<a href="reference/units.html#time"><code>cy_jul</code></a>).</li>
+          <li><strong>Area and mass:</strong> <a href="reference/units.html#area"><code>hectare</code></a> and <a href="reference/units.html#mass"><code>tonne</code></a>.</li>
+          <li><strong>Speed:</strong> <a href="reference/units.html#speed"><code>kph</code></a> and <a href="reference/units.html#speed"><code>mph</code></a>.</li>
+          <li><strong>Energy:</strong> <a href="reference/units.html#amount-of-heat"><code>quad</code></a>, equal to 10<sup>15</sup> <code>[Btu]</code>.</li>
+        </ul>
+
+        <h3 id="release-1-0-settings" style="scroll-margin-top: 80px;">Appearance and settings</h3>
+        <ul>
+          <li>Choose from more built-in themes or create a custom theme.</li>
+          <li>Interface scaling now applies to the expression editor too.</li>
+        </ul>
+      </section>
+      <hr/>
+
+      <section aria-labelledby="contributors">
+        <h2 id="contributors" style="scroll-margin-top: 80px;">Contributors</h2>
+        <p>Thank you to the authors who have contributed since November 30, 2016.</p>
+        <p>Helder Correia, Felix Krull, Mikko Syrjä, Tey / Teyut, Samuel Gaist, Hadrien Theveneau, Pol Welter, Matthew Di Nardo, Chris Roberts, Alan Birtles, Chuvke, Jean-Michel Frouin, Jonas Nyrup, Nikolay Zlatev, Roger Sachan, rewq.</p>
+      </section>
+      <hr/>
+
+      <h1 id="older-versions" style="scroll-margin-top: 80px;">Older Versions</h1>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse012" aria-expanded="true" aria-controls="collapse012">Version 0.12</a>
+      </h4>
+    </div>
+    <div id="collapse012" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading012" style="margin-top: 1em">
+      <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 center-div">
+          <p><i class="fa fa-windows" style="vertical-align:middle; font-size:8em;"></i></p>
+          <p><b>Windows</b></p>
+          <p>
+            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Installer</a>
+                <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.zip"><i class="fa fa-usb fa-lg" style="vertical-align:middle;"></i>&nbsp;Portable</a>
+          </p>
+          <p>
+              Use the portable version if you can't or don't want to install the application. Take it anywhere and just run the file to start.
+            </p>
+        </div>
+
+      <div class="col-lg-4 center-div">
+        <p><i class="fa fa-apple" style="vertical-align:middle; font-size:8em;"></i></p>
+        <p><b>macOS</b></p>
+        <p>
+            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12.dmg"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
+          </p>
+        <div class="alert alert-warning text-left" role="alert">
+          <p><strong>macOS first launch</strong></p>
+          <p>If macOS blocks SpeedCrunch, open System Settings &gt; Privacy &amp; Security and click Open Anyway. <a href="https://support.apple.com/en-am/guide/mac-help/mh40616/27/mac/27">Apple's instructions</a></p>
+        </div>
       </div>
 
       <div class="col-lg-4 center-div">
@@ -164,130 +305,19 @@
       </div>
     </div><!-- /.row -->
   </div>
-      <hr/>
-
-      <p>
-        Unsure about the installation?
-        <a href="userguide/installation.html">Have a look at the instructions.</a>
-      </p>
-      <hr/>
-
-      <h1>Older Versions</h1>
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse011" aria-expanded="false" aria-controls="collapse011">Version 0.11</a>
-      </h4>
-    </div>
-    <div id="collapse011" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading011" style="margin-top: 1em">
-      <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4 center-div">
-          <p><i class="fa fa-windows" style="vertical-align:middle; font-size:8em;"></i></p>
-          <p><b>Windows</b></p>
-          <p>
-            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.11.exe"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Installer</a>
-                <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.11.zip"><i class="fa fa-usb fa-lg" style="vertical-align:middle;"></i>&nbsp;Portable</a>
-          </p>
-          <p>
-              Use the portable version if you can't or don't want to install the application. Take it anywhere and just run the file to start.
-            </p>
-        </div>
-
-      <div class="col-lg-4 center-div">
-        <p><i class="fa fa-apple" style="vertical-align:middle; font-size:8em;"></i></p>
-        <p><b>macOS</b></p>
-        <p>
-            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.11.dmg"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
-          </p>
-      </div>
-
-      <div class="col-lg-4 center-div">
-        <p><i class="fa fa-linux" style="vertical-align:middle; font-size:8em;"></i></p>
-        <p><b>Linux</b></p>
-
-        <p>
-            <a class="btn btn-primary btn-md dl-button disabled"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
-          </p>
-
-        <p>
-          If available, we recommend installing SpeedCrunch directly via your distribution's package manager.
-          Note that the latest version may not be available.
-        </p>
-      </div>
-    </div><!-- /.row -->
-  </div>
     </div>
   </div>
 
-        
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse0101" aria-expanded="false" aria-controls="collapse0101">Version 0.10.1</a>
-      </h4>
-    </div>
-    <div id="collapse0101" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0101" style="margin-top: 1em">
-      <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4 center-div">
-          <p><i class="fa fa-windows" style="vertical-align:middle; font-size:8em;"></i></p>
-          <p><b>Windows</b></p>
-          <p>
-            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.10.1.exe"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Installer</a>
-                <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.10.1.zip"><i class="fa fa-usb fa-lg" style="vertical-align:middle;"></i>&nbsp;Portable</a>
-          </p>
-          <p>
-              Use the portable version if you can't or don't want to install the application. Take it anywhere and just run the file to start.
-            </p>
-        </div>
-
-      <div class="col-lg-4 center-div">
-        <p><i class="fa fa-apple" style="vertical-align:middle; font-size:8em;"></i></p>
-        <p><b>macOS</b></p>
-        <p>
-            <a class="btn btn-primary btn-md dl-button" href="https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.10.1.dmg"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
-          </p>
-      </div>
-
-      <div class="col-lg-4 center-div">
-        <p><i class="fa fa-linux" style="vertical-align:middle; font-size:8em;"></i></p>
-        <p><b>Linux</b></p>
-
-        <p>
-            <a class="btn btn-primary btn-md dl-button disabled"><i class="fa fa-laptop fa-lg" style="vertical-align:middle;"></i>&nbsp;Download</a>
-          </p>
-
-        <p>
-          If available, we recommend installing SpeedCrunch directly via your distribution's package manager.
-          Note that the latest version may not be available.
-        </p>
-      </div>
-    </div><!-- /.row -->
-  </div>
-    </div>
-  </div>
       </div>
     </div>
   </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-

@@ -1,6 +1,5 @@
 
 
-
   
   
 
@@ -26,35 +25,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Index &mdash; SpeedCrunch 0.12 documentation</title>
+    <title>Index &mdash; SpeedCrunch 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/extra.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css?home=2" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.12',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="SpeedCrunch 0.12 documentation" href="contents.html" />
+    <link rel="top" title="SpeedCrunch 1.0 documentation" href="contents.html" />
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -72,9 +64,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"  href="index.html"><span class=""><img src="_static/logo.png"></span>
+        <a class="navbar-brand"  href="index.html">
+              <span class=""><img src="_static/logo.png" alt=""></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>0.12</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
       </div>
 
       
@@ -96,19 +89,16 @@
 <li class="toctree-l2"><a class="reference internal" href="userguide/installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/first_steps.html">First Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/syntax.html">Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables and Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#complex-numbers">Complex numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables, Functions and Units</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/theme_json_schema.html">Theme JSON Schema</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#built-in-functions">Built-in Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reference/index.html#constants">Constants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">Advanced Topics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="advanced/colorschemeformat.html">Color Scheme File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#units">Units</a></li>
 </ul>
 </li>
 </ul>
@@ -121,7 +111,7 @@
                 
 
 <script>
-$(document).ready(function(){
+$jqTheme(document).ready(function(){
     $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 </script>
@@ -157,7 +147,7 @@ $(document).ready(function(){
   <div class="row">
     <ul class="breadcrumb">
       <li><a href="index.html">Home </a></li>
-      <li><a href="contents.html">Documentation </a></li>
+      <li><a href="contents.html">User Manual </a></li>
       <li class="active">Index</li>
     </ul> 
       <div class="col-md-3">
@@ -191,559 +181,496 @@ $(document).ready(function(){
  | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
  | <a href="#X"><strong>X</strong></a>
- | <a href="#Symbols"><strong>Symbols</strong></a>
+ | <a href="#Π"><strong>Π</strong></a>
+ | <a href="#ℯ"><strong>ℯ</strong></a>
  
 </div>
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.abs">abs() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.absdev">absdev() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.and">and() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.arccos">arccos() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.arcosh">arcosh() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.arcsin">arcsin() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.arctan">arctan() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.arctan2">arctan2() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.arsinh">arsinh() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.artanh">artanh() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.average">average() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.abs">abs() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.absdev">absdev() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.and">and() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.arccos">arccos() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.arcosh">arcosh() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.arcsin">arcsin() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.arctan">arctan() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.arctan2">arctan2() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.arsinh">arsinh() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.artanh">artanh() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.average">average() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.bin">bin() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.binomcdf">binomcdf() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.binommean">binommean() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.binompmf">binompmf() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.binomvar">binomvar() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.bin">bin() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.binomcdf">binomcdf() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.binommean">binommean() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.binompmf">binompmf() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.binomvar">binomvar() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.binpad">binpad() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.cart">cart() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.cbrt">cbrt() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.ceil">ceil() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.cos">cos() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.cosh">cosh() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.cot">cot() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.csc">csc() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.cbrt">cbrt() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.ceil">ceil() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cis">cis() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cisform">cisform() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cols">cols() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.conj">conj() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.corrp">corrp() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.corrs">corrs() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.cos">cos() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cosh">cosh() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cot">cot() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.count">count() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.covp">covp() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.covs">covs() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.cross">cross() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.csc">csc() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.dec">dec() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.degrees">degrees() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.datetime">datetime() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.dec">dec() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.degrees">degrees() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.det">det() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.dms">dms() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.dot">dot() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/constants.html#sc.e">e (constant)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.erf">erf() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.erfc">erfc() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.exp">exp() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/constants.html#sc.e">e (constant)</a>
+</li>
+      <li><a href="reference/integer.html#sc.emod">emod() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.eng">eng() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.epoch">epoch() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.erf">erf() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.erfc">erfc() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.exp">exp() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.expform">expform() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.floor">floor() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.frac">frac() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.flatten">flatten() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.floor">floor() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.frac">frac() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.gamma">gamma() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.gcd">gcd() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.geomean">geomean() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.gamma">gamma() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.gcd">gcd() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.geomean">geomean() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.gradians">gradians() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.hex">hex() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.hypercdf">hypercdf() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.hypermean">hypermean() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.hyperpmf">hyperpmf() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.hypervar">hypervar() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.hex">hex() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.hexpad">hexpad() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.hypercdf">hypercdf() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.hypermean">hypermean() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.hyperpmf">hyperpmf() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.hypervar">hypervar() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.idiv">idiv() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_decode">ieee754_decode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_double_decode">ieee754_double_decode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_double_encode">ieee754_double_encode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_encode">ieee754_encode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_half_decode">ieee754_half_decode() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_half_encode">ieee754_half_encode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_quad_decode">ieee754_quad_decode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_quad_encode">ieee754_quad_encode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_single_decode">ieee754_single_decode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/ieee754.html#sc.ieee754_single_encode">ieee754_single_encode() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.imag">imag() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.int">int() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/constants.html#sc.i">i (constant)</a>
+</li>
+      <li><a href="reference/integer.html#sc.idiv">idiv() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_decode">ieee754_decode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_double_decode">ieee754_double_decode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_double_encode">ieee754_double_encode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_double_residual">ieee754_double_residual() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_encode">ieee754_encode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_float_residual">ieee754_float_residual() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_half_decode">ieee754_half_decode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_half_encode">ieee754_half_encode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_half_residual">ieee754_half_residual() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/ieee754.html#sc.ieee754_quad_decode">ieee754_quad_decode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_quad_encode">ieee754_quad_encode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_quad_residual">ieee754_quad_residual() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_round_double">ieee754_round_double() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_round_float">ieee754_round_float() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_round_half">ieee754_round_half() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_round_quad">ieee754_round_quad() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_single_decode">ieee754_single_decode() (function)</a>
+</li>
+      <li><a href="reference/ieee754.html#sc.ieee754_single_encode">ieee754_single_encode() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.imag">imag() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.int">int() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.inv">inv() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="J">J</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/constants.html#sc.j">j (constant)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/constants.html#sc.j">j (constant)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.lb">lb() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.lg">lg() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.ln">ln() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.lngamma">lngamma() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.log">log() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.lb">lb() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.lcm">lcm() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.lg">lg() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.ln">ln() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.lngamma">lngamma() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.log">log() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.mask">mask() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.max">max() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.median">median() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.min">min() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.mod">mod() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.mad">mad() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.mask">mask() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.mass">mass() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.max">max() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.mean">mean() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.median">median() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.min">min() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.mod">mod() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.molarity">molarity() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.molmass">molmass() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.ncr">ncr() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.not">not() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.npr">npr() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.ncr">ncr() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.norm">norm() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.not">not() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.npr">npr() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.numval">numval() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="O">O</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.oct">oct() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.or">or() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.oct">oct() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.octpad">octpad() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.or">or() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.phase">phase() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/constants.html#sc.pi">pi (constant)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.poicdf">poicdf() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.poimean">poimean() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.poipmf">poipmf() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.poivar">poivar() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.polar">polar() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.product">product() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.phase">phase() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.phasorform">phasorform() (function)</a>
+</li>
+      <li><a href="reference/constants.html#sc.pi">pi (constant)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.poicdf">poicdf() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.poimean">poimean() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.poipmf">poipmf() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.poivar">poivar() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.popcount">popcount() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.powmod">powmod() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.product">product() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.radians">radians() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.real">real() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.round">round() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.radians">radians() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.rand">rand() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.randint">randint() (function)</a>, <a href="reference/statistical.html#sc.randint">[1]</a>
+</li>
+      <li><a href="reference/basic.html#sc.rank">rank() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.rat">rat() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.ratio">ratio() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.rational">rational() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.real">real() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.rectform">rectform() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.round">round() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.roundeven">roundeven() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.rows">rows() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.sec">sec() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.sgn">sgn() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.shl">shl() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.shr">shr() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.sin">sin() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.sinh">sinh() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/basic.html#sc.sqrt">sqrt() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.stddev">stddev() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/statistical.html#sc.sum">sum() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.sci">sci() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.sec">sec() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.sgn">sgn() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.shape">shape() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.shl">shl() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.shr">shr() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.sin">sin() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.sinh">sinh() (function)</a>
+</li>
+      <li><a href="introduction.html#index-0">SpeedCrunch</a>
+</li>
+      <li><a href="reference/basic.html#sc.sqrt">sqrt() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.stdevp">stdevp() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.stdevs">stdevs() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.sum">sum() (function)</a>
+</li>
+      <li><a href="reference/statistical.html#sc.summation">summation() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.tan">tan() (function)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/basic.html#sc.tanh">tanh() (function)</a>
-  </dt>
-
-      
-  <dt><a href="reference/integer.html#sc.trunc">trunc() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.tan">tan() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.tanh">tanh() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.trace">trace() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/basic.html#sc.transpose">transpose() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.trigform">trigform() (function)</a>
+</li>
+      <li><a href="reference/integer.html#sc.trunc">trunc() (function)</a>
+</li>
+      <li><a href="reference/basic.html#sc.turns">turns() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.unmask">unmask() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.unmask">unmask() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/statistical.html#sc.variance">variance() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.varp">varp() (function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/statistical.html#sc.vars">vars() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="X">X</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/integer.html#sc.xor">xor() (function)</a>
-  </dt>
-
-  </dl></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/integer.html#sc.xor">xor() (function)</a>
+</li>
+  </ul></td>
 </tr></table>
 
-<h2 id="Symbols">Symbols</h2>
+<h2 id="Π">Π</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/constants.html#sc.π">π (constant)</a>
-  </dt>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/constants.html#sc.π">π (constant)</a>
+</li>
+  </ul></td>
+</tr></table>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="reference/constants.html#sc.ℯ">ℯ (constant)</a>
-  </dt>
-
-  </dl></td>
+<h2 id="ℯ">ℯ</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/constants.html#sc.ℯ">ℯ (constant)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 
@@ -753,20 +680,11 @@ $(document).ready(function(){
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-      
-    </p>
     <p>
-        &copy; Copyright 2016, The SpeedCrunch Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.<br/>
     </p>
   </div>
 </footer>
   </body>
 </html>
-
-
