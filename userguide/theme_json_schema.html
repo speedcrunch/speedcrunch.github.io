@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/extra.css?home=4" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=4042127e"></script>
+    <script src="../_static/documentation_options.js?v=52842e64"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
@@ -52,7 +52,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="SpeedCrunch 1.0 documentation" href="../contents.html" />
+    <link rel="top" title="SpeedCrunch 1.1 documentation" href="../contents.html" />
     <link rel="up" title="User Guide" href="index.html" />
     <link rel="next" title="Reference" href="../reference/index.html" />
     <link rel="prev" title="Session JSON Schema" href="session_json_schema.html" />
@@ -76,7 +76,7 @@
         <a class="navbar-brand"  href="../index.html">
               <span class=""><img src="../_static/logo.png" alt="Logo of SpeedCrunch"></span>
           SpeedCrunch</a>
-        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.0</b></span>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.1</b></span>
       </div>
 
       
@@ -274,7 +274,10 @@ both <code class="docutils literal notranslate"><span class="pre">[]</span></cod
 chrome, expression-editor surface colors, and successive generated surfaces
 used by dock titles, controls and headers, and content areas. Scrollbar
 colors are generated from the background of the surface that owns each
-scrollbar, so theme files do not include a separate key for them.</p></li>
+scrollbar, so theme files do not include a separate key for them.
+Text colors for these surfaces target at least 10:1 contrast while keeping
+the background’s hue where possible. If that ratio cannot be reached,
+SpeedCrunch uses black or white, whichever gives better contrast.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">primary</span></code> is optional. When present, it overrides the generated
 primary/accent color used for active selections, focused editor outlines,
 cursor accents, pane splitters, and primary-hue keypad fills. When omitted,
