@@ -18,6 +18,10 @@ with either a period (``.``) or a comma (``,``) as the decimal separator.
 Accepted decimal separator and grouping conventions depend on the selected
 :ref:`Number Format <radix_character>`.
 
+For example, with either ``1234567.12345`` or ``1,234,567.12345`` selected,
+``1,000 * 2`` evaluates to ``2000`` because the comma groups thousands.
+With a comma-decimal format selected, the same rule applies to ``1.000 * 2``.
+
 Trailing zeros after the decimal point (like in ``12.300``) or leading zeros before it (``0012.3``) are redundant and can be included or omitted to the user's preference. Expressions like ``.5`` as a shorthand notation for ``0.5`` are also permitted.
 
 .. _digit_grouping_separators:
@@ -26,6 +30,12 @@ Digit Grouping Separators
 +++++++++++++++++++++++++
 
 To improve readability, SpeedCrunch accepts grouping separators inside number literals. Grouping separators are optional and ignored during evaluation.
+
+Commas and dots also serve as decimal separators, so their placement is
+checked according to the :ref:`Number Format rules <radix_character>`.
+Malformed punctuation groups such as ``1,2,3``, ``1.2.3``, and ``1,,234``
+are rejected. Spaces do not have a decimal meaning and can be placed freely
+between digits, so ``12 34`` is accepted as ``1234``.
 
 Allowed grouping separators are characters that are **not** letters or digits and are **not** number operators. In practice, this includes many punctuation and symbol characters, for example:
 
@@ -83,6 +93,9 @@ You can enter a number in any of these bases by marking it with the correspondin
 * ``0o`` or ``0O`` for **octal**, e.g. ``0o1412``.
 * ``0d`` or ``0D`` for **decimal**. These can be omitted since decimal is the default base.
 * ``0x``, ``0X``, or ``#`` for **hexadecimal**. The additional six digits are represented by the upper or lower case letters ``a`` to ``f``, e.g. ``0xdeadbeef`` or ``0xDEADBEEF``.
+
+Spaces can separate hexadecimal digit groups, including groups made entirely
+of letters. For example, ``0xAB CD`` has the same value as ``0xABCD`` (43981).
 
 You may even enter fractional values in any of these bases. Note that scientific notation is not
 supported for non-decimal bases, however. Examples::
@@ -421,10 +434,9 @@ SpeedCrunch supports the following operators, listed in order of decreasing prec
 | ``a | b``                     | **Bitwise OR**                                                | ``0b10 | 0b01 = 0b11``  |
 |                               |   See also :func:`or`.                                        |                         |
 +-------------------------------+---------------------------------------------------------------+-------------------------+
-| ``->``, ``in``, ``--``        | **Unit conversion**                                           | ``10[m] in [mi]``       |
+| ``->``, ``in``                | **Unit conversion**                                           | ``10[m] in [mi]``       |
 |                               |   Convert the operand into the given                          |                         |
 |                               |   unit. Both forms are equivalent. See                        | ``10[m] -> [mi]``       |
-|                               |   ``--`` is a shortcut equivalent to ``->`` and ``in``.       | ``10[m] -- [mi]``       |
 |                               |   :ref:`units` for more information.                          |                         |
 +-------------------------------+---------------------------------------------------------------+-------------------------+
 

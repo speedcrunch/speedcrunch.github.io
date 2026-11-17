@@ -1,0 +1,981 @@
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+
+  <!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Answers to common SpeedCrunch questions about installation, calculations, precision, units, sessions, customization and troubleshooting." name="description" />
+
+    <title>Frequently Asked Questions — SpeedCrunch Manual</title>
+    <link rel="canonical" href="https://www.speedcrunch.org/faq.html" />
+    <meta property="og:url" content="https://www.speedcrunch.org/faq.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpeedCrunch" />
+    <meta property="og:title" content="Frequently Asked Questions — SpeedCrunch Manual" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.4.1/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css?home=4" type="text/css" />
+    
+    <script src="_static/documentation_options.js?v=60abe83f"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="SpeedCrunch 1.2.0 documentation" href="contents.html" />
+    <link rel="next" title="User Guide" href="userguide/index.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+      .content h3 {
+        margin-top: 2em;
+      }
+
+      .content h3 > a.headerlink {
+        visibility: visible;
+        opacity: 0;
+      }
+
+      .content h3:hover > a.headerlink,
+      .content h3:focus-within > a.headerlink {
+        opacity: 1;
+      }
+
+      @media (hover: none) {
+        .content h3 > a.headerlink {
+          opacity: 1;
+        }
+      }
+    </style>
+
+  </head>
+  <body role="document" data-spy="scroll" data-target="#myScrollspy" data-offset="80">
+
+  <div id="navbar" class="navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"  href="index.html">
+              <span class=""><img src="_static/logo.png" alt="Logo of SpeedCrunch"></span>
+          SpeedCrunch</a>
+        <span class="navbar-text navbar-version pull-left hidden-sm hidden-xs"><b>1.2</b></span>
+      </div>
+
+      
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+              <li class="dropdown globaltoc-container">
+  
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="contents.html">Navigation <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-and-updates">Installation and updates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-calculations">Basic calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-precision-and-number-formats">Results, precision and number formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-functions-and-units">Variables, functions and units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-math">Advanced math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#history-and-sessions">History and sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customizing-the-app">Customizing the app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-and-tricks">Tips and tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problems-and-help">Problems and help</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide/installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/first_steps.html">First Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/syntax.html">Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/advanced.html">User-Defined Variables, Functions and Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/interface.html">User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/session_json_schema.html">Session JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/theme_json_schema.html">Theme JSON Schema</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#built-in-functions">Built-in Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#constants">Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#units">Units</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="introduction.html" data-toggle="tooltip" title="Previous Page: Introduction"><span class="glyphicon glyphicon-chevron-left"></span><span class="hidden-sm hidden-tablet"> Previous</span>
+    </a>
+  </li>
+  <li>
+    <a href="userguide/index.html" data-toggle="tooltip" title="Next Page: User Guide">
+      <span class="hidden-sm hidden-tablet">Next</span><span class="glyphicon glyphicon-chevron-right"></span></a>
+  </li>
+
+<script>
+$jqTheme(document).ready(function(){
+    $jqTheme('[data-toggle="tooltip"]').tooltip({placement: "bottom"});   
+});
+</script>
+              
+            
+            
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          
+            
+<li><form class="navbar-form" action="search.html" method="get">
+ <div class="form-group has-feedback">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <i class="glyphicon glyphicon-search form-control-feedback"></i>
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form></li>
+          
+
+          
+            
+          
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home </a></li>
+      <li><a href="contents.html">User Manual </a></li>
+      <li class="active">Frequently Asked Questions</li>
+    </ul> 
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><div id="myScrollspy"><ul>
+<li><a class="reference internal" href="#">Frequently Asked Questions</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#installation-and-updates">Installation and updates</a></li>
+<li><a class="reference internal" href="#basic-calculations">Basic calculations</a></li>
+<li><a class="reference internal" href="#results-precision-and-number-formats">Results, precision and number formats</a></li>
+<li><a class="reference internal" href="#variables-functions-and-units">Variables, functions and units</a></li>
+<li><a class="reference internal" href="#advanced-math">Advanced math</a></li>
+<li><a class="reference internal" href="#history-and-sessions">History and sessions</a></li>
+<li><a class="reference internal" href="#customizing-the-app">Customizing the app</a></li>
+<li><a class="reference internal" href="#tips-and-tricks">Tips and tricks</a></li>
+<li><a class="reference internal" href="#problems-and-help">Problems and help</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div> 
+    <div class="col-md-9 content">
+      
+  <section id="frequently-asked-questions">
+<span id="faq"></span><h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Link to this heading">¶</a></h1>
+<p>This page answers the questions that SpeedCrunch users ask most often.
+For more detail, see the <a class="reference internal" href="userguide/index.html"><span class="doc">User Guide</span></a>. You can also open the manual
+in the app by pressing <strong>F1</strong>, or choosing <strong>Help → User Manual</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On macOS, use <strong>Cmd</strong> where this page says <strong>Ctrl</strong>.</p>
+</div>
+<nav class="contents local" id="questions">
+<p class="topic-title">Questions</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#general" id="id1">General</a></p>
+<ul>
+<li><p><a class="reference internal" href="#what-is-speedcrunch" id="id2">What is SpeedCrunch?</a></p></li>
+<li><p><a class="reference internal" href="#is-it-free" id="id3">Is it free?</a></p></li>
+<li><p><a class="reference internal" href="#which-systems-does-it-run-on" id="id4">Which systems does it run on?</a></p></li>
+<li><p><a class="reference internal" href="#is-it-available-in-my-language" id="id5">Is it available in my language?</a></p></li>
+<li><p><a class="reference internal" href="#what-can-speedcrunch-not-do" id="id6">What can SpeedCrunch NOT do?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#installation-and-updates" id="id7">Installation and updates</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-do-i-install-speedcrunch" id="id8">How do I install SpeedCrunch?</a></p></li>
+<li><p><a class="reference internal" href="#what-is-the-portable-version" id="id9">What is the portable version?</a></p></li>
+<li><p><a class="reference internal" href="#macos-says-it-cannot-verify-the-developer-what-do-i-do" id="id10">macOS says it “cannot verify the developer”. What do I do?</a></p></li>
+<li><p><a class="reference internal" href="#i-use-windows-7-or-8-can-i-still-use-speedcrunch" id="id11">I use Windows 7 or 8. Can I still use SpeedCrunch?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-get-updates" id="id12">How do I get updates?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#basic-calculations" id="id13">Basic calculations</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-do-i-calculate-something" id="id14">How do I calculate something?</a></p></li>
+<li><p><a class="reference internal" href="#why-do-i-get-an-error-when-i-use-a-comma-between-function-arguments" id="id15">Why do I get an error when I use a comma between function arguments?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-use-the-previous-result" id="id16">How do I use the previous result?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-recall-an-earlier-expression-or-result" id="id17">How do I recall an earlier expression or result?</a></p></li>
+<li><p><a class="reference internal" href="#why-is-6-2-2-1-equal-to-9-and-not-1" id="id18">Why is <code class="docutils literal notranslate"><span class="pre">6/2(2+1)</span></code> equal to 9 and not 1?</a></p></li>
+<li><p><a class="reference internal" href="#why-is-2-2-3-equal-to-256" id="id19">Why is <code class="docutils literal notranslate"><span class="pre">2^2^3</span></code> equal to 256?</a></p></li>
+<li><p><a class="reference internal" href="#how-does-percent-work" id="id20">How does percent work?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-write-a-comment" id="id21">How do I write a comment?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-enter-very-large-or-very-small-numbers" id="id22">How do I enter very large or very small numbers?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#results-precision-and-number-formats" id="id23">Results, precision and number formats</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-precise-is-speedcrunch" id="id24">How precise is SpeedCrunch?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-change-the-number-of-decimal-places" id="id25">How do I change the number of decimal places?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-get-results-as-fractions" id="id26">How do I get results as fractions?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-switch-between-scientific-engineering-and-other-formats" id="id27">How do I switch between scientific, engineering and other formats?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-see-the-same-result-in-two-formats-at-once-for-example-decimal-and-hex" id="id28">Can I see the same result in two formats at once, for example decimal and hex?</a></p></li>
+<li><p><a class="reference internal" href="#my-computer-uses-a-comma-as-the-decimal-separator-does-that-work" id="id29">My computer uses a comma as the decimal separator. Does that work?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-stop-showing-extra-zeros-like-3-140" id="id30">How do I stop showing extra zeros, like <code class="docutils literal notranslate"><span class="pre">3.140</span></code>?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-choose-how-results-are-rounded" id="id31">Can I choose how results are rounded?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#variables-functions-and-units" id="id32">Variables, functions and units</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-do-i-save-a-value-in-a-variable" id="id33">How do I save a value in a variable?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-create-my-own-function" id="id34">How do I create my own function?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-delete-a-variable-or-function" id="id35">How do I delete a variable or function?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-have-variables-and-functions-in-every-session-automatically" id="id36">Can I have variables and functions in every session automatically?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-use-units" id="id37">How do I use units?</a></p></li>
+<li><p><a class="reference internal" href="#why-do-units-need-square-brackets" id="id38">Why do units need square brackets?</a></p></li>
+<li><p><a class="reference internal" href="#typing-brackets-is-slow-can-i-make-it-faster" id="id39">Typing brackets is slow. Can I make it faster?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-turn-the-brackets-off-and-use-the-old-0-12-style" id="id40">Can I turn the brackets off and use the old 0.12 style?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-convert-between-units" id="id41">How do I convert between units?</a></p></li>
+<li><p><a class="reference internal" href="#why-do-i-get-an-error-when-i-convert-seconds-to-meters" id="id42">Why do I get an error when I convert seconds to meters?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-square-a-value-with-a-unit" id="id43">How do I square a value with a unit?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-create-my-own-units" id="id44">Can I create my own units?</a></p></li>
+<li><p><a class="reference internal" href="#where-can-i-find-the-list-of-units" id="id45">Where can I find the list of units?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#advanced-math" id="id46">Advanced math</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-do-i-switch-between-degrees-and-radians" id="id47">How do I switch between degrees and radians?</a></p></li>
+<li><p><a class="reference internal" href="#does-speedcrunch-support-complex-numbers" id="id48">Does SpeedCrunch support complex numbers?</a></p></li>
+<li><p><a class="reference internal" href="#why-is-8-1-3-a-complex-number-and-not-2" id="id49">Why is <code class="docutils literal notranslate"><span class="pre">(-8)^(1/3)</span></code> a complex number and not -2?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-use-binary-octal-and-hexadecimal-numbers" id="id50">How do I use binary, octal and hexadecimal numbers?</a></p></li>
+<li><p><a class="reference internal" href="#why-is-bin-1-shown-as-0b1-and-not-as-all-ones" id="id51">Why is <code class="docutils literal notranslate"><span class="pre">bin(-1)</span></code> shown as <code class="docutils literal notranslate"><span class="pre">-0b1</span></code> and not as all ones?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-calculate-with-time-and-angles-in-minutes-and-seconds" id="id52">Can I calculate with time and angles in minutes and seconds?</a></p></li>
+<li><p><a class="reference internal" href="#does-it-have-statistics-functions" id="id53">Does it have statistics functions?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-work-with-lists-and-matrices" id="id54">Can I work with lists and matrices?</a></p></li>
+<li><p><a class="reference internal" href="#what-other-special-functions-are-there" id="id55">What other special functions are there?</a></p></li>
+<li><p><a class="reference internal" href="#where-do-i-find-scientific-constants" id="id56">Where do I find scientific constants?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#history-and-sessions" id="id57">History and sessions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#is-my-work-saved-when-i-close-the-app" id="id58">Is my work saved when I close the app?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-fix-a-mistake-in-an-earlier-calculation" id="id59">Can I fix a mistake in an earlier calculation?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-clear-the-history" id="id60">How do I clear the history?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-use-several-calculations-side-by-side" id="id61">Can I use several calculations side by side?</a></p></li>
+<li><p><a class="reference internal" href="#what-is-a-private-tab" id="id62">What is a private tab?</a></p></li>
+<li><p><a class="reference internal" href="#i-closed-a-tab-by-mistake-can-i-get-it-back" id="id63">I closed a tab by mistake. Can I get it back?</a></p></li>
+<li><p><a class="reference internal" href="#how-many-lines-does-the-history-keep" id="id64">How many lines does the history keep?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-save-share-or-print-my-calculations" id="id65">How do I save, share or print my calculations?</a></p></li>
+<li><p><a class="reference internal" href="#where-are-my-session-files-stored" id="id66">Where are my session files stored?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#customizing-the-app" id="id67">Customizing the app</a></p>
+<ul>
+<li><p><a class="reference internal" href="#how-do-i-change-the-colors" id="id68">How do I change the colors?</a></p></li>
+<li><p><a class="reference internal" href="#speedcrunch-looks-different-from-older-versions-can-i-get-the-old-look-back" id="id69">SpeedCrunch looks different from older versions. Can I get the old look back?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-make-the-text-bigger-or-smaller" id="id70">How do I make the text bigger or smaller?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-show-or-hide-the-on-screen-keypad" id="id71">How do I show or hide the on-screen keypad?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-design-my-own-keypad" id="id72">Can I design my own keypad?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-change-keyboard-shortcuts" id="id73">Can I change keyboard shortcuts?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-keep-speedcrunch-on-top-of-other-windows" id="id74">How do I keep SpeedCrunch on top of other windows?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-make-the-window-see-through" id="id75">Can I make the window see-through?</a></p></li>
+<li><p><a class="reference internal" href="#can-i-hide-the-menu-bar" id="id76">Can I hide the menu bar?</a></p></li>
+<li><p><a class="reference internal" href="#what-happens-when-i-start-speedcrunch-while-it-is-already-running" id="id77">What happens when I start SpeedCrunch while it is already running?</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-go-back-to-the-default-settings" id="id78">How do I go back to the default settings?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tips-and-tricks" id="id79">Tips and tricks</a></p></li>
+<li><p><a class="reference internal" href="#problems-and-help" id="id80">Problems and help</a></p>
+<ul>
+<li><p><a class="reference internal" href="#some-characters-change-when-i-type-them-how-do-i-stop-this" id="id81">Some characters change when I type them. How do I stop this?</a></p></li>
+<li><p><a class="reference internal" href="#the-up-and-down-keys-move-through-history-but-i-want-to-move-the-cursor" id="id82">The Up and Down keys move through history, but I want to move the cursor.</a></p></li>
+<li><p><a class="reference internal" href="#ctrl-k-does-nothing" id="id83">Ctrl+K does nothing.</a></p></li>
+<li><p><a class="reference internal" href="#i-found-a-bug-or-i-have-an-idea-where-do-i-report-it" id="id84">I found a bug or I have an idea. Where do I report it?</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">¶</a></h2>
+<section id="what-is-speedcrunch">
+<span id="faq-what-is-speedcrunch"></span><h3>What is SpeedCrunch?<a class="headerlink" href="#what-is-speedcrunch" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch is a fast, high-precision scientific calculator for your desktop.
+You type a whole expression on the keyboard and press <strong>Enter</strong>. It shows the
+result and keeps a full history of your work.</p>
+</section>
+<section id="is-it-free">
+<span id="faq-is-it-free"></span><h3>Is it free?<a class="headerlink" href="#is-it-free" title="Link to this heading">¶</a></h3>
+<p>Yes. SpeedCrunch is free and open source, under the GNU GPL version 2.
+There are no ads and no paid features.</p>
+</section>
+<section id="which-systems-does-it-run-on">
+<span id="faq-supported-systems"></span><h3>Which systems does it run on?<a class="headerlink" href="#which-systems-does-it-run-on" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Windows:</strong> 64-bit Windows 10 (version 1809 or later) or Windows 11</p></li>
+<li><p><strong>macOS:</strong> macOS 14.4 (Sonoma) or later</p></li>
+<li><p><strong>Linux:</strong> most distributions, with X11 or Wayland</p></li>
+</ul>
+</section>
+<section id="is-it-available-in-my-language">
+<span id="faq-language"></span><h3>Is it available in my language?<a class="headerlink" href="#is-it-available-in-my-language" title="Link to this heading">¶</a></h3>
+<p>Probably. SpeedCrunch is translated into more than 40 languages. Change it in
+<strong>Settings → Language</strong>.</p>
+</section>
+<section id="what-can-speedcrunch-not-do">
+<span id="faq-limitations"></span><h3>What can SpeedCrunch NOT do?<a class="headerlink" href="#what-can-speedcrunch-not-do" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch is a calculator, not a full math program. It does not draw graphs,
+solve equations, or do symbolic algebra (for example, derivatives or
+integrals in symbolic form).</p>
+</section>
+</section>
+<section id="installation-and-updates">
+<h2>Installation and updates<a class="headerlink" href="#installation-and-updates" title="Link to this heading">¶</a></h2>
+<section id="how-do-i-install-speedcrunch">
+<span id="faq-installation"></span><h3>How do I install SpeedCrunch?<a class="headerlink" href="#how-do-i-install-speedcrunch" title="Link to this heading">¶</a></h3>
+<p>Download it from <a class="reference external" href="https://speedcrunch.org">speedcrunch.org</a>.</p>
+<ul class="simple">
+<li><p><strong>Windows:</strong> use the installer, or the portable <code class="docutils literal notranslate"><span class="pre">.zip</span></code> version.</p></li>
+<li><p><strong>macOS:</strong> open the disk image and drag SpeedCrunch to <strong>Applications</strong>.</p></li>
+<li><p><strong>Linux:</strong> install it from your distribution (for example
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">speedcrunch</span></code> or <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dnf</span> <span class="pre">install</span> <span class="pre">speedcrunch</span></code>), or
+from <a class="reference external" href="https://flathub.org/apps/org.speedcrunch.SpeedCrunch">Flathub</a>.</p></li>
+</ul>
+</section>
+<section id="what-is-the-portable-version">
+<span id="faq-portable-version"></span><h3>What is the portable version?<a class="headerlink" href="#what-is-the-portable-version" title="Link to this heading">¶</a></h3>
+<p>It is a Windows version that needs no installation. Unzip it and run
+<code class="docutils literal notranslate"><span class="pre">speedcrunch.exe</span></code>. It saves all settings and data in its own folder, so you can
+copy it to a USB stick and use it on another computer.</p>
+</section>
+<section id="macos-says-it-cannot-verify-the-developer-what-do-i-do">
+<span id="faq-macos-unverified-developer"></span><h3>macOS says it “cannot verify the developer”. What do I do?<a class="headerlink" href="#macos-says-it-cannot-verify-the-developer-what-do-i-do" title="Link to this heading">¶</a></h3>
+<p>Only continue if you downloaded SpeedCrunch from the official website.</p>
+<ol class="arabic simple">
+<li><p>Try to open SpeedCrunch once.</p></li>
+<li><p>Open <strong>System Settings → Privacy &amp; Security</strong>.</p></li>
+<li><p>Under <strong>Security</strong>, click <strong>Open Anyway</strong> next to SpeedCrunch.</p></li>
+<li><p>Confirm. macOS remembers your choice.</p></li>
+</ol>
+</section>
+<section id="i-use-windows-7-or-8-can-i-still-use-speedcrunch">
+<span id="faq-older-windows"></span><h3>I use Windows 7 or 8. Can I still use SpeedCrunch?<a class="headerlink" href="#i-use-windows-7-or-8-can-i-still-use-speedcrunch" title="Link to this heading">¶</a></h3>
+<p>Not the current version. Use SpeedCrunch 0.12 from the “Older Versions” part
+of the <a class="reference external" href="https://www.speedcrunch.org/download.html">download page</a>.</p>
+</section>
+<section id="how-do-i-get-updates">
+<span id="faq-updates"></span><h3>How do I get updates?<a class="headerlink" href="#how-do-i-get-updates" title="Link to this heading">¶</a></h3>
+<p>Official builds check for updates automatically, at most once a week. You can
+also check yourself with <strong>Help → Check for Updates</strong>. On Linux, your package
+manager or Flathub usually handles updates.</p>
+</section>
+</section>
+<section id="basic-calculations">
+<h2>Basic calculations<a class="headerlink" href="#basic-calculations" title="Link to this heading">¶</a></h2>
+<section id="how-do-i-calculate-something">
+<span id="faq-enter-calculation"></span><h3>How do I calculate something?<a class="headerlink" href="#how-do-i-calculate-something" title="Link to this heading">¶</a></h3>
+<p>Type the expression and press <strong>Enter</strong>. For example:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">54*(4.514</span> <span class="pre">-</span> <span class="pre">5.7)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">-64.044</span></code></pre>
+</section>
+<section id="why-do-i-get-an-error-when-i-use-a-comma-between-function-arguments">
+<span id="faq-function-arguments"></span><h3>Why do I get an error when I use a comma between function arguments?<a class="headerlink" href="#why-do-i-get-an-error-when-i-use-a-comma-between-function-arguments" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch uses a <strong>semicolon</strong> (<code class="docutils literal notranslate"><span class="pre">;</span></code>) to separate arguments, not a comma:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">average(12;</span> <span class="pre">34;</span> <span class="pre">56)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">34</span></code></pre>
+<p>The comma can be a decimal separator, so it cannot also separate arguments.</p>
+</section>
+<section id="how-do-i-use-the-previous-result">
+<span id="faq-previous-result"></span><h3>How do I use the previous result?<a class="headerlink" href="#how-do-i-use-the-previous-result" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">ans</span></code>. It always holds the last result:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">2+3</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">5</span></code>
+<code class="docutils literal notranslate"><span class="pre">7*ans</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">35</span></code></pre>
+<p><strong>Tip:</strong> If you start a new line with an operator such as <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code> or <code class="docutils literal notranslate"><span class="pre">/</span></code>,
+SpeedCrunch adds <code class="docutils literal notranslate"><span class="pre">ans</span></code> for you. Type <code class="docutils literal notranslate"><span class="pre">+3</span></code> and you get <code class="docutils literal notranslate"><span class="pre">ans+3</span></code>.</p>
+</section>
+<section id="how-do-i-recall-an-earlier-expression-or-result">
+<span id="faq-recall-calculation"></span><h3>How do I recall an earlier expression or result?<a class="headerlink" href="#how-do-i-recall-an-earlier-expression-or-result" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Press <strong>Up</strong> and <strong>Down</strong> in the input field to go through earlier
+expressions.</p></li>
+<li><p>Double-click any line in the result area to copy it into the input field.</p></li>
+</ul>
+</section>
+<section id="why-is-6-2-2-1-equal-to-9-and-not-1">
+<span id="faq-implicit-multiplication"></span><h3>Why is <code class="docutils literal notranslate"><span class="pre">6/2(2+1)</span></code> equal to 9 and not 1?<a class="headerlink" href="#why-is-6-2-2-1-equal-to-9-and-not-1" title="Link to this heading">¶</a></h3>
+<p>Implicit multiplication (no <code class="docutils literal notranslate"><span class="pre">*</span></code> sign) has the same priority as <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">/</span></code>.
+SpeedCrunch works from left to right: <code class="docutils literal notranslate"><span class="pre">6/2</span> <span class="pre">=</span> <span class="pre">3</span></code>, then <code class="docutils literal notranslate"><span class="pre">3*(2+1)</span> <span class="pre">=</span> <span class="pre">9</span></code>.
+The result area shows how SpeedCrunch read your expression, so you can always
+check it. Use parentheses if you mean something else: <code class="docutils literal notranslate"><span class="pre">6/(2(2+1))</span></code>.</p>
+</section>
+<section id="why-is-2-2-3-equal-to-256">
+<span id="faq-power-associativity"></span><h3>Why is <code class="docutils literal notranslate"><span class="pre">2^2^3</span></code> equal to 256?<a class="headerlink" href="#why-is-2-2-3-equal-to-256" title="Link to this heading">¶</a></h3>
+<p>Powers are calculated from right to left: <code class="docutils literal notranslate"><span class="pre">2^(2^3)</span> <span class="pre">=</span> <span class="pre">2^8</span> <span class="pre">=</span> <span class="pre">256</span></code>.</p>
+</section>
+<section id="how-does-percent-work">
+<span id="faq-percent"></span><h3>How does percent work?<a class="headerlink" href="#how-does-percent-work" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">%</span></code> divides by 100. With <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">-</span></code>, the percentage is taken from the number
+on the left:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">1000</span> <span class="pre">+</span> <span class="pre">12%</span>&#160;&#160; <span class="pre">=</span> <span class="pre">1120</span></code>
+<code class="docutils literal notranslate"><span class="pre">1000</span> <span class="pre">-</span> <span class="pre">12%</span>&#160;&#160; <span class="pre">=</span> <span class="pre">880</span></code>
+<code class="docutils literal notranslate"><span class="pre">1000</span> <span class="pre">*</span> <span class="pre">12%</span>&#160;&#160; <span class="pre">=</span> <span class="pre">120</span></code></pre>
+</section>
+<section id="how-do-i-write-a-comment">
+<span id="faq-comments"></span><h3>How do I write a comment?<a class="headerlink" href="#how-do-i-write-a-comment" title="Link to this heading">¶</a></h3>
+<p>Use a question mark. Everything after <code class="docutils literal notranslate"><span class="pre">?</span></code> is ignored:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">?</span> <span class="pre">simple</span> <span class="pre">sum</span></code>
+<code class="docutils literal notranslate"><span class="pre">?</span> <span class="pre">this</span> <span class="pre">whole</span> <span class="pre">line</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">comment</span></code></pre>
+</section>
+<section id="how-do-i-enter-very-large-or-very-small-numbers">
+<span id="faq-large-and-small-numbers"></span><h3>How do I enter very large or very small numbers?<a class="headerlink" href="#how-do-i-enter-very-large-or-very-small-numbers" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">e</span></code> for “times 10 to the power of”: <code class="docutils literal notranslate"><span class="pre">1.234e-9</span></code> means <code class="docutils literal notranslate"><span class="pre">1.234</span> <span class="pre">×</span> <span class="pre">10⁻⁹</span></code>.
+SpeedCrunch accepts huge exponents, like <code class="docutils literal notranslate"><span class="pre">1e+500000000</span></code>, without overflow.</p>
+</section>
+</section>
+<section id="results-precision-and-number-formats">
+<h2>Results, precision and number formats<a class="headerlink" href="#results-precision-and-number-formats" title="Link to this heading">¶</a></h2>
+<section id="how-precise-is-speedcrunch">
+<span id="faq-precision"></span><h3>How precise is SpeedCrunch?<a class="headerlink" href="#how-precise-is-speedcrunch" title="Link to this heading">¶</a></h3>
+<p>It stores about 78 significant digits for each number. This is much more than
+most calculators. You can show up to 50 decimal places.</p>
+</section>
+<section id="how-do-i-change-the-number-of-decimal-places">
+<span id="faq-decimal-places"></span><h3>How do I change the number of decimal places?<a class="headerlink" href="#how-do-i-change-the-number-of-decimal-places" title="Link to this heading">¶</a></h3>
+<p>Use the <strong>precision selector</strong> in the status bar (<strong>View → Status Bar</strong>, or
+<strong>Ctrl+B</strong>), or <strong>Settings → Results → Notation &amp; Precision…</strong>.</p>
+</section>
+<section id="how-do-i-get-results-as-fractions">
+<span id="faq-fractions"></span><h3>How do I get results as fractions?<a class="headerlink" href="#how-do-i-get-results-as-fractions" title="Link to this heading">¶</a></h3>
+<p>Choose <strong>Rational</strong> notation in the status bar or in
+<strong>Settings → Results → Notation &amp; Precision…</strong>. Or use <code class="docutils literal notranslate"><span class="pre">rat()</span></code> for a single
+result:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">rat(0.75)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">3/4</span></code></pre>
+<p>In Rational mode, common trigonometric results are shown in exact form, such
+as <code class="docutils literal notranslate"><span class="pre">pi/2</span></code> or <code class="docutils literal notranslate"><span class="pre">√(2)/2</span></code>.</p>
+</section>
+<section id="how-do-i-switch-between-scientific-engineering-and-other-formats">
+<span id="faq-notation"></span><h3>How do I switch between scientific, engineering and other formats?<a class="headerlink" href="#how-do-i-switch-between-scientific-engineering-and-other-formats" title="Link to this heading">¶</a></h3>
+<p>Use the notation selector in the status bar, or the function keys:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Notation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>F2</p></td>
+<td><p>Automatic decimal</p></td>
+</tr>
+<tr class="row-odd"><td><p>F3</p></td>
+<td><p>Fixed-point decimal</p></td>
+</tr>
+<tr class="row-even"><td><p>F4</p></td>
+<td><p>Engineering</p></td>
+</tr>
+<tr class="row-odd"><td><p>F5</p></td>
+<td><p>Scientific</p></td>
+</tr>
+<tr class="row-even"><td><p>F7</p></td>
+<td><p>Octal</p></td>
+</tr>
+<tr class="row-odd"><td><p>F8</p></td>
+<td><p>Hexadecimal</p></td>
+</tr>
+<tr class="row-even"><td><p>F9</p></td>
+<td><p>Sexagesimal (degrees/time with minutes and seconds)</p></td>
+</tr>
+<tr class="row-odd"><td><p>F10</p></td>
+<td><p>Binary</p></td>
+</tr>
+</tbody>
+</table>
+<p>To format only one result, use <code class="docutils literal notranslate"><span class="pre">sci()</span></code>, <code class="docutils literal notranslate"><span class="pre">eng()</span></code>, <code class="docutils literal notranslate"><span class="pre">hex()</span></code>, <code class="docutils literal notranslate"><span class="pre">bin()</span></code>, <code class="docutils literal notranslate"><span class="pre">oct()</span></code> or
+<code class="docutils literal notranslate"><span class="pre">dec()</span></code>.</p>
+</section>
+<section id="can-i-see-the-same-result-in-two-formats-at-once-for-example-decimal-and-hex">
+<span id="faq-extra-result-lines"></span><h3>Can I see the same result in two formats at once, for example decimal and hex?<a class="headerlink" href="#can-i-see-the-same-result-in-two-formats-at-once-for-example-decimal-and-hex" title="Link to this heading">¶</a></h3>
+<p>Yes. Open <strong>Settings → Results → Notation &amp; Precision…</strong> and turn on one or
+more of the four extra result lines. Each line can have its own notation and
+number of decimal places.</p>
+</section>
+<section id="my-computer-uses-a-comma-as-the-decimal-separator-does-that-work">
+<span id="faq-decimal-separator"></span><h3>My computer uses a comma as the decimal separator. Does that work?<a class="headerlink" href="#my-computer-uses-a-comma-as-the-decimal-separator-does-that-work" title="Link to this heading">¶</a></h3>
+<p>Yes. When you type, SpeedCrunch accepts both a dot and a comma as the decimal
+point. To choose how results look (decimal mark and digit grouping), use
+<strong>Settings → Number Format…</strong>.</p>
+</section>
+<section id="how-do-i-stop-showing-extra-zeros-like-3-140">
+<span id="faq-trailing-zeroes"></span><h3>How do I stop showing extra zeros, like <code class="docutils literal notranslate"><span class="pre">3.140</span></code>?<a class="headerlink" href="#how-do-i-stop-showing-extra-zeros-like-3-140" title="Link to this heading">¶</a></h3>
+<p>Turn on <strong>Settings → Results → Remove Trailing Zeroes</strong>.</p>
+</section>
+<section id="can-i-choose-how-results-are-rounded">
+<span id="faq-rounding"></span><h3>Can I choose how results are rounded?<a class="headerlink" href="#can-i-choose-how-results-are-rounded" title="Link to this heading">¶</a></h3>
+<p>Yes, in <strong>Settings → Results → Rounding Mode</strong>. You can choose normal
+rounding, banker’s rounding, truncation, round up or round down. This only
+changes how results look. To round a value inside a calculation, use
+<code class="docutils literal notranslate"><span class="pre">round()</span></code>, <code class="docutils literal notranslate"><span class="pre">roundeven()</span></code>, <code class="docutils literal notranslate"><span class="pre">trunc()</span></code>, <code class="docutils literal notranslate"><span class="pre">ceil()</span></code> or <code class="docutils literal notranslate"><span class="pre">floor()</span></code>.</p>
+</section>
+</section>
+<section id="variables-functions-and-units">
+<h2>Variables, functions and units<a class="headerlink" href="#variables-functions-and-units" title="Link to this heading">¶</a></h2>
+<section id="how-do-i-save-a-value-in-a-variable">
+<span id="faq-variables"></span><h3>How do I save a value in a variable?<a class="headerlink" href="#how-do-i-save-a-value-in-a-variable" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">=</span> <span class="pre">value</span></code>:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">mass</span> <span class="pre">=</span> <span class="pre">120</span></code>
+<code class="docutils literal notranslate"><span class="pre">g</span> <span class="pre">=</span> <span class="pre">9.81</span></code>
+<code class="docutils literal notranslate"><span class="pre">weight</span> <span class="pre">=</span> <span class="pre">mass*g</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">1177.2</span></code></pre>
+<p>You can add a description with <code class="docutils literal notranslate"><span class="pre">?</span></code>: <code class="docutils literal notranslate"><span class="pre">g</span> <span class="pre">=</span> <span class="pre">9.81</span> <span class="pre">?</span> <span class="pre">gravity</span></code>.</p>
+</section>
+<section id="how-do-i-create-my-own-function">
+<span id="faq-custom-functions"></span><h3>How do I create my own function?<a class="headerlink" href="#how-do-i-create-my-own-function" title="Link to this heading">¶</a></h3>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">f(x)</span> <span class="pre">=</span> <span class="pre">5*x</span> <span class="pre">+</span> <span class="pre">8</span></code>
+<code class="docutils literal notranslate"><span class="pre">f(5)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">33</span></code></pre>
+<p>For more parameters, use semicolons: <code class="docutils literal notranslate"><span class="pre">f(x;</span> <span class="pre">y)</span> <span class="pre">=</span> <span class="pre">x*y</span> <span class="pre">+</span> <span class="pre">x</span></code>.</p>
+</section>
+<section id="how-do-i-delete-a-variable-or-function">
+<span id="faq-delete-definitions"></span><h3>How do I delete a variable or function?<a class="headerlink" href="#how-do-i-delete-a-variable-or-function" title="Link to this heading">¶</a></h3>
+<p>Open the <strong>User Variables</strong> (<strong>Ctrl+4</strong>) or <strong>User Functions</strong> (<strong>Ctrl+5</strong>)
+panel. Select the item and press <strong>Delete</strong>, or use the right-click menu.</p>
+</section>
+<section id="can-i-have-variables-and-functions-in-every-session-automatically">
+<span id="faq-global-definitions"></span><h3>Can I have variables and functions in every session automatically?<a class="headerlink" href="#can-i-have-variables-and-functions-in-every-session-automatically" title="Link to this heading">¶</a></h3>
+<p>Yes. Put them in <strong>Settings → User Definitions…</strong>, one per line. They are
+loaded into every session. Click <strong>Validate</strong> to test them and <strong>Apply</strong> to use
+them.</p>
+</section>
+<section id="how-do-i-use-units">
+<span id="faq-enter-units"></span><h3>How do I use units?<a class="headerlink" href="#how-do-i-use-units" title="Link to this heading">¶</a></h3>
+<p>Put units in square brackets after a number:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">5[ft]</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">1.524</span> <span class="pre">m</span></code></pre>
+</section>
+<section id="why-do-units-need-square-brackets">
+<span id="faq-unit-brackets"></span><h3>Why do units need square brackets?<a class="headerlink" href="#why-do-units-need-square-brackets" title="Link to this heading">¶</a></h3>
+<p>In version 0.12, units were plain names, like variables. This caused
+problems:</p>
+<ul class="simple">
+<li><p><strong>Name clashes.</strong> Every SI prefix could go with every unit, so many short
+names were already taken, for example <code class="docutils literal notranslate"><span class="pre">mg</span></code>, <code class="docutils literal notranslate"><span class="pre">cm</span></code>, <code class="docutils literal notranslate"><span class="pre">ms</span></code>, <code class="docutils literal notranslate"><span class="pre">ns</span></code>, <code class="docutils literal notranslate"><span class="pre">pm</span></code>, <code class="docutils literal notranslate"><span class="pre">Pa</span></code> and
+<code class="docutils literal notranslate"><span class="pre">kt</span></code>. Few short names were left for your own variables.</p></li>
+<li><p><strong>No standard symbols.</strong> Many units had to use English names, like
+<code class="docutils literal notranslate"><span class="pre">second</span></code>. With brackets, you can write standard symbols, like <code class="docutils literal notranslate"><span class="pre">[s]</span></code>, <code class="docutils literal notranslate"><span class="pre">[m]</span></code>
+and <code class="docutils literal notranslate"><span class="pre">[km/h]</span></code>.</p></li>
+<li><p><strong>No real unit system.</strong> Now units are a separate thing, not just
+variables.</p></li>
+<li><p><strong>Mixed suggestions.</strong> Autocomplete showed units together with functions
+and variables. Now, inside <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>, it suggests only units.</p></li>
+<li><p><strong>No custom units.</strong> With brackets, you can create your own units, like
+<code class="docutils literal notranslate"><span class="pre">[mpg]</span></code> (see <a class="reference internal" href="#faq-custom-units"><span class="std std-ref">Can I create my own units?</span></a>).</p></li>
+</ul>
+<p>With brackets, names like <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">l</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">mg</span></code> are free again for your own
+variables.</p>
+</section>
+<section id="typing-brackets-is-slow-can-i-make-it-faster">
+<span id="faq-faster-unit-entry"></span><h3>Typing brackets is slow. Can I make it faster?<a class="headerlink" href="#typing-brackets-is-slow-can-i-make-it-faster" title="Link to this heading">¶</a></h3>
+<p>Yes, a few things help:</p>
+<ul class="simple">
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">[</span></code> and SpeedCrunch adds the <code class="docutils literal notranslate"><span class="pre">]</span></code> for you at the end of the expression.</p></li>
+<li><p>Inside brackets, autocomplete suggests unit names. Press <strong>Tab</strong> to accept.</p></li>
+<li><p>Write a whole unit in one bracket: <code class="docutils literal notranslate"><span class="pre">[km/h]</span></code> instead of <code class="docutils literal notranslate"><span class="pre">[km]/[h]</span></code>.</p></li>
+<li><p>Add a button that inserts <code class="docutils literal notranslate"><span class="pre">[</span></code> to a custom keypad
+(<strong>Settings → Edit Custom Keypad…</strong>).</p></li>
+</ul>
+</section>
+<section id="can-i-turn-the-brackets-off-and-use-the-old-0-12-style">
+<span id="faq-units-without-brackets"></span><h3>Can I turn the brackets off and use the old 0.12 style?<a class="headerlink" href="#can-i-turn-the-brackets-off-and-use-the-old-0-12-style" title="Link to this heading">¶</a></h3>
+<p>No, there is no option for this. But you can get close with your own
+variables. Open <strong>Settings → User Definitions…</strong> and add the units you use
+often, one per line:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">km</span> <span class="pre">=</span> <span class="pre">1[km]</span></code>
+<code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">=</span> <span class="pre">1[h]</span></code>
+<code class="docutils literal notranslate"><span class="pre">kg</span> <span class="pre">=</span> <span class="pre">1[kg]</span></code></pre>
+<p>Now <code class="docutils literal notranslate"><span class="pre">100</span> <span class="pre">km</span> <span class="pre">/</span> <span class="pre">(2</span> <span class="pre">h)</span></code> works without brackets. Results are shown in SI units,
+so this gives <code class="docutils literal notranslate"><span class="pre">13.8888…</span> <span class="pre">m/s</span></code>. To get another unit, you still need brackets
+for the conversion target: <code class="docutils literal notranslate"><span class="pre">100</span> <span class="pre">km</span> <span class="pre">/</span> <span class="pre">(2</span> <span class="pre">h)</span> <span class="pre">-&gt;</span> <span class="pre">[km/h]</span></code> gives <code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">km/h</span></code>.</p>
+<p>If you really prefer the old style, SpeedCrunch 0.12 is still in the
+“Older Versions” part of the
+<a class="reference external" href="https://www.speedcrunch.org/download.html">download page</a>. But it will not get
+new features or fixes.</p>
+</section>
+<section id="how-do-i-convert-between-units">
+<span id="faq-unit-conversion"></span><h3>How do I convert between units?<a class="headerlink" href="#how-do-i-convert-between-units" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">in</span></code>:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">10[kn]</span> <span class="pre">-&gt;</span> <span class="pre">[km/h]</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">18.52</span> <span class="pre">km/h</span></code>
+
+<code class="docutils literal notranslate"><span class="pre">77[°F]</span> <span class="pre">in</span> <span class="pre">[°C]</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">25</span> <span class="pre">°C</span></code></pre>
+</section>
+<section id="why-do-i-get-an-error-when-i-convert-seconds-to-meters">
+<span id="faq-incompatible-units"></span><h3>Why do I get an error when I convert seconds to meters?<a class="headerlink" href="#why-do-i-get-an-error-when-i-convert-seconds-to-meters" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch checks dimensions. Time and length cannot be converted into each
+other, so it shows an error. This protects you from mistakes.</p>
+</section>
+<section id="how-do-i-square-a-value-with-a-unit">
+<span id="faq-square-units"></span><h3>How do I square a value with a unit?<a class="headerlink" href="#how-do-i-square-a-value-with-a-unit" title="Link to this heading">¶</a></h3>
+<p>Put the value and the unit in parentheses: <code class="docutils literal notranslate"><span class="pre">(2[m])^2</span></code>. To enter two square
+meters, write <code class="docutils literal notranslate"><span class="pre">2[m^2]</span></code>. SpeedCrunch rejects <code class="docutils literal notranslate"><span class="pre">2[m]^2</span></code> because it is not clear.</p>
+</section>
+<section id="can-i-create-my-own-units">
+<span id="faq-custom-units"></span><h3>Can I create my own units?<a class="headerlink" href="#can-i-create-my-own-units" title="Link to this heading">¶</a></h3>
+<p>Yes. Put the new name in brackets on the left:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">[earth_radius]</span> <span class="pre">=</span> <span class="pre">6371[km]</span></code>
+<code class="docutils literal notranslate"><span class="pre">1[au]</span> <span class="pre">in</span> <span class="pre">[earth_radius]</span></code></pre>
+<p>This is very useful for units that SpeedCrunch does not have. For example, to
+convert car fuel use from miles per gallon to liters per 100 km:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">[mpg]</span> <span class="pre">=</span> <span class="pre">1[mi/gal_us]</span></code>
+<code class="docutils literal notranslate"><span class="pre">[L100km]</span> <span class="pre">=</span> <span class="pre">1[L]</span> <span class="pre">/</span> <span class="pre">100[km]</span></code>
+<code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">(40[mpg])</span> <span class="pre">-&gt;</span> <span class="pre">[L100km]</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">5.88036458333333333333</span> <span class="pre">L100km</span></code></pre>
+<p>To keep your units in every session, add them to
+<strong>Settings → User Definitions…</strong>.</p>
+</section>
+<section id="where-can-i-find-the-list-of-units">
+<span id="faq-unit-list"></span><h3>Where can I find the list of units?<a class="headerlink" href="#where-can-i-find-the-list-of-units" title="Link to this heading">¶</a></h3>
+<p>See the <a class="reference internal" href="reference/units.html"><span class="doc">units reference</span></a>. Unit names use
+American English and the singular form, for example <code class="docutils literal notranslate"><span class="pre">meter</span></code> and <code class="docutils literal notranslate"><span class="pre">foot</span></code>.</p>
+</section>
+</section>
+<section id="advanced-math">
+<h2>Advanced math<a class="headerlink" href="#advanced-math" title="Link to this heading">¶</a></h2>
+<section id="how-do-i-switch-between-degrees-and-radians">
+<span id="faq-angle-mode"></span><h3>How do I switch between degrees and radians?<a class="headerlink" href="#how-do-i-switch-between-degrees-and-radians" title="Link to this heading">¶</a></h3>
+<p>Use the angle selector in the status bar, or <strong>Settings → Angle Mode</strong>. You can
+also write the unit in the expression. Then the angle mode does not matter:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">cos(180[deg])</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">-1</span></code></pre>
+</section>
+<section id="does-speedcrunch-support-complex-numbers">
+<span id="faq-complex-numbers"></span><h3>Does SpeedCrunch support complex numbers?<a class="headerlink" href="#does-speedcrunch-support-complex-numbers" title="Link to this heading">¶</a></h3>
+<p>Yes, always. Use <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">j</span></code>:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">(5+3j)/(8-2j)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">0.5+0.5j</span></code></pre>
+<p>Note: <code class="docutils literal notranslate"><span class="pre">5j</span></code> means <code class="docutils literal notranslate"><span class="pre">5*j</span></code>, but <code class="docutils literal notranslate"><span class="pre">j5</span></code> is a variable name. You can change the
+symbol and the display form (rectangular, polar, and so on) in
+<strong>Settings → Results</strong>.</p>
+</section>
+<section id="why-is-8-1-3-a-complex-number-and-not-2">
+<span id="faq-negative-roots"></span><h3>Why is <code class="docutils literal notranslate"><span class="pre">(-8)^(1/3)</span></code> a complex number and not -2?<a class="headerlink" href="#why-is-8-1-3-a-complex-number-and-not-2" title="Link to this heading">¶</a></h3>
+<p>Fractional powers give the principal complex root. For a real root, use
+<code class="docutils literal notranslate"><span class="pre">cbrt(-8)</span> <span class="pre">=</span> <span class="pre">-2</span></code>, or <code class="docutils literal notranslate"><span class="pre">root(3;</span> <span class="pre">-8)</span> <span class="pre">=</span> <span class="pre">-2</span></code>.</p>
+</section>
+<section id="how-do-i-use-binary-octal-and-hexadecimal-numbers">
+<span id="faq-number-bases"></span><h3>How do I use binary, octal and hexadecimal numbers?<a class="headerlink" href="#how-do-i-use-binary-octal-and-hexadecimal-numbers" title="Link to this heading">¶</a></h3>
+<p>Use a prefix: <code class="docutils literal notranslate"><span class="pre">0b</span></code> for binary, <code class="docutils literal notranslate"><span class="pre">0o</span></code> for octal, and <code class="docutils literal notranslate"><span class="pre">0x</span></code> or <code class="docutils literal notranslate"><span class="pre">#</span></code> for hex:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">0xFF</span> <span class="pre">+</span> <span class="pre">0b101</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">260</span></code>
+<code class="docutils literal notranslate"><span class="pre">hex(255)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">0xFF</span></code></pre>
+<p>Bitwise operators also work: <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> (and), <code class="docutils literal notranslate"><span class="pre">|</span></code> (or), <code class="docutils literal notranslate"><span class="pre">~</span></code> (not), <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>
+(shifts). The <strong>Bit Field</strong> panel (<strong>Ctrl+8</strong>) lets you click single bits.</p>
+</section>
+<section id="why-is-bin-1-shown-as-0b1-and-not-as-all-ones">
+<span id="faq-twos-complement"></span><h3>Why is <code class="docutils literal notranslate"><span class="pre">bin(-1)</span></code> shown as <code class="docutils literal notranslate"><span class="pre">-0b1</span></code> and not as all ones?<a class="headerlink" href="#why-is-bin-1-shown-as-0b1-and-not-as-all-ones" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch shows the sign and the value separately. It does not use two’s
+complement. Use <code class="docutils literal notranslate"><span class="pre">mask()</span></code> to get the two’s complement form, for example
+<code class="docutils literal notranslate"><span class="pre">mask(-1;</span> <span class="pre">8)</span></code>.</p>
+</section>
+<section id="can-i-calculate-with-time-and-angles-in-minutes-and-seconds">
+<span id="faq-time-and-angles"></span><h3>Can I calculate with time and angles in minutes and seconds?<a class="headerlink" href="#can-i-calculate-with-time-and-angles-in-minutes-and-seconds" title="Link to this heading">¶</a></h3>
+<p>Yes. Use <code class="docutils literal notranslate"><span class="pre">:</span></code> for time and <code class="docutils literal notranslate"><span class="pre">°</span></code> for angles. Minutes can be more than 60:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">12:90</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">13:30:00</span></code></pre>
+<p><strong>Tip:</strong> Type <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> to get the <code class="docutils literal notranslate"><span class="pre">°</span></code> sign.</p>
+</section>
+<section id="does-it-have-statistics-functions">
+<span id="faq-statistics"></span><h3>Does it have statistics functions?<a class="headerlink" href="#does-it-have-statistics-functions" title="Link to this heading">¶</a></h3>
+<p>Yes, for example <code class="docutils literal notranslate"><span class="pre">average</span></code>, <code class="docutils literal notranslate"><span class="pre">median</span></code>, <code class="docutils literal notranslate"><span class="pre">stdevs</span></code>, <code class="docutils literal notranslate"><span class="pre">stdevp</span></code>, <code class="docutils literal notranslate"><span class="pre">vars</span></code>, <code class="docutils literal notranslate"><span class="pre">ncr</span></code>,
+<code class="docutils literal notranslate"><span class="pre">npr</span></code>, <code class="docutils literal notranslate"><span class="pre">binompmf</span></code> and <code class="docutils literal notranslate"><span class="pre">poicdf</span></code>. To sum an expression, use <code class="docutils literal notranslate"><span class="pre">summation</span></code>:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">summation(1;</span> <span class="pre">10;</span> <span class="pre">2+n)</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">75</span></code></pre>
+</section>
+<section id="can-i-work-with-lists-and-matrices">
+<span id="faq-lists-and-matrices"></span><h3>Can I work with lists and matrices?<a class="headerlink" href="#can-i-work-with-lists-and-matrices" title="Link to this heading">¶</a></h3>
+<p>Yes. Use braces and semicolons:</p>
+<pre class="literal-block"><code class="docutils literal notranslate"><span class="pre">det({{1;</span> <span class="pre">2};</span> <span class="pre">{3;</span> <span class="pre">4}})</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">-2</span></code>
+<code class="docutils literal notranslate"><span class="pre">{1;</span> <span class="pre">2;</span> <span class="pre">3}</span> <span class="pre">+</span> <span class="pre">{4;</span> <span class="pre">5;</span> <span class="pre">6}</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">{5;</span> <span class="pre">7;</span> <span class="pre">9}</span></code></pre>
+<p>Other functions include <code class="docutils literal notranslate"><span class="pre">dot</span></code>, <code class="docutils literal notranslate"><span class="pre">cross</span></code>, <code class="docutils literal notranslate"><span class="pre">inv</span></code>, <code class="docutils literal notranslate"><span class="pre">transpose</span></code> and <code class="docutils literal notranslate"><span class="pre">rank</span></code>.</p>
+</section>
+<section id="what-other-special-functions-are-there">
+<span id="faq-special-functions"></span><h3>What other special functions are there?<a class="headerlink" href="#what-other-special-functions-are-there" title="Link to this heading">¶</a></h3>
+<p>A few examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">molmass(C6H12O6)</span></code> gives the molar mass of a chemical formula.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">datetime()</span></code> and <code class="docutils literal notranslate"><span class="pre">epoch()</span></code> convert between Unix time and dates.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ieee754_double_encode()</span></code> and similar functions show how computers store
+floating-point numbers.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">randint(1;</span> <span class="pre">6)</span></code> gives a random whole number.</p></li>
+</ul>
+<p>Open the <strong>Functions</strong> panel (<strong>Ctrl+3</strong>) to see all of them.</p>
+</section>
+<section id="where-do-i-find-scientific-constants">
+<span id="faq-constants"></span><h3>Where do I find scientific constants?<a class="headerlink" href="#where-do-i-find-scientific-constants" title="Link to this heading">¶</a></h3>
+<p>Press <strong>Ctrl+K</strong> and type a name, like <code class="docutils literal notranslate"><span class="pre">speed</span> <span class="pre">of</span> <span class="pre">light</span></code>. Press <strong>Enter</strong> to
+insert it. You can also open the <strong>Constants</strong> panel (<strong>Ctrl+2</strong>). Common
+constants like <code class="docutils literal notranslate"><span class="pre">pi</span></code> and <code class="docutils literal notranslate"><span class="pre">e</span></code> are always available by name.</p>
+</section>
+</section>
+<section id="history-and-sessions">
+<h2>History and sessions<a class="headerlink" href="#history-and-sessions" title="Link to this heading">¶</a></h2>
+<section id="is-my-work-saved-when-i-close-the-app">
+<span id="faq-automatic-session-saving"></span><h3>Is my work saved when I close the app?<a class="headerlink" href="#is-my-work-saved-when-i-close-the-app" title="Link to this heading">¶</a></h3>
+<p>Yes. SpeedCrunch saves your sessions automatically. When you start it again,
+your windows, tabs and history come back.</p>
+</section>
+<section id="can-i-fix-a-mistake-in-an-earlier-calculation">
+<span id="faq-edit-calculation"></span><h3>Can I fix a mistake in an earlier calculation?<a class="headerlink" href="#can-i-fix-a-mistake-in-an-earlier-calculation" title="Link to this heading">¶</a></h3>
+<p>Yes. Move the mouse over the calculation and click the edit icon. Change the
+expression and confirm. SpeedCrunch then recalculates every line below it.
+(Hover highlighting must be on: <strong>Settings → Appearance → Hover
+Highlighting</strong>.)</p>
+</section>
+<section id="how-do-i-clear-the-history">
+<span id="faq-clear-history"></span><h3>How do I clear the history?<a class="headerlink" href="#how-do-i-clear-the-history" title="Link to this heading">¶</a></h3>
+<p>Press <strong>Ctrl+L</strong>, or use <strong>Edit → Clear History</strong>. Your variables and functions
+stay. To remove everything in the session, including variables, use
+<strong>Session → Reset</strong>.</p>
+</section>
+<section id="can-i-use-several-calculations-side-by-side">
+<span id="faq-tabs-and-splits"></span><h3>Can I use several calculations side by side?<a class="headerlink" href="#can-i-use-several-calculations-side-by-side" title="Link to this heading">¶</a></h3>
+<p>Yes.</p>
+<ul class="simple">
+<li><p><strong>Ctrl+T</strong> opens a new tab.</p></li>
+<li><p><strong>View → Split</strong> shows two or more sessions next to each other.</p></li>
+<li><p><strong>Session → New Window</strong> opens a new window.</p></li>
+</ul>
+<p>You can drag tabs between panes and windows.</p>
+</section>
+<section id="what-is-a-private-tab">
+<span id="faq-private-tabs"></span><h3>What is a private tab?<a class="headerlink" href="#what-is-a-private-tab" title="Link to this heading">¶</a></h3>
+<p>A private tab is not saved to disk. When you close it, its content is gone.
+Open one with <strong>Ctrl+Shift+N</strong>. To keep it after all, choose <strong>Session → Keep</strong>.</p>
+</section>
+<section id="i-closed-a-tab-by-mistake-can-i-get-it-back">
+<span id="faq-reopen-tab"></span><h3>I closed a tab by mistake. Can I get it back?<a class="headerlink" href="#i-closed-a-tab-by-mistake-can-i-get-it-back" title="Link to this heading">¶</a></h3>
+<p>Yes. Press <strong>Ctrl+Shift+T</strong> or use <strong>Session → Reopen Closed Tab</strong>. (This does
+not work for private tabs.)</p>
+</section>
+<section id="how-many-lines-does-the-history-keep">
+<span id="faq-history-limit"></span><h3>How many lines does the history keep?<a class="headerlink" href="#how-many-lines-does-the-history-keep" title="Link to this heading">¶</a></h3>
+<p>Up to 1000 per session by default. When the history is full, the oldest lines
+are removed. Change the limit in <strong>Session → History Size Limit…</strong>. Use <code class="docutils literal notranslate"><span class="pre">0</span></code>
+for no limit.</p>
+</section>
+<section id="how-do-i-save-share-or-print-my-calculations">
+<span id="faq-export-calculations"></span><h3>How do I save, share or print my calculations?<a class="headerlink" href="#how-do-i-save-share-or-print-my-calculations" title="Link to this heading">¶</a></h3>
+<p>Use <strong>Session → Export</strong>:</p>
+<ul class="simple">
+<li><p><strong>HTML</strong> keeps the colors. Open it in a browser to print it. A light theme
+is best for printing.</p></li>
+<li><p><strong>Plain text</strong> works everywhere.</p></li>
+<li><p><strong>JSON</strong> is for importing back into SpeedCrunch with <strong>Session → Import</strong>.</p></li>
+</ul>
+</section>
+<section id="where-are-my-session-files-stored">
+<span id="faq-session-files"></span><h3>Where are my session files stored?<a class="headerlink" href="#where-are-my-session-files-stored" title="Link to this heading">¶</a></h3>
+<p>Use <strong>Session → Open Sessions Folder</strong>. This is useful for backups.</p>
+</section>
+</section>
+<section id="customizing-the-app">
+<h2>Customizing the app<a class="headerlink" href="#customizing-the-app" title="Link to this heading">¶</a></h2>
+<section id="how-do-i-change-the-colors">
+<span id="faq-colors"></span><h3>How do I change the colors?<a class="headerlink" href="#how-do-i-change-the-colors" title="Link to this heading">¶</a></h3>
+<p>Open <strong>Settings → Appearance → Theme…</strong>. Choose a light or dark theme, or
+change single colors to make your own. You can import and export themes as
+JSON files.</p>
+</section>
+<section id="speedcrunch-looks-different-from-older-versions-can-i-get-the-old-look-back">
+<span id="faq-style-presets"></span><h3>SpeedCrunch looks different from older versions. Can I get the old look back?<a class="headerlink" href="#speedcrunch-looks-different-from-older-versions-can-i-get-the-old-look-back" title="Link to this heading">¶</a></h3>
+<p>Yes. Use <strong>Settings → Appearance → Style Presets</strong>:</p>
+<ul class="simple">
+<li><p><strong>Classic</strong> looks similar to version 0.12 and uses your system style.</p></li>
+<li><p><strong>Modern</strong> uses the SpeedCrunch theme everywhere.</p></li>
+<li><p><strong>Hybrid</strong> is like Classic, but the panels use the SpeedCrunch theme.</p></li>
+</ul>
+</section>
+<section id="how-do-i-make-the-text-bigger-or-smaller">
+<span id="faq-text-size"></span><h3>How do I make the text bigger or smaller?<a class="headerlink" href="#how-do-i-make-the-text-bigger-or-smaller" title="Link to this heading">¶</a></h3>
+<p>Hold <strong>Ctrl</strong> and turn the mouse wheel, or press <strong>Shift+Up</strong> and
+<strong>Shift+Down</strong>. To choose a different font, use
+<strong>Settings → Appearance → Input and Results → Font…</strong>.</p>
+</section>
+<section id="how-do-i-show-or-hide-the-on-screen-keypad">
+<span id="faq-show-keypad"></span><h3>How do I show or hide the on-screen keypad?<a class="headerlink" href="#how-do-i-show-or-hide-the-on-screen-keypad" title="Link to this heading">¶</a></h3>
+<p>Use <strong>View → Keypad</strong>. You can choose Basic, Scientific (wide), Scientific
+(narrow), Custom, or Disable. Change the keypad size with
+<strong>Settings → Appearance → Keypad → Zoom</strong>.</p>
+</section>
+<section id="can-i-design-my-own-keypad">
+<span id="faq-custom-keypad"></span><h3>Can I design my own keypad?<a class="headerlink" href="#can-i-design-my-own-keypad" title="Link to this heading">¶</a></h3>
+<p>Yes. Choose <strong>Settings → Edit Custom Keypad…</strong>. Set the number of rows and
+columns, then choose what each button does. You can start from one of the built-in
+layouts. Click <strong>OK</strong> to save and use the layout. Later, choose
+<strong>View → Keypad → Custom</strong> to select it again.</p>
+</section>
+<section id="can-i-change-keyboard-shortcuts">
+<span id="faq-keyboard-shortcuts"></span><h3>Can I change keyboard shortcuts?<a class="headerlink" href="#can-i-change-keyboard-shortcuts" title="Link to this heading">¶</a></h3>
+<p>Yes, since version 1.2. Open <strong>Settings → Keyboard Shortcuts</strong>, click the box
+next to an action, and press the new keys.</p>
+</section>
+<section id="how-do-i-keep-speedcrunch-on-top-of-other-windows">
+<span id="faq-always-on-top"></span><h3>How do I keep SpeedCrunch on top of other windows?<a class="headerlink" href="#how-do-i-keep-speedcrunch-on-top-of-other-windows" title="Link to this heading">¶</a></h3>
+<p>Turn on <strong>Settings → Window → Always on Top</strong>. This option is not available on
+Linux with Wayland.</p>
+</section>
+<section id="can-i-make-the-window-see-through">
+<span id="faq-window-opacity"></span><h3>Can I make the window see-through?<a class="headerlink" href="#can-i-make-the-window-see-through" title="Link to this heading">¶</a></h3>
+<p>Yes. Hold <strong>Ctrl+Shift</strong> and turn the mouse wheel.</p>
+</section>
+<section id="can-i-hide-the-menu-bar">
+<span id="faq-menu-bar"></span><h3>Can I hide the menu bar?<a class="headerlink" href="#can-i-hide-the-menu-bar" title="Link to this heading">¶</a></h3>
+<p>On Windows and Linux, yes: <strong>View → Main Menu</strong>. You can still reach the menu
+by right-clicking the result area. On macOS, the menu bar belongs to the
+system, so you cannot hide it.</p>
+</section>
+<section id="what-happens-when-i-start-speedcrunch-while-it-is-already-running">
+<span id="faq-subsequent-launch"></span><h3>What happens when I start SpeedCrunch while it is already running?<a class="headerlink" href="#what-happens-when-i-start-speedcrunch-while-it-is-already-running" title="Link to this heading">¶</a></h3>
+<p>By default, it brings the open window to the front. You can change this in
+<strong>Settings → Window → On Subsequent Launch</strong>, to open a new window or a new
+tab instead.</p>
+</section>
+<section id="how-do-i-go-back-to-the-default-settings">
+<span id="faq-reset-settings"></span><h3>How do I go back to the default settings?<a class="headerlink" href="#how-do-i-go-back-to-the-default-settings" title="Link to this heading">¶</a></h3>
+<p>Use <strong>Settings → Reset All Settings…</strong>. Your history, sessions and user
+definitions are not deleted.</p>
+</section>
+</section>
+<section id="tips-and-tricks">
+<h2>Tips and tricks<a class="headerlink" href="#tips-and-tricks" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Autocomplete:</strong> Start typing a function or variable name and press <strong>Tab</strong>
+to complete it.</p></li>
+<li><p><strong>Function help:</strong> Put the cursor on a function name and press <strong>F1</strong> to open
+its manual page.</p></li>
+<li><p><strong>Parameter hints:</strong> While you type a function, SpeedCrunch shows its
+parameters and highlights the current one.</p></li>
+<li><p><strong>Live preview:</strong> You see the result while you type. Select part of an
+expression to see the result of only that part.</p></li>
+<li><p><strong>Copy the last result:</strong> Press <strong>Ctrl+R</strong>. To copy every new result
+automatically, turn on <strong>Settings → Results → Copy New Results Automatically</strong>.</p></li>
+<li><p><strong>Wrap in parentheses:</strong> Select part of the expression and press <strong>Ctrl+(</strong>.
+With no selection, the whole expression is wrapped.</p></li>
+<li><p><strong>Formula Book:</strong> Press <strong>Ctrl+1</strong> for ready-made formulas from algebra,
+geometry, electronics and radio frequency.</p></li>
+<li><p><strong>Keep the expression:</strong> Turn on <strong>Settings → Editing → Keep Expression After
+Evaluation</strong> to change and re-run the same expression quickly.</p></li>
+<li><p><strong>Clear with Escape:</strong> Turn on <strong>Settings → Editing → Escape Clears Editor</strong>.</p></li>
+<li><p><strong>Paste many lines:</strong> Paste several lines at once and each line is
+calculated.</p></li>
+<li><p><strong>Readable numbers:</strong> You can type <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">000</span> <span class="pre">000</span></code> or <code class="docutils literal notranslate"><span class="pre">1_000_000</span></code>. The spaces and
+underscores are ignored.</p></li>
+<li><p><strong>Copy a whole calculation:</strong> Right-click a calculation and choose
+<strong>Copy → Calculation as Single Line</strong>, for example <code class="docutils literal notranslate"><span class="pre">120</span> <span class="pre">/</span> <span class="pre">8</span> <span class="pre">=</span> <span class="pre">15</span></code>.</p></li>
+<li><p><strong>Powers made easy:</strong> <code class="docutils literal notranslate"><span class="pre">**</span></code> works like <code class="docutils literal notranslate"><span class="pre">^</span></code>, so <code class="docutils literal notranslate"><span class="pre">2**10</span> <span class="pre">=</span> <span class="pre">1024</span></code>.</p></li>
+<li><p><strong>Full screen:</strong> Press <strong>F11</strong>.</p></li>
+<li><p><strong>Keyboard only:</strong> Press <strong>F6</strong> to move between the input field and the
+panels without a mouse.</p></li>
+</ul>
+</section>
+<section id="problems-and-help">
+<h2>Problems and help<a class="headerlink" href="#problems-and-help" title="Link to this heading">¶</a></h2>
+<section id="some-characters-change-when-i-type-them-how-do-i-stop-this">
+<span id="faq-input-adjustments"></span><h3>Some characters change when I type them. How do I stop this?<a class="headerlink" href="#some-characters-change-when-i-type-them-how-do-i-stop-this" title="Link to this heading">¶</a></h3>
+<p>SpeedCrunch adjusts your input, for example it adds closing brackets and turns
+<code class="docutils literal notranslate"><span class="pre">*</span></code> into <code class="docutils literal notranslate"><span class="pre">×</span></code>. To type exactly what you want, turn off
+<strong>Settings → Editing → Automatic Input Adjustments</strong>.</p>
+</section>
+<section id="the-up-and-down-keys-move-through-history-but-i-want-to-move-the-cursor">
+<span id="faq-arrow-key-history"></span><h3>The Up and Down keys move through history, but I want to move the cursor.<a class="headerlink" href="#the-up-and-down-keys-move-through-history-but-i-want-to-move-the-cursor" title="Link to this heading">¶</a></h3>
+<p>Change <strong>Settings → Editing → Up/Down Arrow History</strong> to <strong>Never</strong> or
+<strong>Only for Single-Line Expressions</strong>.</p>
+</section>
+<section id="ctrl-k-does-nothing">
+<span id="faq-constants-shortcut"></span><h3>Ctrl+K does nothing.<a class="headerlink" href="#ctrl-k-does-nothing" title="Link to this heading">¶</a></h3>
+<p>Another program may use this shortcut. Choose a different key for
+<strong>Search Constants</strong> in <strong>Settings → Keyboard Shortcuts</strong>.</p>
+</section>
+<section id="i-found-a-bug-or-i-have-an-idea-where-do-i-report-it">
+<span id="faq-report-problem"></span><h3>I found a bug or I have an idea. Where do I report it?<a class="headerlink" href="#i-found-a-bug-or-i-have-an-idea-where-do-i-report-it" title="Link to this heading">¶</a></h3>
+<p>Use the <a class="reference external" href="https://speedcrunch.org/issues.html">issue tracker</a>. Please include
+the report from <strong>Help → App Diagnostics</strong>. Click <strong>Copy to Clipboard</strong> and
+paste it into your issue. You can also ask there for new formulas in the
+Formula Book.</p>
+</section>
+</section>
+</section>
+
+
+    </div> 
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>
+        &copy; Copyright 2026, The SpeedCrunch Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

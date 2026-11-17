@@ -1,13 +1,16 @@
 .. meta::
-   :description: Browse the SpeedCrunch manual: installation, calculation tutorials, expression syntax, interface settings, mathematical functions, constants and units.
+   :description: Browse the SpeedCrunch manual: frequently asked questions, installation, calculation tutorials, expression syntax, interface settings, mathematical functions, constants and units.
 
 Table of Contents
 =================
+
+Looking for a quick answer? Start with the :doc:`Frequently Asked Questions <faq>`.
 
 .. toctree::
    :maxdepth: 3
 
    introduction
+   faq
    userguide/index
    reference/index
 
